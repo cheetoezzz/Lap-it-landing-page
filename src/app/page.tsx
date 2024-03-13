@@ -1,11 +1,15 @@
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import FAQs from "./components/FAQs";
 import Footer from "./components/footer";
 import Navbar from "./components/navbar";
+import About from "./components/About";
+import Pricing from "./components/Pricing";
 
 const page = () => {
   return (
-    <body>
+    <>
     <Navbar/>
-    <a type='button' href="/login/signup">GET STARTED</a>
     <h1>CONTENT HERE</h1>
     <h1>CONTENT HERE</h1>
     <h1>CONTENT HERE</h1>
@@ -62,7 +66,7 @@ const page = () => {
     <h1>CONTENT HERE</h1>
     <h1>CONTENT HERE</h1>
     <Footer/>
-    </body>
+    </>
   );
 }
 export default page

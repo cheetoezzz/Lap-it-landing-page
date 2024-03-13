@@ -5,61 +5,6 @@ const page = () => {
   return (
     <>
     <Navbar/>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
-    <h1>CONTENT HERE</h1>
     <Footer/>
     </>
   );

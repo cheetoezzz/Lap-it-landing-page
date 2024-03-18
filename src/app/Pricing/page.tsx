@@ -1,5 +1,6 @@
 import React from 'react';
 import { Poppins } from 'next/font/google';
+import Navbar from '../components/navbar';
 
 const poppins_init = Poppins({
   subsets: ['latin'],
@@ -9,6 +10,7 @@ const poppins_init = Poppins({
 
 const Pricing = () => {
   return (
+    <><Navbar />
     <div className="flex justify-center">
       <div className={poppins_init.variable}>
         <div className='flex flex-col items-center'>
@@ -16,7 +18,7 @@ const Pricing = () => {
           <p className='poppins font-medium text-gray-600'>Free 30-Day Trial For Every Tier!</p>
         </div>
       </div>
-    </div>
+    </div></>
   );
 };
 

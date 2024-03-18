@@ -20,7 +20,8 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold">Login</button>
+        <a href="/login/signin" ><button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold">Login</button></a>
+        
       </div>
     </nav>
   );

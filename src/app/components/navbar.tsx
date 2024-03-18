@@ -1,4 +1,4 @@
-import { NAV_LINKS } from "../constants";
+import { NAV_LINKS } from "./constants";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +21,6 @@ const Navbar = () => {
           ))}
         </ul>
         <a href="/login/signin" ><button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold">Login</button></a>
-        
       </div>
     </nav>
   );

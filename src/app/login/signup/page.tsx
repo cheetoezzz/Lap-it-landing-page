@@ -48,7 +48,7 @@ return (
     className="absolute inset-0 bg-cover bg-center"
     style={{
       backgroundImage: "url('/bgimage.svg')",
-      filter: "blur(0px)", 
+      filter: "blur(0px)",
     }}
   />
   <main className="relative z-10 flex justify-center items-center h-full flex-col">

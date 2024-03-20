@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { contactNumber, companyName, username, email, companyAddress, password, confirmpassword } = body;
+    const { contactPerson, contactNumber, companyName, username, email, companyAddress, password, confirmpassword } = body;
 
     // Check if password and confirmPassword match
     if (password !== confirmpassword) {
@@ -54,6 +54,7 @@ export async function POST(req: Request) {
         username,
         email,
         companyAddress,
+        contactPerson,
         contactNumber,
         password: hashedPassword,
       }

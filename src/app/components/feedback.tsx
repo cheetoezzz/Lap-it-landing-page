@@ -4,7 +4,7 @@ const Feedback = () => {
   return (
     <section className="py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-blue-700 text-3xl font-bold text-center mb-36">
+        <h2 className="text-blue-800 text-5xl font-bold text-center mb-36">
           What Our Clients Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -20,7 +20,7 @@ const Feedback = () => {
             <div>
               <div className="relative overflow-hidden rounded-full w-40 h-40 mx-auto border-4 border-white transform -translate-y-20">
                 <img
-                  src="/arc.png" // Replace with actual image URL
+                  src="/person1.svg" // Replace with actual image URL
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -28,7 +28,7 @@ const Feedback = () => {
             </div>
 
             <div className="text-white font-semibold text-center">
-              <p className="mb-10 transform -translate-y-12">John Doe</p>
+              <p className="mb-10 transform -translate-y-12">Jane Doe</p>
               <p className="mb-10 transform -translate-y-12 text-balance ml-10 mr-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 convallis et odio vitae congue. Sed eu risus sit amet ante
@@ -36,7 +36,7 @@ const Feedback = () => {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <hr className="w-1/2 border-gray-400 mb-4 transform -translate-y-14" />
+              <hr className="w-1/2 border-white mb-4 transform -translate-y-14" />
             </div>
             <div className="flex items-center justify-center">
               {/* Rating star button goes here */}
@@ -57,7 +57,7 @@ const Feedback = () => {
             <div>
               <div className="relative overflow-hidden rounded-full w-40 h-40 mx-auto border-4 border-white transform -translate-y-20">
                 <img
-                  src="/arc.png" // Replace with actual image URL
+                  src="/person2.svg" // Replace with actual image URL
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -65,7 +65,7 @@ const Feedback = () => {
             </div>
 
             <div className="text-white font-semibold text-center">
-              <p className="mb-10 transform -translate-y-12">John Doe</p>
+              <p className="mb-10 transform -translate-y-12">James Doe</p>
               <p className="mb-10 transform -translate-y-12 text-balance ml-10 mr-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
                 convallis et odio vitae congue. Sed eu risus sit amet ante
@@ -73,7 +73,7 @@ const Feedback = () => {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <hr className="w-1/2 border-gray-400 mb-4 transform -translate-y-14" />
+              <hr className="w-1/2 border-white mb-4 transform -translate-y-14" />
             </div>
             <div className="flex items-center justify-center">
               {/* Rating star button goes here */}
@@ -94,7 +94,7 @@ const Feedback = () => {
             <div>
               <div className="relative overflow-hidden rounded-full w-40 h-40 mx-auto border-4 border-white transform -translate-y-20">
                 <img
-                  src="/arc.png" // Replace with actual image URL
+                  src="/person3.svg" // Replace with actual image URL
                   alt="Profile"
                   className="w-full h-full object-cover rounded-full"
                 />
@@ -110,7 +110,7 @@ const Feedback = () => {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <hr className="w-1/2 border-gray-400 mb-4 transform -translate-y-14" />
+              <hr className="w-1/2 border-white mb-4 transform -translate-y-14" />
             </div>
             <div className="flex items-center justify-center">
               {/* Rating star button goes here */}

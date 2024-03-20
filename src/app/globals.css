@@ -8,3 +8,7 @@
 .poppins{
     font-family: var(--font-Poppins);
 }
+
+body {
+    background-color: #DEE9FF;
+  }

@@ -1,6 +1,45 @@
 'use client'
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { signIn } from 'next-auth/react';
+import { z } from 'zod';
+import { useRouter } from 'next/navigation';  // Fix import statement
+
+const schema = z.object({
+  username: z.string(),
+  password: z.string().min(8),
+});
+
+type FormFields = z.infer<typeof schema>;
 
 const SignInPage = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm<FormFields>({
+    defaultValues: {
+      username: '',
+    },
+  });
+  const router = useRouter();
+
+  const onSubmit: SubmitHandler<FormFields> = async ({ username, password }) => {
+    try {
+      const signInData = await signIn('credentials', {
+        username,
+        password,
+        redirect: false,
+      });
+
+      if (signInData?.error) {
+        console.error(signInData.error);
+        alert('Login failed. Please check your credentials and try again.');
+      } else {
+        // Successful login
+        router.push('/login/dashboard/client');
+        alert('Login successful!');
+      }
+    } catch (error) {
+      console.error('An unexpected error occurred:', error);
+      alert('An unexpected error occurred during login. Please try again later.');
+    }
+  };
 
 return (
     <div className="relative h-screen">
@@ -21,21 +60,25 @@ return (
       <div className="pt-5">
         <h1 className="text-3xl font-semibold mb-1 ml-60">Login</h1>
         <p className="text-lg mb-4 ml-32 mr-32">Welcome Back! Please enter your details</p>
-        <form className="pb-20 pl-28 text-xs items-center">
+        <form onSubmit={handleSubmit(onSubmit)} className="pb-20 pl-28 text-xs items-center">
           <div className="mb-4 w-9/12">
-            <input type="text" placeholder="Username" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
+            <input {...register('username')} name="username" type="text" placeholder="Username" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
           </div>
           <div className="mb-4 w-9/12">
-            <input type="password" placeholder="Password" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
+            <input {...register('password')} type="password" name="password" placeholder="Password" className="mt-1 p-2 border border-gray-300 rounded-md w-full" />
           </div>
           <div>
-            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-sm hover:bg-blue-600 transition-colors duration-300 w-9/12">Register</button>
+            <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-sm hover:bg-blue-600 transition-colors duration-300 w-9/12">Login</button>
             <br />
             <br />
             <button type="submit" className="bg-black text-white px-4 py-2 rounded-sm hover:bg-blue-600 transition-colors duration-300 w-9/12">Continue with Google</button>
           </div>
+          <div>
+          {errors.username && <div>{errors.username.message}</div>}
+          {errors.password && <div>{errors.password.message}</div>}
+          </div>
           <br />
-          <h1 className="ml-24">Dont have an account? <a href="">Register Here</a></h1>
+          <h1 className="ml-24">Dont have an account? <a href="/login/signup">Register Here</a></h1>
         </form>
       </div>
     </div>

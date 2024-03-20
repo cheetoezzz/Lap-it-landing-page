@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
     </section>
         <section className="">
-            <div className="h-80">
+            <div className="h-64">
                 <div className="flex flex-col items-center mt-14">
                     <div className="bg-blue-600 w-3/6 h-40 rounded-sm flex items-center justify-between">
                         <div className="text-white text-lg font-semibold ml-9 mb-6">

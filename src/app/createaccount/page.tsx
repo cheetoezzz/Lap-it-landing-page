@@ -9,6 +9,7 @@ const schema = z.object({
     companyName: z.string(),
     companyAddress: z.string(),
     contactNumber: z.string(),
+    contactPerson: z.string(),
     username: z.string(),
     email: z.string().email(),
     password: z.string().min(8),
@@ -38,6 +39,10 @@ const SignUpPage = () => {
             }
             if (!data.contactNumber){
                 setError('contactNumber', { message: 'Contact Number is empty' });
+                return;
+            }
+            if (!data.contactPerson){
+                setError('contactNumber', { message: 'Contact Person is empty' });
                 return;
             }
             if (data.password !== data.confirmpassword) {
@@ -99,6 +104,7 @@ const SignUpPage = () => {
       <input {...register("email")} type="text" placeholder="Email" className="mt-1 p-2 border border-gray-300 rounded-md w-full"/>
       <input {...register("companyAddress")} type="text" placeholder="Company Address" className="mt-1 p-2 border border-gray-300 rounded-md w-full"/>
       <input {...register("contactNumber")} type="text" placeholder="Contact Number" className="mt-1 p-2 border border-gray-300 rounded-md w-full"/>
+      <input {...register("contactPerson")} type="text" placeholder="Contact Person" className="mt-1 p-2 border border-gray-300 rounded-md w-full"/>
       <input {...register("password")} type="password" placeholder="Password" className="mt-1 p-2 border border-gray-300 rounded-md w-full"/>
       <input {...register("confirmpassword")} type="password" placeholder="Confirm Password" className="mt-1 p-2 border border-gray-300 rounded-md w-full"/>
       <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded-sm hover:bg-blue-600 transition-colors duration-300 w-9/12">Register</button>

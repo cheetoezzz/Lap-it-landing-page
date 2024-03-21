@@ -21,7 +21,7 @@ const Features = () => {
       </section>
       <section className="py-10 px-10 2xl:max-container relative flex flex-row mt-10">
         {card.map((car, index) => (
-          <div className="space-x-4" key={index}><Card title={car.title} description={car.description}/></div>
+          <div className="space-x-4" key={index}><Card title={car.title} description={car.description} /></div>
         ))}
       </section>
     </div>

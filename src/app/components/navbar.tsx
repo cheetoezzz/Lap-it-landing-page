@@ -2,9 +2,14 @@ import { NAV_LINKS } from "./constants";
 import Image from "next/image";
 import Link from "next/link";
 
+
+
 const Navbar = () => {
+
   return (
     <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700">
+      
+
       <div>
         <Link href='/'>
           <Image src="/lapit.svg" alt="logo" width={150} height={40} className="ml-4" />

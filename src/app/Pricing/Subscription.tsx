@@ -3,9 +3,9 @@ import { FaCheck } from "react-icons/fa6";
 
 const Subscription = () => {
   return (
-    <div className="py-10 px-10 2xl:max-container relative flex flex-row items-center justify-center">
+    <div className="py-10 px-10 2xl:max-container relative flex flex-row items-center justify-center ">
       <div className="flex gap-24">
-        <div className="w-[460px] h-[613px] border-md bg-white mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5">
+        <div className="w-[460px] h-[613px] border-md bg-white mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5 group hover:translate-y-[-5px] transition-all duration-200 ease-in-out ">
           <h1 className="text-green-500 font-semibold text-2xl pt-5 pl-3 text-[24px]">
             BASIC
           </h1>
@@ -58,7 +58,7 @@ const Subscription = () => {
           </button>
         </div>
 
-        <div className="w-[460px] h-[613px] border-md bg-blue-700 mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5">
+        <div className="w-[460px] h-[613px] border-md bg-blue-700 mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5 group hover:translate-y-[-5px] transition-all duration-200 ease-in-out ">
           <h1 className="text-yellow-400 font-semibold text-2xl pt-5 pl-3 text-[24px]">
             STANDARD
           </h1>
@@ -79,14 +79,14 @@ const Subscription = () => {
             </div>
 
             <div className="flex flex-row items-center">
-            <img src="/check-green.png" alt="" />
+              <img src="/check-green.png" alt="" />
               <div>
                 <h1 className="ml-5">Lorem ipsum dolor sit</h1>
               </div>
             </div>
 
             <div className="flex flex-row items-center">
-            <img src="/check-green.png" alt="" />
+              <img src="/check-green.png" alt="" />
               <div>
                 <h1 className="ml-5">Lorem ipsum dolor sit</h1>
               </div>
@@ -111,7 +111,7 @@ const Subscription = () => {
           </button>
         </div>
 
-        <div className="w-[460px] h-[613px] border-md bg-white mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5">
+        <div className="w-[460px] h-[613px] border-md bg-white mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5 group hover:translate-y-[-5px] transition-all duration-200 ease-in-out ">
           <h1 className="text-red-600 font-semibold text-2xl pt-5 pl-3 text-[24px]">
             VIP
           </h1>
@@ -132,28 +132,28 @@ const Subscription = () => {
             </div>
 
             <div className="flex flex-row items-center">
-            <img src="/check-green.png" alt="" />
+              <img src="/check-green.png" alt="" />
               <div>
                 <h1 className="ml-5">Lorem ipsum dolor sit</h1>
               </div>
             </div>
 
             <div className="flex flex-row items-center">
-            <img src="/check-green.png" alt="" />
+              <img src="/check-green.png" alt="" />
               <div>
                 <h1 className="ml-5">Lorem ipsum dolor sit</h1>
               </div>
             </div>
 
             <div className="flex flex-row items-center">
-            <img src="/check-green.png" alt="" />
+              <img src="/check-green.png" alt="" />
               <div>
                 <h1 className="ml-5">Lorem ipsum dolor sit</h1>
               </div>
             </div>
 
             <div className="flex flex-row items-center">
-            <img src="/check-green.png" alt="" />
+              <img src="/check-green.png" alt="" />
               <div>
                 <h1 className="ml-5">Lorem ipsum dolor sit</h1>
               </div>

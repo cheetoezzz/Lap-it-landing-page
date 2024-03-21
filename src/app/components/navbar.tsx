@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700">
+    <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700 select-none">
       <div>
         <Link href='/'>
           <Image src="/lapit.svg" alt="logo" width={150} height={40} className="ml-4" />
@@ -20,7 +20,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <a href="/login/signin" ><button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold">Login</button></a>
+        <a href="/login/signin" ><button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold ">Login</button></a>
       </div>
     </nav>
   );

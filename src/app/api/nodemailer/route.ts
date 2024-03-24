@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
     try {
-        const { email, subject, companyName, contactPerson, contactNumber, companyAddress } = await req.json();
+        const { email, companyName, contactPerson, contactNumber, companyAddress } = await req.json();
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
@@ -18,7 +18,6 @@ export async function POST(req: Request) {
             subject: 'Account Registration Request',
             html: `
                 <h3>Credentials</h3>
-                <li>Subject: ${subject}</li>
                 <li>Company Name: ${companyName}</li>
                 <li>Email: ${email}</li>
                 <li>Contact Person: ${contactPerson}</li>

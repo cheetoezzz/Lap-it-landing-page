@@ -7,8 +7,7 @@ import Link from "next/link";
 const Navbar = () => {
 
   return (
-    <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700 select-none">
-    <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700">     
+    <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700 select-none"> 
       <div>
         <Link href='/'>
           <Image src="/lapit.svg" alt="logo" width={150} height={40} className="ml-4" />

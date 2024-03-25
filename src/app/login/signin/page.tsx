@@ -29,7 +29,7 @@ const SignInPage = () => {
 
       if (signInData?.error) {
         console.error(signInData.error);
-        alert('Login failed. Please check your credentials and try again.');
+        alert('Login failed. Account does not exist');
       } else {
         // Successful login
         router.push('/login/dashboard/client');

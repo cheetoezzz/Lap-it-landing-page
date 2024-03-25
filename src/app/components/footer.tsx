@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col mt-5 items-start w-1/4 ml-32">
-            <div className="font-bold ">REACH OUT</div>
+            <div className="font-bold ">Reach out</div>
 
             <div className="flex items-start mt-5">
               <img src="/point.png" alt="" className="mr-2" />
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col mt-5">
-  <div className="font-bold mr-14">GET STARTED</div>
+  <div className="font-bold mr-14">Get Started</div>
   <div className="flex items-center ml-12 mt-5">
     <div className="bg-white w-[220px] h-10 flex items-center justify-between rounded-md px-4">
       <input type="text" placeholder="Email" className="text-black flex-grow outline-none bg-transparent" />

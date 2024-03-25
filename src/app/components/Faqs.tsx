@@ -1,10 +1,7 @@
 import React from "react";
 import { FcOk } from "react-icons/fc";
-<<<<<<< HEAD
 import Image from 'next/image';
-=======
 import Image from "next/image";
->>>>>>> e811fba829f341335b185fa66a49f151f0bee4e6
 
 const FAQs = () => {
   return (

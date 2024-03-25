@@ -13,9 +13,6 @@ type FormFields = z.infer<typeof schema>;
 
 const SignInPage = () => {
   const { register, handleSubmit, formState: { errors } } = useForm<FormFields>({
-    defaultValues: {
-      username: '',
-    },
   });
   const router = useRouter();
 

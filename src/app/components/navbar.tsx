@@ -4,11 +4,8 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-<<<<<<< HEAD
     <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700">
-=======
     <nav className="flex items-center justify-between max-w-full px-4 py-3 bg-blue-700 select-none"> 
->>>>>>> e811fba829f341335b185fa66a49f151f0bee4e6
       <div>
         <Link href="/">
           <Image
@@ -33,22 +30,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-<<<<<<< HEAD
-        <a href="/login/signin">
-          <button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold">
-            Login
-          </button>
-        </a>
-=======
         <a href="/login/signin" ><button className="bg-white w-20 h-10 rounded-md text-blue-700 font-bold ">Login</button></a>
->>>>>>> e811fba829f341335b185fa66a49f151f0bee4e6
       </div>
     </nav>
   );
 };
 
 export default Navbar;
-<<<<<<< HEAD
-=======
-
->>>>>>> e811fba829f341335b185fa66a49f151f0bee4e6

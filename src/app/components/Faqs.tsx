@@ -49,7 +49,7 @@ const FAQs = () => {
                 <h1 className="ml-2">Volutpat nulla lorem vitae dolo</h1>
               </div>
               <div className="flex items-center ml-40 mt-7">
-                <button className="bg-blue-600 w-40 h-10 hover:scale-110 duration-700 text-white font-normal flex items-center justify-center rounded-md">
+                <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
                   Learn More
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

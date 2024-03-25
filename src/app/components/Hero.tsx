@@ -14,7 +14,7 @@ const Hero = () => {
             </h1>
             <div className="mt-4">
               <a href="/login/signup">
-                <button className="bg-blue-600 w-40 h-10 text-white rounded hover:scale-110 duration-700 flex items-center justify-center">
+                <button className="bg-blue-600 w-40 h-10 text-white rounded hover:bg-blue-800 transition-all flex items-center justify-center">
                   Get Started
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

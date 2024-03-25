@@ -2,7 +2,7 @@ import React from "react";
 
 const Feedback = () => {
   return (
-    <section className="py-16">
+    <section className="py-16 select-none">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-blue-800 text-5xl font-bold text-center mb-36">
           What Our Clients Say

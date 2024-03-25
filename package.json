@@ -13,11 +13,24 @@
     "@next-auth/prisma-adapter": "^0.4.4-canary.81",
     "@prisma/client": "^5.11.0",
     "axios": "^1.6.8",
+<<<<<<< HEAD
     "bcrypt": "^5.1.1",
     "framer-motion": "^11.0.20",
     "next": "14.1.3",
     "next-auth": "^4.24.7",
     "nodemailer": "^6.9.13",
+=======
+
+    "framer-motion": "^11.0.20",
+
+    "framer-motion": "^11.0.14",
+
+    "next": "14.1.3",
+
+    "next-auth": "^4.24.7",
+    "nodemailer": "^6.9.13",
+
+>>>>>>> e811fba829f341335b185fa66a49f151f0bee4e6
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.1",

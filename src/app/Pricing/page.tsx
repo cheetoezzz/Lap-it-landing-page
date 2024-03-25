@@ -2,7 +2,7 @@
 import React from 'react';
 import { Poppins } from 'next/font/google';
 import Navbar from '../components/navbar';
-import Choice from '../Pricing/Choice';
+import Choice from '../pricing/Choice';
 import Subscription from './Subscription';
 
 const poppins_init = Poppins({
@@ -15,8 +15,7 @@ const poppins_init = Poppins({
 
 const Pricing = () => {
   return (
-    <><Navbar />
-    
+    <><Navbar />s
     <div className=''>
     <div className="flex justify-center mt-9">
       <div className={poppins_init.variable}>

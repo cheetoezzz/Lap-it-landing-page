@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="">
+    <div className="select-none">
       <section
         className="max-container padding-container flex flex-col gap-20 py-10 pb-32 xl:flex-row bg-cover bg-center"
         style={{ backgroundImage: "url('/tao1.png')", height: "400px" }}
@@ -14,7 +14,7 @@ const Hero = () => {
             </h1>
             <div className="mt-4">
               <a href="/login/signup">
-                <button className="bg-blue-600 w-40 h-10 text-white rounded flex items-center justify-center">
+                <button className="bg-blue-600 w-40 h-10 text-white rounded hover:bg-blue-800 transition-all flex items-center justify-center">
                   Get Started
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@ const Hero = () => {
                 <br />
                 Tailored Just for You!
                 <br />
-                <a className="underline" href="">
+                <a className="underline"  href="">
                   Go to Pricing
                 </a>
               </div>

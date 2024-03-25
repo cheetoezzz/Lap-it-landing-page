@@ -46,7 +46,7 @@ const page = async () => {
     </div>
   );
 }
-  return <h2> Please Login to see this admin page <a href="/login/signin">Sign In</a></h2>;
+  return <h2> Please Login First to see this page <a href="/login/signin">Sign In</a></h2>;
 };
 
 export default page;

@@ -2,7 +2,7 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { signIn } from 'next-auth/react';
 import { z } from 'zod';
-import { useRouter } from 'next/navigation';  // Fix import statement
+import { useRouter } from 'next/navigation';
 
 const schema = z.object({
   username: z.string(),

@@ -60,9 +60,7 @@ const SignUpPage = () => {
         confirmpassword: data.password,
       });
       if (response.status === 201) {
-        // Clear any previous errors
         setError("root", { message: "User created successfully" });
-        // Do something with the successful response (e.g., show success message)
         router.push("/login/signin");
         console.log("Account created successfully:", response.data);
         alert("Account created successfully");

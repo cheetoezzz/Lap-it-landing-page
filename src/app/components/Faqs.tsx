@@ -1,8 +1,6 @@
 import React from "react";
 import { FcOk } from "react-icons/fc";
 import Image from 'next/image';
-import Image from "next/image";
-
 const FAQs = () => {
   return (
     <div className="flex flex-col select-none">

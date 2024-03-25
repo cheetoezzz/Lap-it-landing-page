@@ -18,7 +18,6 @@ const SignUpPage = () => {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    
     setFormSubmitted(true);
     setErrorMessage(null);
     if (

@@ -1,61 +1,43 @@
 import React from "react";
-import Image from "next/image";
+import Card from "./firstsectioncard";
 
 const Firstsection = () => {
+
+  const data = [
+    { title: "SEEMLESS", iconSrc: "/icon.svg" },
+    { title: "SCALABLE & FLEXIBLE", iconSrc: "/icon.svg"},
+    { title: "EFFECIENT", iconSrc: "/icon.svg"  },
+    { title: "GAME-CHANGER", iconSrc: "/icon.svg"  }
+  ];
+
   return (
     <div className="flex flex-col select-none">
-      <section className="flex flex-col items-center justify-center">
-        <div className="text-blue-700 font-bold text-5xl text-center">
-          Secure Cloud <br /> Application Hosting
+      <section className="flex flex-col items-center justify-center pt-24 ">
+        <div className="text-black font-extrabold text-5xl text-center ">
+          <div className="flex">
+            <div>
+              <h1>EXPERIENCE OUR</h1>
+            </div>
+            <div className="text-neutral-100 ml-4 border rounded-xl bg-red-600 p-2 -translate-y-2">
+              <h1> MULTI-TENANCY</h1>
+            </div>
+          </div>
+          <div>
+            <h1>SOFTWARE SUITE</h1>
+          </div>
         </div>
-        <h1 className="mt-4">
-          Lorem ipsum dolor sit amet consectetur.
-          <strong> Volutpat nulla lorem vitae dolor</strong> enim viverra orci.
+        <h1 className="mt-4 text-gray-500">
+        Lorem ipsum dolor sit amet consectetur. Id posuere vulputate diam facilisis dui
+        </h1>
+        <h1 className="text-gray-500">
+        consectetur Sed nunc sed nunc ut in diam ultrices blandit.
         </h1>
       </section>
-      <div className="flex flex-row">
-        <section className="w-1/2">
-          <div className="flex justify-end items-end mr-40 mt-9">
-            <Image
-              src="/shield.svg"
-              alt="Image Description"
-              width={400}
-              height={300}
-            />
-          </div>
-        </section>
-        <section className="w-1/2">
-          <h1 className="text-slate-600 text-base mt-28 ml-12">
-            Lorem ipsum dolor sit amet consectetur. Lacinia risus{" "}
-            <strong>
-              {" "}
-              quam
-              <br />
-              morbi donec netus accumsan elementum.
-            </strong>{" "}
-            Viverra amet
-            <br />
-            phasellus tellus laoreet fringilla. Lorem urna suspendisse sit ac
-            <br />
-            convallis eget lacus non.
-          </h1>
-          <div className="flex items-center ml-12 mt-7">
-            <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
-              Learn More
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="w-4 h-4 ml-4"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
-          </div>
+      <div className="flex flex-row items-center justify-center h-48 mt-24">
+        <section className="py-10 px-10 2xl:max-container relative flex flex-row mt-10 overflow-auto">
+        {data.map((cards, index) => (
+          <div className="space-x-4" key={index}><Card title={cards.title} iconSrc={cards.iconSrc} /></div>
+        ))}
         </section>
       </div>
     </div>

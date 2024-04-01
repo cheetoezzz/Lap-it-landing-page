@@ -24,8 +24,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
+            <div className="sm:pr-3 md:pr-7 xl:pr-12">
         <a href=""><button className="ml-3 px-5 py-1 rounded-md sm:text-sm sm:ml-5 md:ml-7 md:text-base  bg-white">Login</button></a>
+        </div>
 
       </div>
     </nav>

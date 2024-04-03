@@ -11,7 +11,7 @@ export interface CardProps {
 
 const Card = ({ title, smallDescription, price, className, icons }: CardProps) => {
   return (
-    <div className={`w-[460px] h-[613px] border-md bg-white mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5 group hover:translate-y-[-5px] transition-all duration-200 ease-in-out drop-shadow-2xl ${className}`}>
+    <div className={`w-[460px] h-[613px] border-md bg-white mx-3 rounded-md flex flex-col items-start justify-center pl-4 pt-5 group border-2 hover:border-blue-500 drop-shadow-2xl  ${className}`}>
       <h1 className="font-semibold text-2xl pt-5 pl-3 text-[24px] ">
         {title}
       </h1>
@@ -37,9 +37,9 @@ const Card = ({ title, smallDescription, price, className, icons }: CardProps) =
       </div>
 
       {/* Add a button */}
-      <button className="text-white font-bold bg-blue-500 mt-auto block mx-50 ml-8 border border-blue-500 rounded-lg px-[133px] py-[15px] gap-10 m-5 ">
-        SUBSCRIBE
-      </button>
+      <button className="text-blue-500 font-bold mt-auto block mx-50 ml-8 border border-blue-500 rounded-lg px-[133px] py-[15px] gap-10 m-5 hover:bg-blue-500 hover:text-white duration-500 ">
+  SUBSCRIBE
+</button>
     </div>
   );
 };

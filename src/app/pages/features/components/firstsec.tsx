@@ -12,29 +12,31 @@ const Firstsection = () => {
 
   return (
     <div className="flex flex-col select-none">
-  <section className="flex flex-col items-center justify-center pt-24 sm:pt-32 md:pt-40">
-    <div className="text-black font-extrabold text-4xl sm:text-5xl text-center">
-      <div className="flex flex-col sm:flex-row">
+  <section className="h-1 flex flex-col items-center justify-center sm:pt-7 xl:pt-32 ">
+    <div className="text-black font-extrabold text-[15px] sm:text-[25px] md:text-[30px] xl:text-[50px] text-center">
+      <div className="flex flex-row translate-y-16">
         <div>
           <h1>EXPERIENCE OUR</h1>
         </div>
-        <div className="text-neutral-100 ml-2 sm:ml-4 border rounded-xl bg-red-600 p-2 -translate-y-2">
+        <div className="ml-1 sm:ml-2 md:ml-3 border rounded-md bg-red-600 px-1 sm:px-[7px] md:px-[10px] xl:px-[13px] -translate-y-[1px] text-white">
           <h1>MULTI-TENANCY</h1>
         </div>
       </div>
-      <div>
+      <div className="translate-y-[59px]">
         <h1>SOFTWARE SUITE</h1>
       </div>
     </div>
-    <h1 className="mt-4 text-gray-500 text-center sm:text-left">
-      Lorem ipsum dolor sit amet consectetur. Id posuere vulputate diam facilisis dui
+    <div className=" text-[6.3px] sm:text-[11px] md:text-[13px] xl:text-[23px] translate-y-14 sm:translate-y-14">
+    <h1 className=" text-gray-500 text-center ">
+      Lorem ipsum dolor sit amet consectetur. Id posuere vulputate diam facilisis dui consectetur 
     </h1>
-    <h1 className="text-gray-500 text-center sm:text-left">
-      consectetur Sed nunc sed nunc ut in diam ultrices blandit.
+    <h1 className="text-gray-500 text-center ">
+      Sed nunc sed nunc ut in diam ultrices blandit.
     </h1>
+    </div>
   </section>
-  <div className="flex flex-row items-center justify-center h-auto sm:h-48 mt-24">
-    <section className="py-10 px-10 2xl:max-container relative flex flex-row mt-10 overflow-auto">
+  <div className="flex flex-row items-center justify-center translate-y-7 sm:translate-y-14 mt-14">
+    <section className="mt-2 sm:mt-5 sm:mb-5 md:mt-10 xl:mt-14 xl:mb-0 relative flex flex-row overflow-auto">
       {data.map((cards, index) => (
         <div className="space-x-4" key={index}><Card title={cards.title} iconSrc={cards.iconSrc} /></div>
       ))}

@@ -1,6 +1,7 @@
 import { title } from "process";
 
 export const NAV_LINKS = [
+
   { href: "/", key: "home", label: "Home" },
   { href: "/", key: "features", label: "Features" },
   { href: "/", key: "FAQs", label: "FAQ" },
@@ -24,4 +25,6 @@ const Card = ({ description, title }: card) => {
 };
 
 export default Card;
+
+
 

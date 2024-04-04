@@ -9,7 +9,6 @@ const Page = () => {
   return (
     <div>
       <NavBar/>
-      <h1 className='text-green-500 sm:text-red-500 md:text-black xl:text-blue-600'>RESPONSIVE</h1>
       <Firstsection/>
       <Secondsection/>
       <Thirdsection/>

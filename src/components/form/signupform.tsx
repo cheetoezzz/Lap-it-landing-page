@@ -7,14 +7,13 @@ import { z } from "zod";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "../ui/form";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import { FaGoogle } from "react-icons/fa";
 
 const formSchema = z.object({
   username: z.string().min(2, {
@@ -31,28 +30,36 @@ const SignUpForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
-  }
+    const response = await fetch("/api/nodemailer", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+      console.log("Form submission successful:", response);
+
+    }   
   return (
     <div className="item-center justify-center">
-      <div className="text-center">
-        <h1 className="font-sans font-bold text-sm">Sign Up</h1>
-        <h1>enter your credentials bellow to sign up for an account</h1>
+      <div className=" text-center">
+        <h1 className="font-bold text-[25px]">Sign Up</h1>
+        <h1 className="text-gray-500 text-[13px]">
+          Enter your credentials bellow to sign up for an account
+        </h1>
       </div>
-      <div>
+
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 ">
             <FormField
               control={form.control}
               name="username"
               render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Username</FormLabel>
+                <FormItem> 
                   <FormControl>
-                    <Input placeholder="shadcn" {...field} />
+                    <Input className="text-xs mt-2" placeholder="Username" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -62,20 +69,39 @@ const SignUpForm = () => {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Email Address</FormLabel>
-                  <FormControl>
-                    <Input placeholder="shadcn" {...field} />
+                <FormItem className="-translate-y-5">
+                  <FormControl >
+                    <Input className="text-xs" placeholder="Email Address" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button type="submit">Submit</Button>
+            <div className="flex justify-center -translate-y-9 ">
+            <Button
+                className="w-[200px] bg-white text-black  border-b-gray-60 border hover:text-white hover:bg-blue-500"
+                type="submit"
+              >
+                Sign up with Email
+              </Button>
+            </div>
+            <div className="text-center -translate-y-12">
+                <h1 className="text-xs text-gray-400">━━━━━━━ OR CONTINUE WITH ━━━━━━━</h1>
+            </div>
+            <div className="flex justify-center -translate-y-16">
+              <Button
+                className=" bg-white text-black border border-gray-60 hover:text-white hover:bg-blue-500"
+                type="submit"
+              >
+                <div className="w-6 h-6 mr-2">
+                  <FaGoogle className="mt-[2px] w-5 h-5"/>
+                </div>
+                Sign up with Google
+              </Button>
+            </div>
           </form>
         </Form>
       </div>
-    </div>
   );
 };
 

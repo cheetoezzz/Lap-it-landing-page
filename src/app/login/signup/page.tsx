@@ -23,17 +23,18 @@ const Page = () => {
           {/* Logo */}
           <Image
             src="/Lapwhitelogo.svg"
-            width={100}
-            height={100}
-            className="absolute top-0 left-0 m-4 md:m-8 lg:m-12 max-w-full h-auto"
+            width={150}
+            height={150}
+            className="absolute top-0 left-0 m-4 md:m-6 lg:m-8 xl:m-10 max-w-full h-auto"
             alt="Logo"
           />
           {/* Quote */}
           <div className="absolute justify-center bottom-0 left-0 right-0 text-center mb-8 md:mb-12 lg:mb-16 mx-[40px]">
-            <p className="text-white text-[10px]  md:text-xl lg:text-base ">
+            <p className="text-white font-medium text-[7px] sm:text-[12px] md:text-[14px] lg:text-[14px] xl:text-[14px] lg:text-base ">
               “Empower your business journey, elevate your achievements! Unleash
               the possibilities of smooth administration, insightful analytics,
               and tailored solutions on our diverse platform.”
+              <p className="px-6 text-[10px] font-light text-left ">Lap Solution TEAM</p>
             </p>
           </div>
         </div>

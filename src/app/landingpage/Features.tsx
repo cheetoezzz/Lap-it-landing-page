@@ -12,7 +12,7 @@ const Features = () => { //kani ang next buhata
     { title: "Clinic / Patient", description: "Lorem ipsum dolor sit amet consectetur sodales."},
   ];
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-20 select-none">
       <div className="font-extrabold text-5xl">
         <h1>
           HIGH -{" "}
@@ -33,7 +33,7 @@ const Features = () => { //kani ang next buhata
       <div className="mt-16">
         <Image src="/computer.svg" alt="image" width={24} height={24} />
       </div>
-      <section className="py-10 px-10 2xl:max-container relative flex flex-row mt-10 overflow-auto">
+      <section className="py-10 px-10 2xl:max-container relative flex flex-row mt-10 overflow-auto w-[1500px]">
         {card.map((car, index) => (
           <div className="space-x-4" key={index}><Card title={car.title} description={car.description} /></div>
         ))}

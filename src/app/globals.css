@@ -67,7 +67,6 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background: #EFF6FF;
 }
 @layer base {
   * {

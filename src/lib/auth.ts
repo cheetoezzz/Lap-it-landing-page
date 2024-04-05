@@ -17,11 +17,11 @@ export const authOptions: NextAuthOptions = {
     CredentialsProvider({
       name: "credentials",
       credentials: {
-        username: { label: "Username", type: "text" },
+        email: { label: "Username", type: "email" },
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        if (!credentials?.username || !credentials?.password) {
+        if (!credentials?.email || !credentials?.password) {
           console.error("Credentials are missing or incomplete."); // user information does not exist 
           return null;
         }
@@ -29,7 +29,7 @@ export const authOptions: NextAuthOptions = {
         console.log("Received credentials:", credentials); // suggest to remove
 
         const existingUser = await db.user.findUnique({
-          where: { username: credentials.username },
+          where: { email: credentials.email },
         });
 
         console.log("Existing user:", existingUser); // remove
@@ -54,7 +54,7 @@ export const authOptions: NextAuthOptions = {
         return {
           id: existingUser.id.toString(),
           companyName: existingUser.companyName,
-          username: existingUser.username,
+          email: existingUser.email,
         };
       },
     }),

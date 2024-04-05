@@ -47,7 +47,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-1/2 relative mt-20">
-          <div className="-mt-9 ml-24 mb-24">
+          <div className="-mt-9 pl-24 mb-24">
             <Image
               src="/Vector.svg"
               alt="Image Description"

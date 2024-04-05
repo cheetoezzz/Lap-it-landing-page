@@ -39,7 +39,6 @@ const page = async () => {
               </a>
             </li>
             <li>
-            {/* <SignoutButton/> */}
             </li>
             {/* Add more nav items here */}
           </ul>

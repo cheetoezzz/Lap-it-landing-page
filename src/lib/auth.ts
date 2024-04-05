@@ -22,7 +22,7 @@ export const authOptions: NextAuthOptions = {
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) {
-          console.error("Credentials are missing or incomplete."); // user information does not exist 
+          console.error("Credentials are missing or incomplete."); // user information does not exist
           return null;
         }
 

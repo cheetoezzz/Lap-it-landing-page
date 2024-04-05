@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import Navbar from './components/navbar'
 import Home from './landingpage/Home'
 import Features from './landingpage/Features'

@@ -12,7 +12,7 @@ const Features = () => { //kani ang next buhata
     { title: "Clinic / Patient", description: "Lorem ipsum dolor sit amet consectetur sodales."},
   ];
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-20 select-none">
       <div className="font-extrabold text-5xl">
         <h1>
           HIGH -{" "}

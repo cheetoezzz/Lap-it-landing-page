@@ -3,7 +3,7 @@ import { title } from "process";
 export const NAV_LINKS = [
 
   { href: "/.", key: "home", label: "Home" },
-  { href: "/features", key: "features", label: "Features" },
+  { href: "/pages/features", key: "features", label: "Features" },
   { href: "/", key: "FAQs", label: "FAQ" },
   { href: "/", key: "About", label: "About" },
   { href: "/pricing", key: "Pricing", label: "Pricing" },

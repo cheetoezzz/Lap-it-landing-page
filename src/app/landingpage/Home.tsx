@@ -37,17 +37,17 @@ const Home = () => {
             </p>
           </div>
           <div>
-            <button className="ml-44 mt-11">Get Started</button>
-            <button className="ml-44">Book a demo</button>
+            <button className="ml-44 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">Get Started</button>
+            <button className="ml-28 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">Book a demo</button>
           </div>  
-          <div className="mt-4 ml-44 flex flex-row justify-between text-lg"> 
+          <div className="mt-6 ml-44 flex flex-row justify-between text-lg"> 
             {card.map((car, index) => ( //mao ni mag map naka
               <Card key={index} title={car.title} description={car.description} />
             ))}
           </div>
         </div>
         <div className="w-1/2 relative mt-20">
-          <div className="-mt-9 ml-24 mb-24">
+          <div className="-mt-9 pl-24 mb-24">
             <Image
               src="/Vector.svg"
               alt="Image Description"

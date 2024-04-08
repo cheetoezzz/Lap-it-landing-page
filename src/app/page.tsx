@@ -6,6 +6,8 @@ import Thirdsection from './landingpage/Thirdsec'
 import Fourthsec from './landingpage/Fourthsec'
 import Fifthesec from './landingpage/Fifthesec'
 import Servicessec from './landingpage/Servicessec'
+import Testimonysec from './landingpage/Testimonysec'
+import Contact from './landingpage/Contact'
 
 
 const Page = () => {
@@ -18,6 +20,8 @@ const Page = () => {
       <Fourthsec/>
       <Fifthesec/>
       <Servicessec/>
+      <Testimonysec/>
+      <Contact/>
     </div>
   )
 }

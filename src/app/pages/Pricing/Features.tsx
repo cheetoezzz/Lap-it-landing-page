@@ -11,6 +11,7 @@ const Features = () => {
 
   ];
 
+
   const getTitleColorClass = (title: string): string => {
     switch (title) {
       case "STARTER":
@@ -105,12 +106,12 @@ const Features = () => {
       <section className="py-10 px-10 2xl:max-container relative flex flex-row justify-center gap-16">
         {card.map((car, index) => (
           <div className="space-x-4" key={index}>
-            <Card
+            <Card 
               title={car.title}
               smallDescription={car.smallDescription}
               price={car.price}
               className={getTitleColorClass(car.title)}
-              icons={renderIcons(car.title)} // This passes an array of JSX elements
+              icons={renderIcons(car.title)} 
             />
           </div>
         ))}

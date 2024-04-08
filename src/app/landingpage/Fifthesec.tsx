@@ -67,8 +67,8 @@ const Features = () => {
   };
 
   return (
-    <div className="select-none">
-      <div className="flex flex-col items-center mt-28 text-center bg-white">
+    <div className="select-none bg-blue-50">
+      <div className="flex flex-col items-center pt-16 text-center">
         <div className="font-extrabold text-5xl">
           <h1 className="mt-4">LET’S KNOW THE</h1>
           <h1 className="mt-2">

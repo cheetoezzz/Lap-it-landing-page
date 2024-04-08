@@ -2,7 +2,7 @@
 
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import {
   Form,
@@ -14,6 +14,9 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { FaGoogle } from "react-icons/fa";
+import { signIn } from 'next-auth/react';
+import { useRouter } from "next/navigation";
+
 
 
 const formSchema = z.object({
@@ -22,12 +25,31 @@ const formSchema = z.object({
 });
 
 const SignInForm = () => {
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema)
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  const onSubmit: SubmitHandler<z.infer<typeof formSchema>>= async ({ email, password})  => {
+    try {
+      const signInData = await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (signInData?.error) {
+        console.error(signInData.error);
+        alert('Login failed. Account does not exist');
+      } else {
+        // Successful login
+        router.push('/login/dashboard/client');
+        alert('Login successful!');
+      }
+    } catch (error) {
+      console.error('An unexpected error occurred:', error);
+      alert('An unexpected error occurred during login. Please try again later.');
+    }
   }
   return (
     <div className="item-center justify-center">
@@ -48,7 +70,7 @@ const SignInForm = () => {
                   <FormControl >
                     <Input className="text-xs" placeholder="Email Address" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -60,7 +82,7 @@ const SignInForm = () => {
                   <FormControl >
                     <Input className="text-xs" placeholder="Password" type="password" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />

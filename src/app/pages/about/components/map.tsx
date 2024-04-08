@@ -1,21 +1,25 @@
 'use client'
 
+// Import Leaflet outside of the component
+import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import L from 'leaflet';
 
 const Map = () => {
   const [customIcon, setCustomIcon] = useState<L.Icon | null>(null);
 
   useEffect(() => {
-    import('leaflet').then((L) => {
-      const icon = new L.Icon({
-        iconUrl: "/about/location.png",
-        iconSize: [30, 30],
+    // Ensure this code only runs on the client-side
+    if (typeof window !== "undefined") {
+      import('leaflet').then((L) => {
+        const icon = new L.Icon({
+          iconUrl: "/about/location.png",
+          iconSize: [30, 30],
+        });
+        setCustomIcon(icon);
       });
-      setCustomIcon(icon);
-    });
+    }
   }, []);
 
   return (

@@ -10,7 +10,7 @@ const Contact = () => {
           <div className="flex flex-col items-center pt-11">
             <div className="bg-blue-400 w-[1100px] h-[282px] rounded-sm flex items-center text-nowrap drop-shadow-2xl pt-20 ml-7">
               <div className="text-white text-4xl font-extrabold ml-9 mb-24">
-                SUBSCRIBE TO NEWLETTER
+                SUBSCRIBE TO NEWSLETTER
                 <p className="text-base mt-4 font-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>

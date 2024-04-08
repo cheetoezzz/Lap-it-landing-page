@@ -19,11 +19,11 @@ const Contact = () => {
                   <Button type="submit">Subscribe</Button>
                 </div>
               </div>
-              <div className="flex flex-col mr-9 pb-24">
+              <div className="flex flex-col mr-3 pb-24">
                 <Image
                   src="/subscribe.svg"
                   alt="icon"
-                  width={6500}
+                  width={500}
                   height={500}
                 />
               </div>

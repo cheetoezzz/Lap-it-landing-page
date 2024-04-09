@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Servicessec = () => {
   return (
-    <div className="flex flex-col items-center mt-28 text-center select-none">
+    <div className="flex flex-col items-center pt-20 text-center select-none">
       <div className="font-extrabold text-5xl">
         <h1 className="mt-2">WE OFFER</h1>
         <h1 className="mt-4">

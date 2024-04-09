@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Thirdsection = () => {
   return (
-    <div className="flex flex-col items-center mt-28 text-center select-none">
+    <div className="flex flex-col items-center pt-20 text-center select-none">
       <div className="font-extrabold text-5xl">
         <h1 className="mt-4">
           <span className="bg-red-600 text-white p-1 px-4 rounded-md inline-block">

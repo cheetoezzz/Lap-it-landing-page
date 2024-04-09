@@ -23,6 +23,7 @@ const PlanCard = ({ title, smallDescription,color}: CardProps) => {
           </button>
         </div>
       </div>
+
     </div>
   );
 };

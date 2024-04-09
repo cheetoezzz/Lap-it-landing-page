@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "@/app/components/navbar";
 import Features from "./Features";
 import PlanFeatures from "./PlanFeatures";
-
+import TableCard from "./TableCard";
+import TableFeature from "./TableFeature";
 const Pricing = () => {
   return (
     <>
@@ -20,7 +21,7 @@ const Pricing = () => {
           </div>
         </div>
         <Features />
-        <div className="bg-blue-100 py-3 mt-5">
+        <div className="bg-blue-50 py-3 mt-5"> {/*2nd SECTION*/}  
           <div className="flex justify-center  text-[48px] font-bold ">
             <h1>SEE WHICH PLAN IS</h1>
           </div>
@@ -33,8 +34,10 @@ const Pricing = () => {
             </div>
           </div>
         </div> {/* END OF DIV FOR 2nd SECTION*/}  
-        <PlanFeatures/>
+
         
+        <PlanFeatures/>
+        <TableFeature/>
       </div>
     </>
   );

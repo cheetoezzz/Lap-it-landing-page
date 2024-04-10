@@ -10,22 +10,22 @@ interface CardProps {
 
 const TableCard = ({ tbOne, tbTwo, tbThree, tbFour, icons }: CardProps) => {
   return (
-    <div className="flex justify-center items-center">
-  <table className="border-2 w-full">  
+    <div className=" flex justify-center items-center">
+  <table className=" border border-blue-300 w-full">  
     <tbody>
       <tr>
-        <td className="border px-4 py-2" style={{ width: "650px", height:"56px" }}>{tbOne}</td>
-        <td className="border px-4 py-2" style={{ width: "400px" }}>
+        <td className="border border-blue-300 px-4 py-2 font-bold text-[16px] " style={{ width: "650px", height:"56px" }}>{tbOne}</td>
+        <td className="border border-blue-300 px-4 py-2" style={{ width: "350px" }}>
           <div className="flex justify-center items-center">
             {typeof tbTwo === 'object' ? tbTwo.icon : tbTwo}
           </div>
         </td>
-        <td className="border px-4 py-2" style={{ width: "350px", height:"56px" }}>
+        <td className="border border-blue-300 px-4 py-2" style={{ width: "350px", height:"56px" }}>
           <div className="flex justify-center items-center">
             {typeof tbThree === 'object' ? tbThree.icon : tbThree}
           </div>
         </td>
-        <td className="border px-4 py-2" style={{ width: "350px", height:"56px" }}>
+        <td className="border border-blue-300 px-4 py-2" style={{ width: "350px", height:"56px" }}>
           <div className="flex justify-center items-center">
             {typeof tbFour === 'object' ? tbFour.icon : tbFour}
           </div>

@@ -14,7 +14,7 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { FaGoogle } from "react-icons/fa";
-import { signIn } from 'next-auth/react';
+import { getSession, signIn } from 'next-auth/react';
 import { useRouter } from "next/navigation";
 
 
@@ -43,8 +43,25 @@ const SignInForm = () => {
         alert('Login failed. Account does not exist');
       } else {
         // Successful login
-        router.push('/login/dashboard/client');
-        alert('Login successful!');
+        const session = await getSession();
+        if (session) {
+          console.log("User details:", session.user);
+          const userRole = session.user.role;
+          switch (userRole) {
+            case "admin":
+              router.push("/login/dashboard/admin");
+              break;
+            case "user":
+              router.push("/login/dashboard/client");
+              break;
+            default:
+              router.push("/login/signin/"); // Default path if role is not recognized
+              break;
+          }
+          alert("Login successful!");
+        } else {
+          throw new Error("Session not found");
+        }
       }
     } catch (error) {
       console.error('An unexpected error occurred:', error);
@@ -91,7 +108,7 @@ const SignInForm = () => {
                 className="w-[200px] bg-white text-black  border-b-gray-60 border hover:text-white hover:bg-blue-500"
                 type="submit"
               >
-                Sign In with Email
+                Sign In with Email 
               </Button>
             </div>
             <div className="text-center">

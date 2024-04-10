@@ -1,29 +1,77 @@
 "use client";
+import Image from "next/image";
+import Link from "next/link";
+import { NAV_LINKS } from ".";
+import BottomOfFooter from "./BottomOfFooter";
 
 // Triaged, use Next/Image and map nav links
+//used nextImage 
+// gi isa nako ang feature ug card *testing new method*
 const Footer = () => {
+
+  const card = [
+    { link:"https://www.facebook.com/itechsolutions588",pic: <Image src="/fb.png" alt="" width={16} height={16} /> },
+    {link:"https://www.facebook.com/itechsolutions588", pic: <Image src="/mssgr.png" alt="" width={16} height={16}  /> },
+    { link:"https://www.instagram.com/lapitsolutions/",pic: <Image src="/insta.png" alt="" width={16} height={16}  /> },
+    { link:"https://www.facebook.com/itechsolutions588",pic: <Image src="/twtr.png" alt="" width={16} height={16} /> },
+    { link: "mailto:LapITSolutions09@gmail.com", pic: <Image src="/gm.png" alt="" width={16} height={16} /> },
+  ];
+
+  const PlanCard = ({ link, pic }: { link: string; pic?: string | JSX.Element }) => {
+    return (
+      <div className="">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {typeof pic === 'string' ? <Image src={pic} alt="" width={100} height={100} /> : pic}
+        </a>
+      </div>
+    );
+  };
+
+
   return (
-    <footer className="bg-blue-900 text-white text-center py-4 mt-auto">
+    <footer className=" bg-blue-900  text-white   mt-auto">
       <div className="container mx-auto">
-        <div className="flex flex-row justify-between">
+        <div className=" flex flex-row justify-between">
           <div className="flex flex-col items-start mt-5 gap-4">
-            <div className="font-bold">Links</div>
-            <div>Homes</div>   {/* IMAGE OF LAP IT */}
-            <div>Features</div> {/* SMALL DESCRIPTION*/}
-            <div>FAQs</div>       {/* ICONS*/}
-            <div>About</div>
-            <div>Pricing</div>
-            {/* {NAV_LINKS.length > 0 && NAV_LINKS.map} */}
+            <Link href="/">
+              <Image
+                src="/lapit.svg"
+                alt="logo"
+                width={80}
+                height={60}
+                className="sm:w-28 md:w-40"
+              />
+            </Link>{" "}
+            {/* IMAGE OF LAP IT */}
+            <div className=" text-[12px]">
+              {" "}
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br></br> Sed dapibus tempus vulputate.
+              </p>{" "}
+            </div>
+            
+            <div className="flex flex-row items-center space-x-4">  {/* ICONS*/}
+            {card.map((logoMap, index) => (
+              <PlanCard key={index}  link={logoMap.link} pic={logoMap.pic} />
+            ))}
+          </div>
+            
+            
           </div>
 
-          <div className="flex flex-col items-start mt-5 gap-4 ml-32">
-            <div className="font-bold">Legal</div>
-            <div>Privacy & Policy</div>
-            <div>Terms & Conditions</div>
+
+          <div className="flex flex-col items-start mt-5 gap-4 ml-32">  {/* // {NAV_LINKS.length > 0 && NAV_LINKS.map} */}
+            <div className="font-bold text-[20px]">Useful Links</div>
+            {NAV_LINKS.map((link) => (
+              <Link  key={link.key} href={link.href} className="text-[14px]"> 
+                {link.label}
+              </Link> 
+          ))}
           </div>
 
           <div className="flex flex-col mt-5 items-start w-1/4 ml-32">
-            <div className="font-bold ">Reach out</div>
+            <div className="font-bold text-[20px]">Reach out</div>
 
             <div className="flex items-start mt-5">
               <img src="/point.png" alt="" className="mr-2" />
@@ -47,43 +95,17 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col mt-5">
-            <div className="font-bold mr-14">Get Started</div>
-            <div className="flex items-center ml-12 mt-5">
-              <div className="bg-white w-[220px] h-10 flex items-center justify-between rounded-md px-4">
-                <input
-                  type="text"
-                  placeholder="Email"
-                  className="text-black flex-grow outline-none bg-transparent"
-                />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-4 h-4 ml-2 text-blue-600"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.72 7.72a.75.75 0 0 1 1.06 0l3.75 3.75a.75.75 0 0 1 0 1.06l-3.75 3.75a.75.75 0 1 1-1.06-1.06l2.47-2.47H3a.75.75 0 0 1 0-1.5h16.19l-2.47-2.47a.75.75 0 0 1 0-1.06Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </div>
+            <div className="font-bold mr-14 text-[20px]">Get In Touch</div>
+            <div className="flex items-center  mt-5">
+              <h1>Question or feedback <br /> we’d love to hear it from you.</h1>
             </div>
           </div>
         </div>
-
-        <div className="border-b border-white w-full mt-4"></div>
-
-        <div className="flex items-center justify-center mt-8">
-          <p className="mr-80">© 2024 My Website. All rights reserved.</p>
-          <img src="/fb.png" alt="" className="mr-5" />
-          <img src="/mssgr.png" alt="" className="mr-5" />
-          <img src="/insta.png" alt="" className="mr-5" />
-          <img src="/twtr.png" alt="" className="mr-5" />
-          <img src="/gmail.png" alt="" className="mr-5" />
-        </div>
+      
       </div>
+      <BottomOfFooter/>
     </footer>
+    
   );
 };
 

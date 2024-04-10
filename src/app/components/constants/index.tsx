@@ -6,7 +6,7 @@ export const NAV_LINKS = [
   { href: "/pages/features", key: "features", label: "Features" },
   { href: "/", key: "FAQs", label: "FAQ" },
   { href: "/pages/about", key: "About", label: "About" },
-  { href: "pages/Pricing", key: "Pricing", label: "Pricing" },
+  { href: "/pages/Pricing", key: "Pricing", label: "Pricing" },
 ];
 
 interface card {

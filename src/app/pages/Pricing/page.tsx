@@ -3,6 +3,8 @@ import Navbar from "@/app/components/navbar";
 import Features from "./Features";
 import PlanFeatures from "./PlanFeatures";
 import TableFeature from "./TableFeature";
+import Footer
+ from "@/app/components/constants/Footer";
 const Pricing = () => {
   return (
     <>
@@ -43,6 +45,7 @@ const Pricing = () => {
         
         <PlanFeatures/>
         <TableFeature/>
+        <Footer/>
       </div>
     </>
   );

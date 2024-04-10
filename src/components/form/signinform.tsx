@@ -108,7 +108,7 @@ const SignInForm = () => {
                 className="w-[200px] bg-white text-black  border-b-gray-60 border hover:text-white hover:bg-blue-500"
                 type="submit"
               >
-                Sign In with Email
+                Sign In with Email 
               </Button>
             </div>
             <div className="text-center">

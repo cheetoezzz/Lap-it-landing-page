@@ -2,7 +2,7 @@
 
 import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import {
   Form,
@@ -14,6 +14,9 @@ import {
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { FaGoogle } from "react-icons/fa";
+import { getSession, signIn } from 'next-auth/react';
+import { useRouter } from "next/navigation";
+
 
 
 const formSchema = z.object({
@@ -22,12 +25,48 @@ const formSchema = z.object({
 });
 
 const SignInForm = () => {
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema)
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  const onSubmit: SubmitHandler<z.infer<typeof formSchema>>= async ({ email, password})  => {
+    try {
+      const signInData = await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (signInData?.error) {
+        console.error(signInData.error);
+        alert('Login failed. Account does not exist');
+      } else {
+        // Successful login
+        const session = await getSession();
+        if (session) {
+          console.log("User details:", session.user);
+          const userRole = session.user.role;
+          switch (userRole) {
+            case "admin":
+              router.push("/login/dashboard/admin");
+              break;
+            case "user":
+              router.push("/login/dashboard/client");
+              break;
+            default:
+              router.push("/login/signin/"); // Default path if role is not recognized
+              break;
+          }
+          alert("Login successful!");
+        } else {
+          throw new Error("Session not found");
+        }
+      }
+    } catch (error) {
+      console.error('An unexpected error occurred:', error);
+      alert('An unexpected error occurred during login. Please try again later.');
+    }
   }
   return (
     <div className="item-center justify-center">
@@ -48,7 +87,7 @@ const SignInForm = () => {
                   <FormControl >
                     <Input className="text-xs" placeholder="Email Address" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -60,7 +99,7 @@ const SignInForm = () => {
                   <FormControl >
                     <Input className="text-xs" placeholder="Password" type="password" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -69,7 +108,7 @@ const SignInForm = () => {
                 className="w-[200px] bg-white text-black  border-b-gray-60 border hover:text-white hover:bg-blue-500"
                 type="submit"
               >
-                Sign In with Email
+                Sign In with Email 
               </Button>
             </div>
             <div className="text-center">

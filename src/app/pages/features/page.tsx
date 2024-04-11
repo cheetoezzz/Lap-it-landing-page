@@ -4,6 +4,8 @@ import Firstsection from './components/firstsec'
 import Secondsection from './components/secondsec'
 import Thirdsection from './components/thridsec'
 import Forthsection from './components/forthsec'
+import Footer from '@/app/components/constants/Footer'
+import BottomOfFooter from '@/app/components/constants/BottomOfFooter'
 
 const Page = () => {
   return (
@@ -13,6 +15,7 @@ const Page = () => {
       <Secondsection/>
       <Thirdsection/>
       <Forthsection/>
+      <Footer/>
     </div>
   )
 }

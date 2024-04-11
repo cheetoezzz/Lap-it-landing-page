@@ -75,10 +75,12 @@ const SignUpForm = () => {
                   <FormControl>
                     <Input className="text-xs mt-2" placeholder="Company Name" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
+                
               )}
             />
+            
             <FormField
               control={form.control}
               name="companyAddress"
@@ -87,7 +89,7 @@ const SignUpForm = () => {
                   <FormControl>
                     <Input className="text-xs mt-2" placeholder="Company Address" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -99,7 +101,7 @@ const SignUpForm = () => {
                   <FormControl>
                     <Input className="text-xs mt-2" placeholder="Contact Person" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -111,7 +113,7 @@ const SignUpForm = () => {
                   <FormControl>
                     <Input className="text-xs mt-2" placeholder="Contact Number" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -123,7 +125,7 @@ const SignUpForm = () => {
                   <FormControl>
                     <Input className="text-xs mt-2" placeholder="Username" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />
@@ -135,7 +137,7 @@ const SignUpForm = () => {
                   <FormControl >
                     <Input className="text-xs" placeholder="Email Address" {...field} />
                   </FormControl>
-                  <FormMessage />
+                  <FormMessage className="text-[10px]" />
                 </FormItem>
               )}
             />

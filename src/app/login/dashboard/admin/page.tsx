@@ -17,7 +17,7 @@ const Page = async () => {
 
   // ) // use ternary operators 
 
-  if (session?.user.role === 'user'){
+  if (session?.user.role == 'admin'){
   return (
     <div className="flex h-screen ">
       {/* Side Navbar */}
@@ -46,7 +46,7 @@ const Page = async () => {
       </div>
       {/* Main Content */}
       <div className="flex flex-col flex-1 p-10">
-        <h1 className="text-4xl font-bold">Hello, Client {session?.user.companyName}!</h1>
+        <h1 className="text-4xl font-bold">Hello, Admin {session?.user.companyName}!</h1>
         <p className="mt-4">This is your dashboard.</p>
         {/* Your content here */}
       </div>

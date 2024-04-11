@@ -1,14 +1,15 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import Footer from "@/app/components/constants/Footer";
 
 const Faq2 = () => {
   return (
-    <div className="pt-20 mb-10 select-none">
+    <div className="pt-20  select-none">
       <div className="flex flex-col items-center font-extrabold text-5xl">
         <h1>STILL HAVE QUESTIONS</h1>
       </div>
-      <div className="text-center text-md pt-7">
+      <div className="text-center text-md pt-7 pb-20">
         <p>
           You can submit your question through the form below.
           <br /> Please provide as much detail as possible so that we can
@@ -34,6 +35,7 @@ const Faq2 = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

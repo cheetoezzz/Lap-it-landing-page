@@ -1,11 +1,17 @@
+import NavBar from '@/app/components/navbar'
 import React from 'react'
+import Firstsec from './components/firstsec'
+import Faq2 from './components/Faq2'
 
-const page = () => {
+
+const Page = () => {
   return (
     <div>
-      <h1>FAQ PAGE</h1>
+      <NavBar/>
+      <Firstsec/>
+      <Faq2/>
     </div>
   )
 }
 
-export default page
+export default Page

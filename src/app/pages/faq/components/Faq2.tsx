@@ -12,30 +12,35 @@ const Faq2 = () => {
       <div className="text-center text-md pt-7 pb-20">
         <p>
           You can submit your question through the form below.
-          <br /> Please provide as much detail as possible so that we can
-          assist you effectively.
+          <br /> Please provide as much detail as possible so that we can assist
+          you effectively.
         </p>
         <div className="flex justify-center items-center gap-3 pt-10">
           <div className="bg-white w-96 p-6 rounded-lg shadow-xl">
-          <div className="pt-4">
-                <h1 className="font-bold">
-                    Ask a Question
-                </h1>
-                <p className="text-xs mt-4">Fill-in the form below to submit your question to us.</p>
+            <div className="pt-4">
+              <h1 className="font-bold">Ask a Question</h1>
+              <p className="text-xs mt-4">
+                Fill-in the form below to submit your question to us.
+              </p>
             </div>
             <div className="pt-10">
-            <Input type="email" placeholder="Email" className="mb-4 w-full" />
-            <Input
-              type="text"
-              placeholder="Type Your Questions"
-              className="mb-4 w-full h-32 resize-none"
-            />
-            <Button className="w-full bg-blue-600"type="submit">Submit</Button>
+              <div className="relative mb-4">
+                <Input type="email" placeholder="Email" className="w-full" />
+              </div>
+              <div className="relative mb-4">
+                <textarea
+                  placeholder="Type Your Questions"
+                  className="w-full h-32 resize-none border rounded-md px-2 py-2"
+                ></textarea>
+              </div>
+              <Button className="w-full bg-blue-600" type="submit">
+                Submit
+              </Button>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

@@ -31,7 +31,7 @@ const firstsec = () => {
             />
           </div>
         </section>
-      <div className=" w-1/2 justify-between flex flex-col items-end pr-36 pt-11">
+      <div className=" w-1/2 justify-between flex flex-col items-end pr-36 pt-16">
         <Accordion type="single" collapsible>
           <AccordionItem className="w-[500px]" value="item-1">
             <AccordionTrigger className="border px-5 rounded-md bg-blue-600 text-white font-semibold text-sm">

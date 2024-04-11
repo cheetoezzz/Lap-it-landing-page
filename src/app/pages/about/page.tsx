@@ -15,7 +15,6 @@ const Page = () => {
       <Secondsection/>
       <Thirdsection/>
       <Footer/>
-      <BottomOfFooter/>
     </div>
   );
 };

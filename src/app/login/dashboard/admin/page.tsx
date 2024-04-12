@@ -39,6 +39,11 @@ const Page = async () => {
               </a>
             </li>
             <li>
+              <a href="/login/dashboard/admin/editlandingpage" className="flex items-center p-2 space-x-3 text-gray-700 rounded-md hover:bg-gray-200">
+                <span>Edit Landing Page</span>
+              </a>
+            </li>
+            <li>
             </li>
             {/* Add more nav items here */}
           </ul>

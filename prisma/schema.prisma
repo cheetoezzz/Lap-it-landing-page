@@ -31,3 +31,11 @@ model User {
   createdAt DateTime @default(now())
   UpdateAt  DateTime @updatedAt
 }
+
+model FeaturesContent {
+  id      Int      @id @default(autoincrement())
+  contentName     String
+  content  String
+  createdAt DateTime @default(now())
+  UpdateAt  DateTime @updatedAt
+}

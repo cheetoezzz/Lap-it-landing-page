@@ -9,7 +9,7 @@ import Servicessec from './landingpage/Servicessec'
 import Testimonysec from './landingpage/Testimonysec'
 import Contact from './landingpage/Contact'
 import Footer from './components/constants/Footer'
-import BottomOfFooter from './components/constants/BottomOfFooter'
+
 
 const Page = () => {
   return (

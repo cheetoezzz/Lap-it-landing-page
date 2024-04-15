@@ -128,7 +128,7 @@ const Features = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId6} />;
+                      <UpdateContentForm getId={getId6} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -160,7 +160,7 @@ const Features = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId7} />;
+                      <UpdateContentForm getId={getId7} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -190,7 +190,7 @@ const Features = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId8} />;
+                      <UpdateContentForm getId={getId8} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -222,7 +222,7 @@ const Features = () => {
                     </DialogDescription>
                   </DialogHeader>
                   {/* CONTENT */}
-                  <UpdateContentForm getId={getId9} />;
+                  <UpdateContentForm getId={getId9} />
                 </DialogContent>
               </Dialog>
             </AccordionContent>

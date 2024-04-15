@@ -96,7 +96,7 @@ const Thirdsection = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId10} />;
+                      <UpdateContentForm getId={getId10} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -126,7 +126,7 @@ const Thirdsection = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId11} />;
+                      <UpdateContentForm getId={getId11} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -157,7 +157,7 @@ const Thirdsection = () => {
                       </DialogDescription>
                     </DialogHeader>
                     {/* CONTENT */}
-                    <UpdateContentForm getId={getId12} />;
+                    <UpdateContentForm getId={getId12} />
                   </DialogContent>
                 </Dialog>
               </AccordionContent>
@@ -188,7 +188,7 @@ const Thirdsection = () => {
                     </DialogDescription>
                   </DialogHeader>
                   {/* CONTENT */}
-                  <UpdateContentForm getId={getId13} />;
+                  <UpdateContentForm getId={getId13} />
                 </DialogContent>
               </Dialog>
             </AccordionContent>

@@ -106,7 +106,7 @@ const Home = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId} />;
+                      <UpdateContentForm getId={getId} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -137,7 +137,7 @@ const Home = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId2} />;
+                      <UpdateContentForm getId={getId2} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -168,7 +168,7 @@ const Home = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId3} />;
+                      <UpdateContentForm getId={getId3} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
@@ -199,7 +199,7 @@ const Home = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId4} />;
+                      <UpdateContentForm getId={getId4} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>

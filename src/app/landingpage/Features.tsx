@@ -1,4 +1,3 @@
-'use client'
 import React from "react";
 import Image from "next/image";
 import Card from "../components/card";
@@ -13,28 +12,40 @@ import {
 const Features = () => {
   const card = [
     {
-      title: "Registration",
-      description: "Lorem ipsum dolor sit amet consectetur sodales.",
+      title: "Property Management System",
+      description:
+        "Manage hotels, rentals, and vacation properties effortlessly with our easy-to-use Property Management System (PMS)",
+      iconSrc: "/pms.svg",
     },
     {
       title: "Multi-Tenancy",
-      description: "Lorem ipsum dolor sit amet consectetur sodales.",
+      description:
+        "Efficiently manage multiple tenants and properties with our powerful Multi-Tenancy Management System",
+      iconSrc: "/pms.svg", 
     },
     {
       title: "Point of Sales",
-      description: "Lorem ipsum dolor sit amet consectetur sodales.",
+      description:
+        "Elevate your business with our intuitive Point of Sale (POS) system, simplifying transactions and enhancing customer experience for retail and hospitality industries",
+      iconSrc: "/pos.svg",
     },
     {
       title: "Inventory Control",
-      description: "Lorem ipsum dolor sit amet consectetur sodales.",
+      description:
+        "Optimize your inventory management with our comprehensive Inventory Control System",
+      iconSrc: "/ic.svg", 
     },
     {
       title: "Rentals",
-      description: "Lorem ipsum dolor sit amet consectetur sodales.",
+      description:
+        "Discover seamless rental management with our intuitive software",
+      iconSrc: "/rental.svg", 
     },
     {
       title: "Clinic / Patient",
-      description: "Lorem ipsum dolor sit amet consectetur sodales.",
+      description:
+        "Transform your clinic operations with our all-in-one clinic management software",
+      iconSrc: "/clinic.svg", 
     },
   ];
 
@@ -60,12 +71,15 @@ const Features = () => {
         <Image src="/computer.svg" alt="image" width={24} height={24} />
       </div>
 
-      <Carousel
-      >
+      <Carousel>
         <CarouselContent>
           {card.map((car, index) => (
-            <CarouselItem className="w-56 mt-10 mb-14 basis-1/4" key={index}>
-              <Card title={car.title} description={car.description} />
+            <CarouselItem className="w-[200px] mt-20 pl-10 mb-14 basis-1/3  " key={index}>
+              <Card
+                title={car.title}
+                description={car.description}
+                iconSrc={car.iconSrc}
+              />
             </CarouselItem>
           ))}
         </CarouselContent>

@@ -43,7 +43,7 @@ const Pricing = () => {
         </div> {/* END OF DIV FOR 2nd SECTION*/}  
 
         
-        <PlanFeatures/>
+        
         <TableFeature/>
         <Footer/>
       </div>

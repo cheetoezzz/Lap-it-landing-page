@@ -37,7 +37,7 @@ const PlanFeatures = () => {
         </section>
       
       </div>
-      <div className="flex items-center justify-end max-w-72 mx-auto  ml-24 -mt-7 text-[22px] font-bold">
+      <div className="flex items-center justify-end max-w-72 mx-auto  ml-20 -mt-7 text-[22px] font-bold">
         <h1>Features</h1>
       </div>
     </div>

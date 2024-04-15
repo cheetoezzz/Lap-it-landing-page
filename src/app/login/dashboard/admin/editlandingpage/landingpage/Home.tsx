@@ -40,14 +40,14 @@ const Home = () => {
         const data = await response.json();
         const homes: HomeContent[] = data.homeContent;
 
-        // Create an object to store feature contents by ID
+        // Create an object to store Home contents by ID
         const contents: { [key: number]: string } = {};
         for (const home of homes) {
           contents[home.id] = home.content;
         }
         setHomeContents(contents);
       } catch (error) {
-        console.error("Error fetching feature content:", error);
+        console.error("Error fetching Homw content:", error);
       }
     };
 
@@ -69,28 +69,6 @@ const Home = () => {
   const getId5 = () => {
     return "5";
   };
-  const getId6 = () => {
-    return "6";
-  };
-  const getId7 = () => {
-    return "7";
-  };
-  const getId8 = () => {
-    return "8";
-  };
-  const getId9 = () => {
-    return "9";
-  };
-  const getId10 = () => {
-    return "10";
-  };
-  const getId11 = () => {
-    return "11";
-  };
-  const getId12 = () => {
-    return "12";
-  };
-
   const card = [
     //same rani sa features// ang nakalahi ani kay naa sa constants ang pagtawag ani naa sa index.tsx
     { title: "100K+", description: "Total Customer" },
@@ -228,12 +206,11 @@ const Home = () => {
               </AccordionItem>
             </Accordion>
             </div>
-            <div className="items-start justify-start flex w-[600px]">
-
+            <div className="flex items-start justify-start text-start  w-[700px]">
             <Accordion type="single" collapsible>
               <AccordionItem
                 value="item-1"
-                className="items-center justify-center flex"
+                className="items-center flex"
               >
                 <AccordionTrigger>
                 <h1 className="text-[16px] text-white">{homeContents[5]}</h1>
@@ -252,13 +229,12 @@ const Home = () => {
                         </DialogDescription>
                       </DialogHeader>
                       {/* CONTENT */}
-                      <UpdateContentForm getId={getId5} />;
+                      <UpdateContentForm getId={getId5} />
                     </DialogContent>
                   </Dialog>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-              
             </div>
           </div>
           <div>

@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" rx="32" fill="#2563EB"/>
+<path d="M19.9598 33.2267C19.5662 33.4632 19.2403 33.7973 19.0137 34.1968C18.7871 34.5962 18.6675 35.0474 18.6665 35.5067V39.8267C18.6675 40.2859 18.7871 40.7371 19.0137 41.1365C19.2403 41.536 19.5662 41.8702 19.9598 42.1067L23.9598 44.5067C24.3746 44.7558 24.8493 44.8875 25.3332 44.8875C25.817 44.8875 26.2918 44.7558 26.7065 44.5067L31.9998 41.3333V34L25.3332 30L19.9598 33.2267Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.3332 38L19.0132 34.2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.3335 38L32.0002 34" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.3335 38V44.8933" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 34V41.3333L37.2933 44.5067C37.7081 44.7558 38.1828 44.8875 38.6667 44.8875C39.1505 44.8875 39.6252 44.7558 40.04 44.5067L44.04 42.1067C44.4337 41.8702 44.7596 41.536 44.9861 41.1365C45.2127 40.7371 45.3323 40.2859 45.3333 39.8267V35.5067C45.3323 35.0474 45.2127 34.5962 44.9861 34.1968C44.7596 33.7973 44.4337 33.4632 44.04 33.2267L38.6667 30L32 34Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.6667 38L32 34" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.6665 38L44.9865 34.2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.6665 38V44.8933" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.6268 21.8933C26.2332 22.1298 25.9073 22.464 25.6807 22.8634C25.4541 23.2629 25.3345 23.7141 25.3335 24.1733V30L32.0002 34L38.6668 30V24.1733C38.6658 23.7141 38.5462 23.2629 38.3196 22.8634C38.0931 22.464 37.7672 22.1298 37.3735 21.8933L33.3735 19.4933C32.9587 19.2441 32.484 19.1125 32.0002 19.1125C31.5163 19.1125 31.0416 19.2441 30.6268 19.4933L26.6268 21.8933Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.0002 26.6666L25.6802 22.8666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 26.6666L38.32 22.8666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 34V26.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

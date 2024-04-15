@@ -21,31 +21,31 @@ const Features = () => {
       title: "Multi-Tenancy",
       description:
         "Efficiently manage multiple tenants and properties with our powerful Multi-Tenancy Management System",
-      iconSrc: "/pms.svg", // You can add an icon source here if needed
+      iconSrc: "/pms.svg", 
     },
     {
       title: "Point of Sales",
       description:
         "Elevate your business with our intuitive Point of Sale (POS) system, simplifying transactions and enhancing customer experience for retail and hospitality industries",
-      iconSrc: "/pms.svg", // You can add an icon source here if needed
+      iconSrc: "/pos.svg",
     },
     {
       title: "Inventory Control",
       description:
         "Optimize your inventory management with our comprehensive Inventory Control System",
-      iconSrc: "/pms.svg", // You can add an icon source here if needed
+      iconSrc: "/ic.svg", 
     },
     {
       title: "Rentals",
       description:
         "Discover seamless rental management with our intuitive software",
-      iconSrc: "/pms.svg", // You can add an icon source here if needed
+      iconSrc: "/rental.svg", 
     },
     {
       title: "Clinic / Patient",
       description:
         "Transform your clinic operations with our all-in-one clinic management software",
-      iconSrc: "/pms.svg", // You can add an icon source here if needed
+      iconSrc: "/clinic.svg", 
     },
   ];
 

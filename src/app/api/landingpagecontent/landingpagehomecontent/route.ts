@@ -7,16 +7,16 @@ export const GET = async (req: Request) => {
   const id = searchParams.get("id");
   try {
     if (id) {
-      const featureContent = await db.featuresContent.findFirst({
+      const homeContent = await db.landingpagehomeContent.findFirst({
         where: { id: Number(id) },
       });
-      if (!featureContent) {
+      if (!homeContent) {
         return NextResponse.json({ message: "Content not found" });
       }
-      return NextResponse.json({ featureContent }, { status: 200 });
+      return NextResponse.json({ homeContent }, { status: 200 });
     } else {
-      const featuresContent = await db.featuresContent.findMany();
-      return NextResponse.json({ featuresContent }, { status: 200 });
+      const homeContent = await db.landingpagehomeContent.findMany();
+      return NextResponse.json({ homeContent }, { status: 200 });
     }
   } catch (error) {
     console.error("Error:", error);
@@ -31,14 +31,14 @@ export const PUT = async (req: Request) => {
 
   try {
     const body = await req.json();
-    const { contentName, content } = body;
-    const updatedFeaturecontent = await db.featuresContent.update({
+    const { content } = body;
+    const updatedHomecontent = await db.landingpagehomeContent.update({
       where: { id: Number(id) },
-      data: { contentName, content },
+      data: { content },
     });
 
-    if (updatedFeaturecontent) {
-      console.log("Updated Content:", updatedFeaturecontent);
+    if (updatedHomecontent) {
+      console.log("Updated Content:", updatedHomecontent);
       return NextResponse.json({ message: "Content updated successfully" });
     } else {
       return NextResponse.json(

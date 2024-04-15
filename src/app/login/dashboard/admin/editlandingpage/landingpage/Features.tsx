@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
 import Image from "next/image";
-
+import Card from "./components";
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +9,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Card from "./components/card";
 
 const Features = () => {
   const card = [

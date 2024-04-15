@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
@@ -19,8 +20,7 @@ import {
 } from "@/components/ui/dialog";
 
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import UpdateContentForm from "@/components/form/features/editcontent";
 
 interface featureContent {
   id: number;
@@ -54,6 +54,14 @@ const Firstsection = () => {
     fetchData();
   }, []);
 
+  //UPDATE ID
+    const getId = () => { return '1';};
+    const getId2 = () => { return '2';};
+    const getId3 = () => { return '3';};
+    const getId4 = () => { return '4';};
+
+//CARDS
+
   const data = [
     { title: "SEEMLESS", iconSrc: "/icon.svg" },
     { title: "SCALABLE & FLEXIBLE", iconSrc: "/icon.svg" },
@@ -63,12 +71,12 @@ const Firstsection = () => {
 
   return (
     <div className="flex flex-col select-none">
-      <section className="h-1 flex flex-col items-center justify-center sm:pt-7 xl:pt-32 ">
+      <section className="h-[350px] flex flex-col items-center justify-center sm:pt-7 xl:pt-32 ">
         <div className="text-black font-extrabold text-[15px] sm:text-[25px] md:text-[30px] xl:text-[50px] text-center">
           <div className="flex flex-row translate-y-16">
             <div>
               <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
+                <AccordionItem value="item-1" className="items-center justify-center flex">
                   <AccordionTrigger>
                     <h1>{featureContents[1]}</h1>
                   </AccordionTrigger>
@@ -86,29 +94,7 @@ const Firstsection = () => {
                           </DialogDescription>
                         </DialogHeader>
                         {/* CONTENT */}
-                        <div className="grid gap-4 py-4">
-                          <div className="grid grid-cols-4 items-center gap-4">
-                            <Label htmlFor="name" className="text-right">
-                              Content Name
-                            </Label>
-                            <Input
-                              id="name"
-                              className="col-span-3"
-                            />
-                          </div>
-                          <div className="grid grid-cols-4 items-center gap-4">
-                            <Label htmlFor="username" className="text-right">
-                              Content Value
-                            </Label>
-                            <Input
-                              id="username"
-                              className="col-span-3"
-                            />
-                          </div>
-                        </div>
-                        <DialogFooter>
-                          <Button type="submit">Save changes</Button>
-                        </DialogFooter>
+                        <UpdateContentForm getId={getId} />;  
                       </DialogContent>
                     </Dialog>
                   </AccordionContent>
@@ -116,30 +102,87 @@ const Firstsection = () => {
               </Accordion>
             </div>
             <div className="ml-1 sm:ml-2 md:ml-3 border rounded-md bg-red-600 px-1 sm:px-[7px] md:px-[10px] xl:px-[13px] -translate-y-[1px] text-white">
-              <Accordion type="single" collapsible>
-                <AccordionItem value="item-1">
+            <Accordion type="single" collapsible>
+                <AccordionItem value="item-2" className="items-center justify-center flex">
                   <AccordionTrigger>
                     <h1>{featureContents[2]}</h1>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <Button>EDIT</Button>
+                    {/* BUTTON EDIT */}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline" className="text-black">Edit</Button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[425px]">
+                        <DialogHeader>
+                          <DialogTitle>Edit Content</DialogTitle>
+                          <DialogDescription>
+                            Make changes to this content here.
+                          </DialogDescription>
+                        </DialogHeader>
+                        {/* CONTENT */}
+                        <UpdateContentForm getId={getId2} />;  
+                      </DialogContent>
+                    </Dialog>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
             </div>
           </div>
           <div className="translate-y-[59px]">
-            <h1>SOFTWARE SUITE</h1>
+            <Accordion type="single" collapsible>
+                <AccordionItem value="item-3" className="items-center justify-center flex">
+                  <AccordionTrigger>
+                    <h1 >{featureContents[3]}</h1>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    {/* BUTTON EDIT */}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline">Edit</Button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[425px]">
+                        <DialogHeader>
+                          <DialogTitle>Edit Content</DialogTitle>
+                          <DialogDescription>
+                            Make changes to this content here.
+                          </DialogDescription>
+                        </DialogHeader>
+                        {/* CONTENT */}
+                        <UpdateContentForm getId={getId3} />;  
+                      </DialogContent>
+                    </Dialog>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
           </div>
         </div>
         <div className=" text-[6.3px] sm:text-[11px] md:text-[13px] xl:text-[23px] translate-y-14 sm:translate-y-14">
-          <h1 className=" text-gray-500 text-center ">
-            Lorem ipsum dolor sit amet consectetur. Id posuere vulputate diam
-            facilisis dui consectetur
-          </h1>
-          <h1 className="text-gray-500 text-center ">
-            Sed nunc sed nunc ut in diam ultrices blandit.
-          </h1>
+          <Accordion type="single" collapsible>
+                <AccordionItem value="item-3" className="items-center justify-center flex mx-[500px]">
+                  <AccordionTrigger>
+                    <h1 className="text-gray-500">{featureContents[4]}</h1>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    {/* BUTTON EDIT */}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline">Edit</Button>
+                      </DialogTrigger>
+                      <DialogContent className="sm:max-w-[425px]">
+                        <DialogHeader>
+                          <DialogTitle>Edit Content</DialogTitle>
+                          <DialogDescription>
+                            Make changes to this content here.
+                          </DialogDescription>
+                        </DialogHeader>
+                        {/* CONTENT */}
+                        <UpdateContentForm getId={getId4} />;  
+                      </DialogContent>
+                    </Dialog>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
         </div>
       </section>
       <div className="flex flex-row items-center justify-center translate-y-7 sm:translate-y-14 mt-14">
@@ -156,3 +199,4 @@ const Firstsection = () => {
 };
 
 export default Firstsection;
+

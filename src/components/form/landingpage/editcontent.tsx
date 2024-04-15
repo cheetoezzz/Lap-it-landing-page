@@ -12,7 +12,6 @@ interface UpdateContentFormProps {
 }
 
 const UpdateContentForm: React.FC<UpdateContentFormProps> = ({ getId }) => {
-  const [contentName, setContentName] = useState("");
   const [content, setContent] = useState("");
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
@@ -21,13 +20,13 @@ const UpdateContentForm: React.FC<UpdateContentFormProps> = ({ getId }) => {
 
     try {
       const response = await fetch(
-        `/api/landingpagecontent/featurecontent?id=${id}`,
+        `/api/landingpagecontent/landingpagehomecontent?id=${id}`,
         {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ contentName, content }),
+          body: JSON.stringify({ content }),
         }
       );
 
@@ -40,12 +39,6 @@ const UpdateContentForm: React.FC<UpdateContentFormProps> = ({ getId }) => {
     } catch (error) {
       console.error("Error updating content:", error);
     }
-  };
-
-  const handleContentNameChange = (event: {
-    target: { value: React.SetStateAction<string> };
-  }) => {
-    setContentName(event.target.value);
   };
 
   const handleContentChange = (event: {

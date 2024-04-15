@@ -39,3 +39,28 @@ model FeaturesContent {
   createdAt DateTime @default(now())
   UpdateAt  DateTime @updatedAt
 }
+
+model LandingpagehomeContent {
+  id      Int      @id @default(autoincrement())
+  contentName     String
+  content   String
+  createdAt DateTime @default(now())
+  UpdateAt  DateTime @updatedAt
+}
+
+model LandingpageImages {
+  id      Int      @id @default(autoincrement())
+  Image     String
+  createdAt DateTime @default(now())
+  UpdateAt  DateTime @updatedAt
+}
+
+model LandingpageCards {
+  id      Int      @id @default(autoincrement())
+  title     String
+  content   String
+  Image     String
+  createdAt DateTime @default(now())
+  UpdateAt  DateTime @updatedAt
+}
+

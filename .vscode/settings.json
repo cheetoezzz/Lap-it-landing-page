@@ -1,7 +1,14 @@
 {
     "cSpell.words": [
+        "editcontent",
         "featurecontent",
         "handlesubmit",
-        "landingpagecontent"
+        "Homecontent",
+        "landingpage",
+        "landingpagecontent",
+        "landingpagehomecontent",
+        "landingpageimages",
+        "supabase",
+        "uploadimages"
     ]
 }

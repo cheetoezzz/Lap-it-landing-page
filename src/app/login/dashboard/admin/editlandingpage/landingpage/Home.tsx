@@ -1,11 +1,98 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Card from "./components/card";
+import Card from "./components";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import UpdateContentForm from "@/components/form/landingpage/editcontent";
 
+interface HomeContent {
+  id: number;
+  contentName: string;
+  content: string;
+}
 
+const Home = () => {
+  const [homeContents, setHomeContents] = useState<{
+    [key: number]: string;
+  }>({});
 
-const Home = () => { 
-  const card = [ //same rani sa features// ang nakalahi ani kay naa sa constants ang pagtawag ani naa sa index.tsx
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "/api/landingpagecontent/landingpagehomecontent"
+        );
+        const data = await response.json();
+        const homes: HomeContent[] = data.homeContent;
+
+        // Create an object to store feature contents by ID
+        const contents: { [key: number]: string } = {};
+        for (const home of homes) {
+          contents[home.id] = home.content;
+        }
+        setHomeContents(contents);
+      } catch (error) {
+        console.error("Error fetching feature content:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const getId = () => {
+    return "1";
+  };
+  const getId2 = () => {
+    return "2";
+  };
+  const getId3 = () => {
+    return "3";
+  };
+  const getId4 = () => {
+    return "4";
+  };
+  const getId5 = () => {
+    return "5";
+  };
+  const getId6 = () => {
+    return "6";
+  };
+  const getId7 = () => {
+    return "7";
+  };
+  const getId8 = () => {
+    return "8";
+  };
+  const getId9 = () => {
+    return "9";
+  };
+  const getId10 = () => {
+    return "10";
+  };
+  const getId11 = () => {
+    return "11";
+  };
+  const getId12 = () => {
+    return "12";
+  };
+
+  const card = [
+    //same rani sa features// ang nakalahi ani kay naa sa constants ang pagtawag ani naa sa index.tsx
     { title: "100K+", description: "Total Customer" },
     { title: "100K+", description: "Real Time Customer" },
     { title: "100K+", description: "Customer Satisfaction" },
@@ -13,39 +100,188 @@ const Home = () => {
 
   return (
     <div className="select-none  bg-blue-600">
-       
       <section className="max-container padding-container flex flex-col gap-7 py-5 xl:flex-row ">
         <div className="mt-24">
           <div className="ml-44">
-            <h1 className="text-4xl font-extrabold text-white mb-4">
-              AFFORDABLE SMALL
-            </h1>
-            <h1 className="text-4xl font-extrabold text-white mb-4">
-              BUSINESS {" "}
-               <span className="bg-white px-1 w-6 text-blue-600 rounded-md">
-                ENTERPRISE
-              </span>
-            </h1>
-            <h1 className="text-4xl font-extrabold text-white">SOFTWARE</h1>
-            <p className="text-white mt-7 text-lg ">
-              Lorem ipsum dolor sit amet consectetur. Id posuere vulputate diam
-              <br />
-              facilisis dui consectetur. Sed nunc sed nunc ut in diam ultrices
-              <br />
-              blandit. Aenean varius elit sagittis praesent id leo. Turpis
-              mauris
-              <br />
-              accumsan lobortis congue non velit diam massa.
-            </p>
+            <div className="flex items-start justify-start">
+            <Accordion type="single" collapsible>
+              <AccordionItem
+                value="item-1"
+                className="items-center justify-center flex"
+              >
+                <AccordionTrigger>
+                  <h1 className="text-4xl font-extrabold text-white">
+                    {homeContents[1]}
+                  </h1>
+                </AccordionTrigger>
+                <AccordionContent>
+                  {/* BUTTON EDIT */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">Edit</Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[425px]">
+                      <DialogHeader>
+                        <DialogTitle>Edit Content</DialogTitle>
+                        <DialogDescription>
+                          Make changes to this content here.
+                        </DialogDescription>
+                      </DialogHeader>
+                      {/* CONTENT */}
+                      <UpdateContentForm getId={getId} />;
+                    </DialogContent>
+                  </Dialog>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            </div>
+            <div className="flex flex-row">
+              <div>
+            <Accordion type="single" collapsible>
+              <AccordionItem
+                value="item-1"
+                className="items-center justify-center flex"
+              >
+                <AccordionTrigger>
+                <h1 className="text-4xl font-extrabold text-white">{homeContents[2]}</h1>
+                </AccordionTrigger>
+                <AccordionContent>
+                  {/* BUTTON EDIT */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">Edit</Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[425px]">
+                      <DialogHeader>
+                        <DialogTitle>Edit Content</DialogTitle>
+                        <DialogDescription>
+                          Make changes to this content here.
+                        </DialogDescription>
+                      </DialogHeader>
+                      {/* CONTENT */}
+                      <UpdateContentForm getId={getId2} />;
+                    </DialogContent>
+                  </Dialog>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            </div>
+            <div className="bg-white px-1 w-96">
+            
+            <Accordion type="single" collapsible>
+              <AccordionItem
+                value="item-1"
+                className="items-center justify-center flex"
+              >
+                <AccordionTrigger>
+                <h1 className=" text-4xl font-extrabold text-blue-600 rounded-md">{homeContents[3]}</h1>
+                </AccordionTrigger>
+                <AccordionContent>
+                  {/* BUTTON EDIT */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">Edit</Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[425px]">
+                      <DialogHeader>
+                        <DialogTitle>Edit Content</DialogTitle>
+                        <DialogDescription>
+                          Make changes to this content here.
+                        </DialogDescription>
+                      </DialogHeader>
+                      {/* CONTENT */}
+                      <UpdateContentForm getId={getId3} />;
+                    </DialogContent>
+                  </Dialog>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            </div>
+            </div>
+            <div className="flex items-start justify-start">
+            <Accordion type="single" collapsible>
+              <AccordionItem
+                value="item-1"
+                className="items-center justify-center flex"
+              >
+                <AccordionTrigger>
+                <h1 className="text-4xl font-extrabold text-white">{homeContents[4]}</h1>
+                </AccordionTrigger>
+                <AccordionContent>
+                  {/* BUTTON EDIT */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">Edit</Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[425px]">
+                      <DialogHeader>
+                        <DialogTitle>Edit Content</DialogTitle>
+                        <DialogDescription>
+                          Make changes to this content here.
+                        </DialogDescription>
+                      </DialogHeader>
+                      {/* CONTENT */}
+                      <UpdateContentForm getId={getId4} />;
+                    </DialogContent>
+                  </Dialog>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            </div>
+            <div className="items-start justify-start flex w-[600px]">
+
+            <Accordion type="single" collapsible>
+              <AccordionItem
+                value="item-1"
+                className="items-center justify-center flex"
+              >
+                <AccordionTrigger>
+                <h1 className="text-[16px] text-white">{homeContents[5]}</h1>
+                </AccordionTrigger>
+                <AccordionContent>
+                  {/* BUTTON EDIT */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline">Edit</Button>
+                    </DialogTrigger>
+                    <DialogContent className="sm:max-w-[425px]">
+                      <DialogHeader>
+                        <DialogTitle>Edit Content</DialogTitle>
+                        <DialogDescription>
+                          Make changes to this content here.
+                        </DialogDescription>
+                      </DialogHeader>
+                      {/* CONTENT */}
+                      <UpdateContentForm getId={getId5} />;
+                    </DialogContent>
+                  </Dialog>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+              
+            </div>
           </div>
           <div>
-            <button className="ml-44 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">Get Started</button>
-            <button className="ml-28 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">Book a demo</button>
-          </div>  
-          <div className="mt-6 ml-44 flex flex-row justify-between text-lg"> 
-            {card.map((car, index) => ( //mao ni mag map naka
-              <Card key={index} title={car.title} description={car.description} />
-            ))}
+            <button className="ml-44 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">
+              Get Started
+            </button>
+            <button className="ml-28 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">
+              Book a demo
+            </button>
+          </div>
+          <div className="mt-6 ml-44 flex flex-row justify-between text-lg">
+            {card.map(
+              (
+                car,
+                index //mao ni mag map naka
+              ) => (
+                <Card
+                  key={index}
+                  title={car.title}
+                  description={car.description}
+                />
+              )
+            )}
           </div>
         </div>
         <div className="w-1/2 relative mt-20">
@@ -68,11 +304,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      </div>
-  
+    </div>
   );
 };
 
 export default Home;
-
-

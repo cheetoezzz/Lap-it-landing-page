@@ -11,7 +11,7 @@ const PlanCard = ({ title, smallDescription,color}: CardProps) => {
   return (
     <div className="">
       <div className="">
-        <div className="flex flex-col justify-center items-center mr-28 -ml-20 ">
+        <div className="flex flex-col justify-center items-center ml-10">
         <h1 className={`font-semibold text-[18px] mt-11  ${color}`}>{title} </h1>
           <div className="text-slate-400  text-[16px] ">{smallDescription}</div>
           <div className="text-slate-400  px-12 "><p>Sodales.</p></div>

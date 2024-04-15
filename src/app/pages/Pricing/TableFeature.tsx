@@ -1,6 +1,6 @@
 import React from 'react'
 import TableCard from './TableCard'
-
+import PlanFeatures from './PlanFeatures';
 
 const TableFeature = () => {
 
@@ -91,6 +91,7 @@ const TableFeature = () => {
         <div className='bg-blue-50'>
         <section className=" pt-3 pb-16 flex justify-center">
           <div className="flex flex-col ">
+          <PlanFeatures/>
             {table.map((card, index) => (
               <div className="flex-grow flex-shrink-0" key={index}>
                 <TableCard

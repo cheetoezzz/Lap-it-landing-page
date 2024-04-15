@@ -5,7 +5,6 @@ import Firstsection from "./components/firstsec";
 import Secondsection from "./components/secondsec";
 import Thirdsection from "./components/thirdsec";
 import Footer from '@/app/components/constants/Footer'
-import BottomOfFooter from '@/app/components/constants/BottomOfFooter'
 import Navbar from "../../landingpage/components/navbar";
 
 const Page = () => {
@@ -16,7 +15,6 @@ const Page = () => {
       <Secondsection/>
       <Thirdsection/>
       <Footer/>
-      <BottomOfFooter/>
     </div>
   );
 };

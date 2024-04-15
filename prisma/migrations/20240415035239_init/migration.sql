@@ -29,6 +29,39 @@ CREATE TABLE "FeaturesContent" (
     CONSTRAINT "FeaturesContent_pkey" PRIMARY KEY ("id")
 );
 
+-- CreateTable
+CREATE TABLE "LandingpagehomeContent" (
+    "id" SERIAL NOT NULL,
+    "contentName" TEXT NOT NULL,
+    "content" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "UpdateAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "LandingpagehomeContent_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "LandingpageImages" (
+    "id" SERIAL NOT NULL,
+    "Image" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "UpdateAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "LandingpageImages_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "LandingpageCards" (
+    "id" SERIAL NOT NULL,
+    "title" TEXT NOT NULL,
+    "content" TEXT NOT NULL,
+    "Image" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "UpdateAt" TIMESTAMP(3) NOT NULL,
+
+    CONSTRAINT "LandingpageCards_pkey" PRIMARY KEY ("id")
+);
+
 -- CreateIndex
 CREATE UNIQUE INDEX "User_companyName_key" ON "User"("companyName");
 

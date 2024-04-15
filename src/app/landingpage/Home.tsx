@@ -1,8 +1,44 @@
-import React from "react";
+'use client'
+
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Card from "../components/constants";
 
+interface HomeContent {
+  id: number;
+  contentName: string;
+  content: string;
+}
+
 const Home = () => {
+    const [homeContents, setHomeContents] = useState<{
+      [key: number]: string;
+    }>({});
+
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(
+            "/api/landingpagecontent/landingpagehomecontent"
+          );
+          const data = await response.json();
+          const homes: HomeContent[] = data.homeContent;
+  
+          // Create an object to store Home contents by ID
+          const contents: { [key: number]: string } = {};
+          for (const home of homes) {
+            contents[home.id] = home.content;
+          }
+          setHomeContents(contents);
+        } catch (error) {
+          console.error("Error fetching Home content:", error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+
   const card = [
     { title: "100K+", description: "Total Customer" },
     { title: "100K+", description: "Real Time Customer" },
@@ -16,21 +52,17 @@ const Home = () => {
           <div className="mt-7">
             <div className="pt-10">
               <h1 className="text-5xl font-extrabold text-white mb-4">
-                AFFORDABLE SMALL
+                {homeContents[1]}
               </h1>
               <h1 className="text-5xl font-extrabold text-white mb-4">
-                BUSINESS{" "}
+                {homeContents[2]}{" "}
                 <span className="bg-white px-1 w-6 text-blue-600 rounded-md">
-                  ENTERPRISE
+                {homeContents[3]}
                 </span>
               </h1>
-              <h1 className="text-5xl font-extrabold text-white">SOFTWARE</h1>
+              <h1 className="text-5xl font-extrabold text-white">{homeContents[4]}</h1>
               <p className="text-white mt-7 text-md text-justify mx-auto max-w-lg">
-                Empower your business with cutting-edge tools designed to
-                streamline operations, boost productivity, and maximize growth
-                without breaking the bank. Our software is tailored to meet the
-                unique needs of small businesses, offering a comprehensive suite
-                of features that are easy to use and implement.
+                {homeContents[5]}
               </p>
             </div>
             <div>

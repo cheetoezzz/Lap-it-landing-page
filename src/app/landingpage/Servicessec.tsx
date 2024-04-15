@@ -15,9 +15,7 @@ const Servicessec = () => {
       </div>
       <div className="text-center mt-7">
         <p>
-          Lorem ipsum dolor sit amet consectetur.
-          <strong> Volutpat nulla lorem vitae dolor </strong> enim viverra
-          orci..
+        Explore our range of additional services designed to complement your needs and enhance your experience  
         </p>
       </div>
       <div className="flex flex-row gap-12">
@@ -32,21 +30,12 @@ const Servicessec = () => {
           </div>
         </section>
         <section className="flex flex-col items-center mt-36 gap-2">
-          <h1 className="text-slate-600 text-base text-start">
-            Lorem ipsum dolor sit amet consectetur. Lacinia risus{" "}
-            <strong>
-              {" "}
-              quam
-              <br />
-              morbi donec netus accumsan elementum.
-            </strong>{" "}
-            Viverra amet
-            <br />
-            phasellus tellus laoreet fringilla. Lorem urna suspendisse sit ac
-            <br />
-            convallis eget lacus non.
+          <h1 className="text-slate-600 text-base mt-7 text-md text-justify mx-auto max-w-lg">
+            Discover a full spectrum of services including laptop and computer
+            repairs, ensuring that we cater to all your tech needs under one
+            reliable roof, so you can focus on what matters most—your business.
           </h1>
-          <div className="mt-7 flex flex-col items-start justify-start pr-72">
+          <div className="mt-7 flex flex-col items-start justify-start pr-[350px]">
             <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
               Learn More
               <svg

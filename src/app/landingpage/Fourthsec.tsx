@@ -15,29 +15,20 @@ const Fourthsec = () => {
       </div>
       <div className="text-center mt-7">
         <p>
-          Lorem ipsum dolor sit amet consectetur.
-          <strong> Volutpat nulla lorem vitae dolor </strong> enim viverra
-          orci..
+        Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
         </p>
       </div>
       <div className="flex flex-row mt-24">
         <section className="w-1/2 mr-20">
-          <h1 className="text-slate-600 text-start mb-8 mt-20">
-            Lorem ipsum dolor sit amet consectetur. Lacinia risus
-            <strong>
-              quam
-              <br />
-              morbi donec netus accumsan elementum.
-            </strong>{" "}
-            Viverra amet
-            <br />
-            phasellus tellus laoreet fringilla. Lorem urna suspendisse sit ac
-            <br />
-            convallis eget lacus non.
+          <h1 className="text-slate-600 mb-8 mt-20 text-md text-justify mx-auto max-w-lg">
+            Experience peace of mind with our secure cloud application hosting
+            services, providing a reliable and scalable platform to host your
+            applications with top-notch security measures, ensuring data
+            integrity and availability for your business needs.
           </h1>
           <div className="font-semibold text-slate-600">
             <div className="flex items-center">
-              <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
+              <button className="bg-blue-600 w-40 h-10 ml-2 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
                 Learn More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

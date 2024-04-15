@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "./constants/card";
 import { FcCheckmark, FcMinus } from "react-icons/fc";
-import { FaBold } from "react-icons/fa";
 
-const Features = () => {
+
+const Fifthesec = () => {
   const card = [
     {
       title: "STARTER",
@@ -99,4 +99,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Fifthesec;

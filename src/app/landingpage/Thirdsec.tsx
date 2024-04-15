@@ -14,16 +14,17 @@ const Thirdsection = () => {
         </h1>
         <h1 className="mt-2">YOUR BUSINESS</h1>
       </div>
-      <div className="text-center mt-7">
+      <div className="text-center text-sm mt-7">
         <p>
-          Lorem ipsum dolor sit amet consectetur.
-          <strong> Volutpat nulla lorem vitae dolor </strong> enim viverra
-          orci..
+          Gain swift access to your business essentials with our streamlined
+          solution,<br /> ensuring quick and efficient management of critical tasks,
+          data, and resources to keep your operations running smoothly and
+          effectively.
         </p>
       </div>
       <div className="flex flex-row gap-12">
         <section className="w-1/2 ml-20">
-          <div className="flex justify-end items-end mr-24 mt-10"> 
+          <div className="flex justify-end items-end mr-24 mt-10">
             <Image
               src="/smile.svg"
               alt="Image Description"
@@ -91,4 +92,3 @@ const Thirdsection = () => {
 };
 
 export default Thirdsection;
-

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Thirdsection = () => {
+const Fourthsec = () => {
   return (
     <div className="flex flex-col items-center mt-28 text-center bg-white select-none">
       <div className="font-extrabold text-5xl">
@@ -70,4 +70,4 @@ const Thirdsection = () => {
   );
 };
 
-export default Thirdsection;
+export default Fourthsec;

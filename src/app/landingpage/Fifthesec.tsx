@@ -8,17 +8,17 @@ const Features = () => {
     {
       title: "STARTER",
       smallDescription: "First you can try it for free",
-      price: "₱7,500",
+      price: "₱ 7,500",
     },
     {
       title: "STANDARD",
       smallDescription: "First you can try it for free",
-      price: "₱10,500",
+      price: "₱ 10,500",
     },
     {
       title: "PREMIUM",
       smallDescription: "First you can try it for free",
-      price: "₱15,500",
+      price: "₱ 15,500",
     },
   ];
 

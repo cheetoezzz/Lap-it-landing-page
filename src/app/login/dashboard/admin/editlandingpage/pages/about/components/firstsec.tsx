@@ -13,10 +13,8 @@ const Firstsection = () => {
                 WE ARE TEAM OF CREATORS & INVESTORS
               </h1>
               <h1 className="text-[16px] ml-28 mr-10">
-                Lorem ipsum dolor sit amet consectetur. Id posuere vulputate
-                diam facilisis dui consectetur. Sed nunc sed nunc ut in diam
-                ultrices blandit. Aenean varius elit sagittis praesent id leo.
-                Turpis mauris accumsan lobortis congue non velit diam massa.
+              LAP I.T. Solutions Inc. is a one-stop technical company and is capable of handling various advance business solutions.
+Our Software and Hardware is trusted and used by many business owners and operators for their ever-demanding operations.
               </h1>
             </div>
             <div className="ml-28 mt-10">

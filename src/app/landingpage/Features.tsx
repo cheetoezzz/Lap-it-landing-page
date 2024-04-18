@@ -67,7 +67,7 @@ const Features = () => {
           tailored user experience.
         </p>
       </div>
-      <div className="mt-16">
+      <div className="mt-12">
         <Image src="/computer.svg" alt="image" width={24} height={24} />
       </div>
 

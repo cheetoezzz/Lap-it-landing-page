@@ -17,7 +17,7 @@ const Thirdsection = () => {
           </div>
           <div className="flex flex-row">
             <div className="w-1/2 h-[150vh] relative">
-            <div className="flex items-center justify-center mt-10 mb-6">
+            <div className="flex items-center justify-center mtw-10 mb-6">
               <Image src="/about/image2.svg" width={600} height={600} alt="" />
               </div>
             <div className="flex items-center justify-center my-6">

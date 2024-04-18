@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-// import Map from "./map";
+import Map from "./map";
 
 const Thirdsection = () => {
   return (
@@ -21,7 +21,7 @@ const Thirdsection = () => {
               <Image src="/about/image2.svg" width={600} height={600} alt="" />
               </div>
             <div className="flex items-center justify-center my-6">
-              {/* <Map/> */}
+              <Map/>
             </div>
             </div>
             <div className="w-1/2 h-[150vh] relative ml-10 ">

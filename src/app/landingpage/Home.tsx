@@ -1,19 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Card from "../components/constants";
 
 const Home = () => {
-  const card = [
-    { title: "100K+", description: "Total Customer" },
-    { title: "100K+", description: "Real Time Customer" },
-    { title: "100K+", description: "Customer Satisfaction" },
-  ];
-
   return (
     <div className="select-none bg-blue-600">
       <div className="max-w-screen-xl mx-auto">
         <section className="padding-container flex flex-col gap-20 py-5 xl:flex-row">
-          <div className="mt-7">
+          <div className="pt-2">
             <div className="pt-10">
               <h1 className="text-5xl font-extrabold text-white mb-4">
                 AFFORDABLE SMALL
@@ -33,40 +26,43 @@ const Home = () => {
                 of features that are easy to use and implement.
               </p>
             </div>
-            <div>
-              <button className="-ml-0 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">
+            <div className="mt-9 flex gap-20">
+              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">
                 Get Started
               </button>
-              <button className="ml-28 mt-9 border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">
+              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black">
                 Book a demo
               </button>
             </div>
-            <div className="mt-6 my-5-44 flex flex-row justify-between text-md">
-              {card.map((car, index) => (
-                <Card
-                  key={index}
-                  title={car.title}
-                  description={car.description}
-                />
-              ))}
-            </div>
           </div>
-          <div className="w-1/2 relative mt-20">
-            <div className="-mt-9 pl-24 mb-24">
+          <div className="w-1/2 relative pt-5">
+            <div className="relative -top-20 -right-14">
               <Image
-                src="/Vector.svg"
-                alt="Image Description"
-                width={530}
-                height={400}
-                className="opacity-10"
-              />
-            </div>
-            <div className="absolute -top-1 -right-3">
-              <Image
-                src="/lap.svg"
-                alt="Image Description"
+                src="/poss.svg"
+                alt="Point of Sale"
                 width={600}
                 height={400}
+              />
+            </div>
+            <div className="flex gap-10 relative mt-[-160px] justify-center mb-2 -right-10">
+              <Image
+                src="/bir.svg"
+                alt="BIR Logo"
+                width={80}
+                height={100}
+                className=""
+              />
+              <Image
+                src="/sm.svg"
+                alt="SM Logo"
+                width={80}
+                height={100}
+              />
+              <Image
+                src="/abreeza.svg"
+                alt="Abreeza Logo"
+                width={80}
+                height={100}
               />
             </div>
           </div>

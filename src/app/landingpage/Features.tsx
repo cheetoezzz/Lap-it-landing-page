@@ -12,6 +12,12 @@ import {
 const Features = () => {
   const card = [
     {
+      title: "Point of Sales",
+      description:
+        "Elevate your business with our intuitive Point of Sale system, simplifying transactions and enhancing customer experience",
+      iconSrc: "/pos.svg",
+    },
+    {
       title: "Property Management System",
       description:
         "Manage hotels, rentals, and vacation properties effortlessly with our easy-to-use Property Management System (PMS)",
@@ -21,13 +27,7 @@ const Features = () => {
       title: "Multi-Tenancy",
       description:
         "Efficiently manage multiple tenants and properties with our powerful Multi-Tenancy Management System",
-      iconSrc: "/pms.svg", 
-    },
-    {
-      title: "Point of Sales",
-      description:
-        "Elevate your business with our intuitive Point of Sale system, simplifying transactions and enhancing customer experience",
-      iconSrc: "/pos.svg",
+      iconSrc: "/multitenancy.svg", 
     },
     {
       title: "Inventory Control",
@@ -67,7 +67,7 @@ const Features = () => {
           tailored user experience.
         </p>
       </div>
-      <div className="mt-16">
+      <div className="mt-12">
         <Image src="/computer.svg" alt="image" width={24} height={24} />
       </div>
 

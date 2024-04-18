@@ -1,24 +1,24 @@
 import React from "react";
 import Card from "./constants/card";
 import { FcCheckmark, FcMinus } from "react-icons/fc";
-import { FaBold } from "react-icons/fa";
 
-const Features = () => {
+
+const Fifthesec = () => {
   const card = [
     {
       title: "STARTER",
       smallDescription: "First you can try it for free",
-      price: "₱7,500",
+      price: "₱ 7,500",
     },
     {
       title: "STANDARD",
       smallDescription: "First you can try it for free",
-      price: "₱10,500",
+      price: "₱ 10,500",
     },
     {
       title: "PREMIUM",
       smallDescription: "First you can try it for free",
-      price: "₱15,500",
+      price: "₱ 15,500",
     },
   ];
 
@@ -99,4 +99,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default Fifthesec;

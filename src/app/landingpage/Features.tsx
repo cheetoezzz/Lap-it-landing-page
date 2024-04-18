@@ -26,7 +26,7 @@ const Features = () => {
     {
       title: "Point of Sales",
       description:
-        "Elevate your business with our intuitive Point of Sale (POS) system, simplifying transactions and enhancing customer experience for retail and hospitality industries",
+        "Elevate your business with our intuitive Point of Sale system, simplifying transactions and enhancing customer experience",
       iconSrc: "/pos.svg",
     },
     {

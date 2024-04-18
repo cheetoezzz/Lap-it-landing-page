@@ -21,8 +21,8 @@ const Contact = () => {
                 </Button>
               </div>
             </div>
-            <div className="flex flex-col mr-3 pb-24">
-              <Image src="/subscribe.svg" alt="icon" width={500} height={500} />
+            <div className="flex flex-col mr-5 pb-[124px]">
+              <Image src="/subscribe.svg" alt="icon" width={510} height={500} />
             </div>
           </div>
         </div>

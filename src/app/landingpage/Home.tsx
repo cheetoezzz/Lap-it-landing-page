@@ -7,7 +7,7 @@ const Home = () => {
       <div className="max-w-screen-xl mx-auto">
         <section className="padding-container flex flex-col gap-20 py-5 xl:flex-row">
           <div className="pt-2">
-            <div className="pt-10">
+            <div className="pt-[80px]">
               <h1 className="text-5xl font-extrabold text-white mb-4">
                 AFFORDABLE SMALL
               </h1>
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2 relative pb-10">
-            <div className="relative -top-20 -right-24">
+            <div className="relative -top-16 -right-24">
               <Image
                 src="/poss.svg"
                 alt="Point of Sale"

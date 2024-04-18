@@ -35,8 +35,8 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="w-1/2 relative pt-5">
-            <div className="relative -top-20 -right-14">
+          <div className="w-1/2 relative pb-7">
+            <div className="relative -top-28 -right-14">
               <Image
                 src="/poss.svg"
                 alt="Point of Sale"

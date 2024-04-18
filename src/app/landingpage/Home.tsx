@@ -35,16 +35,16 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="w-1/2 relative pb-7">
-            <div className="relative -top-28 -right-14">
+          <div className="w-1/2 relative pb-10">
+            <div className="relative -top-20 -right-24">
               <Image
                 src="/poss.svg"
                 alt="Point of Sale"
                 width={600}
-                height={400}
+                height={600}
               />
             </div>
-            <div className="flex gap-10 relative mt-[-160px] justify-center mb-2 -right-10">
+            <div className="flex gap-10 relative mt-[-160px] justify-center mb-2 -right-20">
               <Image
                 src="/bir.svg"
                 alt="BIR Logo"

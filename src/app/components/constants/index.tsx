@@ -9,10 +9,6 @@ export const NAV_LINKS = [
   { href: "/pages/Pricing", key: "Pricing", label: "Pricing" },
 ];
 
-interface card {
-  description: string;
-  title: string;
-}
 
 
 

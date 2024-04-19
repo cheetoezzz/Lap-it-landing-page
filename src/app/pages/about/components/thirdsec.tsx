@@ -6,8 +6,8 @@ const Thirdsection = () => {
   return (
     <div>
       <div className="flex">
-        <div className="w-screen h-[250vh] xl:h-[150vh] relative">
-          <div className="flex flex-col">
+        <div className="w-screen  max-h-none relative">
+          <div className="flex flex-col mt-20">
             <div className="text-center">
               <h1 className="text-[18px] font-extrabold mx-10 lg:text-[40px]">VISIT US</h1>
               <p className="text-[16px] text-gray-500 mx-5">
@@ -16,7 +16,7 @@ const Thirdsection = () => {
             </div>
           </div>
           <div className="flex flex-col xl:flex-row">
-            <div className="w-screen h-[90vh] sm:h-[140vh] xl:w-1/2 relative ">
+            <div className="w-screen h-[60vh] sm:h-[100vh] xl:w-1/2 relative ">
             <div className="flex items-center justify-center mt-5 mb-6 mx-3 xl:mt-12">
               <Image src="/about/image2.svg" width={600} height={600} alt="" />
               </div>
@@ -26,7 +26,7 @@ const Thirdsection = () => {
             </div>
 
 
-            <div className="w-screen h-[150vh] xl:w-1/2 relative ">
+            <div className="w-screen  max-h-none mb-20 xl:w-1/2 relative ">
               {/* Form or content */}
               <div className="mt-10">
                 <div className=" flex-col items-center text-center">

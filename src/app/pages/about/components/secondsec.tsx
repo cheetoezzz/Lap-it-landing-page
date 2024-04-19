@@ -4,8 +4,8 @@ const Secondsection = () => {
   return (
     <div>
       <div className="flex">
-        <div className="w-screen h-[100vh] lg:h-[65vh] relative">
-          <div className="flex flex-col">
+        <div className="w-screen  max-h-none  relative">
+          <div className="flex flex-col mt-10">
             <div className="text-center">
               <h1 className="text-[18px] font-extrabold mx-10 lg:text-[40px]">
                 OUR PURPOSE & DIRECTION
@@ -14,7 +14,7 @@ const Secondsection = () => {
           </div>
           <div className="mt-5">
             <div className="flex flex-col items-center justify-center lg:flex-row gap-10 ">
-              <div className="bg-blue-50 border bg-blue-50 p-[32px]">
+              <div className="bg-blue-50 border  p-[32px]">
                 <div className=" w-[250px] h-[230px] sm:w-[400px] lg:w-[500px] lg:h-[200px]">
                   <h1 className="text-blue-500 font-extrabold text-[18px] lg:text-[22px]">
                     OUR MISSION
@@ -30,7 +30,7 @@ const Secondsection = () => {
                   </h1>
                 </div>
               </div>
-              <div className="bg-blue-50 border bg-blue-50 p-[32px] mt-5 lg:mt-0">
+              <div className="bg-blue-50 border  p-[32px] mt-5 lg:mt-0">
                 <div className="w-[250px] h-[150px] sm:w-[400px] lg:w-[500px] lg:h-[200px]">
                   <h1 className="text-blue-500 font-extrabold text-[18px] lg:text-[22px]">
                     OUR VISION

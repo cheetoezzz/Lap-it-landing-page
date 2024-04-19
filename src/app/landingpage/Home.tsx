@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-1/2 relative pb-10">
-            <div className="relative -top-16 -right-24">
+            <div className="relative -top-10 -right-24">
               <Image
                 src="/poss.svg"
                 alt="Point of Sale"

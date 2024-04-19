@@ -5,10 +5,10 @@ const Firstsection = () => {
   return (
     <div>
       <div className="flex">
-        <div className="w-screen h-[150vh] sm:w-screen sm:h-[120vh] lg:w-1/2 lg:h-[150vh] xl:h-[130vh] relative">
-          <div className="items-center">
-            <div className="text-center mt-10 lg:text-start xl:mx-10 ">
-              <h1 className="text-[18px] font-extrabold mx-10 lg:ml-5 lg:mr-20 lg:text-[40px] xl:text-[48px] ">
+        <div className="w-screen max-h-none sm:w-screen lg:w-1/2 relative">
+          <div className="items-center ">
+            <div className="text-center mt-10 lg:text-start xl:ml-16 xl:mt-24  ">
+              <h1 className="text-[18px] font-extrabold mx-10 lg:ml-5 lg:mr-20 lg:text-[35px] lg:mt-20 xl:text-[48px] ">
                 WE ARE TEAM OF CREATORS & INVESTORS
               </h1>
               <h1 className="text-[16px] mt-3 mx-5">
@@ -18,7 +18,7 @@ const Firstsection = () => {
                 owners and operators for their ever-demanding operations.
               </h1>
             </div>
-            <div className="text-center lg:text-start mt-10 xl:ml-10 xl:mr-20">
+            <div className="text-center lg:text-start  mt-10 lg:mt-32 xl:ml-16 xl:mt-[155px]">
               <div className="mx-5">
                 <h1 className="text-[18px] font-extrabold lg:text-[40px] xl:text-[48px]">
                   ESTABLISHED IN 2008, LAP I.T. Solutions Inc.
@@ -37,7 +37,7 @@ const Firstsection = () => {
                 </h1>
               </div>
             </div>
-            <div className="mt-10">
+            <div className="mt-10 lg:ml-12">
               <div className="flex flex-col items-center lg:flex lg:flex-row lg:items-start lg:gap-3 lg:mx-5 xl:ml-10 xl:mr-20">
                 <div className="text-center my-2">
                   <h1 className="text=[18px] font-bold">2008 </h1>
@@ -61,7 +61,7 @@ const Firstsection = () => {
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="lg:mr-10 xl:ml-20">
           {/* Image */}
           <div className="hidden lg:block lg:w-[550px] lg:ml-14 lg:mt-5 xl:w-[600px] xl:mr-5 ">
             <Image src="/about/image.svg" width={1000} height={1000} alt="" />

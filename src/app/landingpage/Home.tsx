@@ -28,7 +28,7 @@ const Home = () => {
                 of features that are easy to use and implement.
               </p>
             </div>
-            <div className="mt-9 flex gap-16 justify-center mx-5 lg:justify-start lg:pl-5">
+            <div className="mt-9 flex gap-16 justify-center max-w-none mx-5 lg:justify-start lg:pl-5">
               <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12">
                 Get Started
               </button>

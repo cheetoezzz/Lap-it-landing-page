@@ -76,7 +76,7 @@ const Features = () => {
       </div>
       
       {isSmallScreen ? (
-        <div className="px-10">
+        <div className="px-10 max-w-none">
         <div className="overflow-auto max-w-96 flex gap-2 mt-10 mb-10">
           {card.map((car, index) => (
             <div className="mb-10" key={index}>

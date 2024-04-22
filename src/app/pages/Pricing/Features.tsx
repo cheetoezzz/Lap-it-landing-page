@@ -4,14 +4,16 @@ import React from "react";
 import { FcCheckmark } from "react-icons/fc";
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image";
 
 const Features = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
+  const [isModalOpen3, setIsModalOpen3] = useState(false);
 
 
   return (
-    <section className="flex items-center justify-center max-h-none mb-20 ">
+    <section className="flex items-center justify-center max-h-none mb-20 select-none">
       <div className="flex flex-col">
         <div className="text-center">
           <h1 className="text-[48px] font-extrabold">PRICING</h1>
@@ -76,10 +78,12 @@ const Features = () => {
                         />
                       </svg>
                     </Button>
-                    <img
-                      src="/image.png"
+                    <Image
+                      src="/Retail.svg"
                       alt="Your Image"
                       className="rounded-lg"
+                      width={600}
+                      height={600}
                     />
                   </div>
                 </div>
@@ -112,7 +116,7 @@ const Features = () => {
                 </div>
                 <div className="flex items-center justify-center translate-x-[13px] mt-10">
                   <Button
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={() => setIsModalOpen2(true)}
                     className="w-[300px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   >
                     Learn More
@@ -122,12 +126,12 @@ const Features = () => {
             </div>
 
             {/* Modal */}
-            {isModalOpen && (
+            {isModalOpen2 && (
               <div className="fixed z-50 inset-0 overflow-y-auto bg-black bg-opacity-40">
                 <div className="flex items-center justify-center min-h-screen">
                   <div className="relative bg-gray-200 rounded-lg">
                     <Button
-                      onClick={() => setIsModalOpen(false)}
+                      onClick={() => setIsModalOpen2(false)}
                       className="absolute top-0 right-0 m-3 text-gray-700 hover:text-gray-900"
                     >
                       <svg
@@ -144,10 +148,12 @@ const Features = () => {
                         />
                       </svg>
                     </Button>
-                    <img
-                      src="/image.png"
+                    <Image
+                      src="/Inventory.png"
                       alt="Your Image"
-                      className="rounded-lg"
+                      className="rounded-lg "
+                      width={0}
+                      height={0}
                     />
                   </div>
                 </div>
@@ -180,7 +186,7 @@ const Features = () => {
                 </div>
                 <div className="flex items-center justify-center translate-x-[13px] mt-10">
                   <Button
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={() => setIsModalOpen3(true)}
                     className="w-[300px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   >
                     Learn More
@@ -190,12 +196,12 @@ const Features = () => {
             </div>
 
             {/* Modal */}
-            {isModalOpen && (
+            {isModalOpen3 && (
               <div className="fixed z-50 inset-0 overflow-y-auto bg-black bg-opacity-40">
                 <div className="flex items-center justify-center min-h-screen">
                   <div className="relative bg-gray-200 rounded-lg">
                     <Button
-                      onClick={() => setIsModalOpen(false)}
+                      onClick={() => setIsModalOpen3(false)}
                       className="absolute top-0 right-0 m-3 text-gray-700 hover:text-gray-900"
                     >
                       <svg
@@ -213,7 +219,7 @@ const Features = () => {
                       </svg>
                     </Button>
                     <img
-                      src="/image.png"
+                      src="/Food.png"
                       alt="Your Image"
                       className="rounded-lg"
                     />

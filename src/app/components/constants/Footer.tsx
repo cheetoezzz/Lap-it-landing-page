@@ -87,7 +87,7 @@ const Footer = () => {
     <Link
       key={link.key}
       href={link.href}
-      className="text-[12px] md:text-[15px] lg:text-[16px] xl:text-[14px] 2xl:text-[16px]"
+      className="text-[14px] md:text-[15px] lg:text-[16px] xl:text-[14px] 2xl:text-[16px]"
     >
       {link.label}
     </Link>
@@ -96,18 +96,18 @@ const Footer = () => {
 
         </div>
         <div className="flex flex-col justify-center items-center md:mt-7 xl:ml-5 xl:mb-10  ">
-          <div className="font-bold text-[17px] md:text-[18px] sm:mt-2">Reach out</div>
+          <div className="font-bold text-[17px] md:text-[18px] mt-5 sm:mt-2">Reach out</div>
           <div className="flex items-start mt-1 justify-center  w-72 ">
             <img src="/point.png" alt="" className="mr-2" />
             <div className="justify-center flex text-center text-[12px] md:text-[14px] 2xl:text-[16px]">
               <div>Door 2 Ground floor Marcela Bldg. Jose Palma Gil St., Claveria St. Davao City, 8000 Philippines</div>
             </div>
           </div>
-          <div className="flex items-center text-[12px] mt-4 md:text-[14px] 2xl:text-[16px]">
+          <div className="flex items-center text-[12px] mt-2 md:text-[14px] 2xl:text-[16px]">
             <img src="/vector.png" alt="" className="mr-2" />
             <div>sales.lap@gmail.com</div>
           </div>
-          <div className="flex items-center text-[12px] mt-4 md:text-[14px] 2xl:text-[16px]">
+          <div className="flex items-center text-[12px] mt-2 md:text-[14px] 2xl:text-[16px]">
             <img src="/Vector (1).png" alt="" className="mr-2" />
             <div>+63 905 556 5713</div>
           </div>

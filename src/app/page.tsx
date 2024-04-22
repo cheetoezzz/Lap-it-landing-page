@@ -15,8 +15,11 @@ const Page = () => {
   return (
     <div>
       <Navbar/>
-      <Home/>
-      <Features/>
+      <Home/> 
+      <Features/> 
+      <div className='text-green-500 sm:text-red-500 md:text-violet-400 lg:text-blue-600 xl:text-orange-800'>
+        responsive
+      </div>
       <Thirdsection/>
       <Fourthsec/>
       <Fifthesec/>

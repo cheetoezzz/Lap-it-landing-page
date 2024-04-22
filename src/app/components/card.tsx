@@ -9,18 +9,18 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ description, title, iconSrc }) => {
   return (
-    <div className="w-[350px] h-96 border bg-white border-blue-500 rounded-md shadow-xl flex flex-col justify-center hover:scale-105 duration-700 transition-all">
-      <div className="flex flex-col justify-center items-center p-4 h-full">     
-      <Image className="mt-7" src={iconSrc} alt={title} width={50} height={50} />
-        <h1 className="text-black font-semibold text-lg pt-10 text-center">
+    <div className="w-[250px] h-[300px] border bg-white border-blue-500 rounded-md shadow-xl flex flex-col justify-center sm:hover:scale-105 sm:duration-700 sm:transition-all md:hover:scale-105 md:duration-700 md:transition-all lg:hover:scale-105 lg:duration-700 lg:transition-all xl:hover:scale-105 xl:duration-700 xl:transition-all xl:w-[350px] xl:h-96">
+      <div className="flex flex-col justify-center items-center p-4 xl:h-full">     
+      <Image className="pt-3 xl:mt-7" src={iconSrc} alt={title} width={50} height={50} />
+        <h1 className="text-black font-semibold text-sm pt-7 xl:text-lg xl:pt-10 text-center">
           {title}
         </h1>
-        <div className="text-black text-sm mt-2 mb-8 text-center h-full flex justify-center items-center">
-          {description}
+        <div className="text-black text-xs text-center h-full flex justify-center items-center my-[-10px] xl:text-sm xl:mt-2 xl:mb-8 ">
+          {description} 
         </div>
         <a
           href="#"
-          className="border border-blue-500 w-full h-40 rounded-md text-blue-600 font-semibold flex justify-center items-center mt-auto"
+          className="border border-blue-500 w-full h-20 rounded-md text-blue-600 font-semibold flex justify-center items-center mt-6 xl:mt-auto xl:w-full xl:h-40 "
         >
           Read more
         </a>

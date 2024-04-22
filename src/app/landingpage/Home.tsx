@@ -17,7 +17,9 @@ const Home = () => {
                   ENTERPRISE
                 </span>
               </h1>
-              <h1 className="text-3xl text-center font-extrabold text-white sm:text-4xl lg:text-start lg:text-[40px] xl:text-5xl">SOFTWARE</h1>
+              <h1 className="text-3xl text-center font-extrabold text-white sm:text-4xl lg:text-start lg:text-[40px] xl:text-5xl">
+                SOFTWARE
+              </h1>
               <p className="text-white mt-7 text-sm text-justify mx-5 max-w-none sm:text-lg lg:mx-0 lg:max-w-[500px]">
                 Empower your business with cutting-edge tools designed to
                 streamline operations, boost productivity, and maximize growth
@@ -35,35 +37,35 @@ const Home = () => {
               </button>
             </div>
           </div>
+
           <div className="relative pb-10 hidden lg:flex-row lg:max-w-none lg:mr-16 lg:block lg:pt-3 xl:block xl:pl-14 ">
             <div className="relative -top-16 -right-24 lg:-right-10">
-              <Image
-                src="/poss.svg"
-                alt="Point of Sale"
-                width={600}
-                height={600}
-              />
-            </div>
-            <div className="flex gap-10 relative mt-[-140px] justify-center mb-5 -right-20 lg:-right-10">
-              <Image
-                src="/bir.svg"
-                alt="BIR Logo"
-                width={80}
-                height={100}
-                className=""
-              />
-              <Image
-                src="/sm.svg"
-                alt="SM Logo"
-                width={80}
-                height={100}
-              />
-              <Image
-                src="/abreeza.svg"
-                alt="Abreeza Logo"
-                width={80}
-                height={100}
-              />
+              <div className="w-1/2 relative pb-10">
+                <div className="relative -top-10 -right-24">
+                  <Image
+                    src="/poss.svg"
+                    alt="Point of Sale"
+                    width={600}
+                    height={600}
+                  />
+                </div>
+                <div className="flex gap-10 relative mt-[-140px] justify-center mb-5 -right-20 lg:-right-10">
+                  <Image
+                    src="/bir.svg"
+                    alt="BIR Logo"
+                    width={80}
+                    height={100}
+                    className=""
+                  />
+                  <Image src="/sm.svg" alt="SM Logo" width={80} height={100} />
+                  <Image
+                    src="/abreeza.svg"
+                    alt="Abreeza Logo"
+                    width={80}
+                    height={100}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>

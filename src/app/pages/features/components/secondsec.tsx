@@ -31,23 +31,20 @@ const Secondsection = () => {
   ];
 
   return (
-    <section className="items-center justify-center  h-[570px] sm:h-[800px] md:h-[1100px] xl:h-[1350px] pt-11 select-none">
+    <section className="items-center justify-center  max-h-none py-11 select-none">
       <div className="max-w-6xl mx-auto px-4">
         <div>
           <h2 className="text-black text-[15px] sm:text-[25px] md:text-[30px] xl:text-[50px] font-extrabold text-center  ">
             LOREM IPSUM DOLOR
           </h2>
-          <div className=" text-[6.3px] sm:text-[11px] md:text-[13px] xl:text-[23px] ">
+          <div className=" text-[10px] sm:text-[11px] md:text-[13px] xl:text-[23px] ">
             <h1 className=" text-gray-500 text-center ">
               Lorem ipsum dolor sit amet consectetur. Id posuere vulputate diam
-              facilisis dui consectetur
-            </h1>
-            <h1 className="text-gray-500 text-center ">
-              Sed nunc sed nunc ut in diam ultrices blandit.
+              facilisis dui consectetur Sed nunc sed nunc ut in diam ultrices blandit.
             </h1>
           </div>
         </div>
-        <div className=" items-center justify-center mt-14 ">
+        <div className=" items-center justify-center mt-5 hidden lg:block">
           <Image
             src="/Features/section2.svg"
             alt="Features"
@@ -56,9 +53,9 @@ const Secondsection = () => {
           />
         </div>
 
-        <div className="flex flex-row items-center justify-center translate-y-7 sm:translate-y-14 xl:w-[1550px] xl:-translate-x-[210px]">
-          <section className="mt-2 sm:mt-5 sm:mb-5 md:mt-10 relative flex flex-row overflow-auto">
-            {data.map((cards, index) => (
+        <div className="flex flex-col items-center justify-center mt-6 lg:flex lg:flex-row  ">
+          <div className="space-y-5 overflow-auto basis-[217px] relative lg:flex lg:flex-row lg:space-y-0 lg:space-x-5 lg:basis-[1000px]">
+          {data.map((cards, index) => (
               <div className="space-x-4" key={index}>
                 <Card
                   title={cards.title}
@@ -67,11 +64,12 @@ const Secondsection = () => {
                 />
               </div>
             ))}
-          </section>
+          </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default Secondsection;

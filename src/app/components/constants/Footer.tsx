@@ -53,7 +53,7 @@ const Footer = () => {
       
       <div className="max-w-none md:grid md:grid-cols-2 xl:flex xl:flex-row xl:gap-16 xl:justify-center 2xl:gap-52 relative ">
         <div className="">
-          <div className="flex flex-col items-center mt-5">
+          <div className="flex flex-col items-center mt-5 ">
             <Link href="/">
               <div style={{ maxWidth: "100%" }}>
                 <Image

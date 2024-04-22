@@ -2,7 +2,7 @@ import React from "react";
 
 const BottomOfFooter = () => {
   return (
-    <div className="bg-blue-700 mt-7">
+    <div className="bg-blue-700 ">
       <div className="flex flex-row items-center justify-center bg-blue-700 gap-7">
         <p className=" text-white font-bold mt-3">Lapit Solutions © 2024</p>
       </div>

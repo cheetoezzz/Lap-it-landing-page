@@ -38,10 +38,10 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="relative pb-10 hidden lg:flex-row lg:max-w-none lg:mr-16 lg:block lg:pt-3 xl:block xl:pl-14 ">
-            <div className="relative -top-16 -right-24 lg:-right-10">
-              <div className="w-1/2 relative pb-10">
-                <div className="relative -top-10 -right-24">
+          <div className="relative pb-10 hidden lg:flex-row lg:max-w-none lg:mr-16 lg:block xl:block xl:pl-14 ">
+            <div className="relative -right-24 lg:-right-10">
+              <div className="max-w-none relative pb-10">
+                <div className="relative -top-20 -right-26">
                   <Image
                     src="/poss.svg"
                     alt="Point of Sale"
@@ -49,7 +49,7 @@ const Home = () => {
                     height={600}
                   />
                 </div>
-                <div className="flex gap-10 relative mt-[-140px] justify-center mb-5 -right-20 lg:-right-10">
+                <div className="flex gap-10 relative mt-[-120px] justify-center mb-[-50px] -right-20 lg:-right-5">
                   <Image
                     src="/bir.svg"
                     alt="BIR Logo"

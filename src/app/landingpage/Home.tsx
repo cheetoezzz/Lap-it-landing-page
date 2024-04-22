@@ -41,7 +41,7 @@ const Home = () => {
           <div className="relative pb-10 hidden lg:flex-row lg:max-w-none lg:mr-16 lg:block xl:block xl:pl-14 ">
             <div className="relative -right-24 lg:-right-10">
               <div className="max-w-none relative pb-10">
-                <div className="relative -top-20 -right-26">
+                <div className="relative -top-16 -right-26">
                   <Image
                     src="/poss.svg"
                     alt="Point of Sale"

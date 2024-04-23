@@ -8,23 +8,64 @@ const Footer = () => {
   const card = [
     {
       link: "https://www.facebook.com/itechsolutions588",
-      pic: <Image src="/fb.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/fb.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }} />,
     },
     {
       link: "https://www.facebook.com/itechsolutions588",
-      pic: <Image src="/mssgr.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/mssgr.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }} />,
     },
     {
       link: "https://www.instagram.com/lapitsolutions/",
-      pic: <Image src="/insta.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/insta.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+        }} />,
     },
     {
       link: "https://www.facebook.com/itechsolutions588",
-      pic: <Image src="/twtr.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/twtr.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto",     
+        }} />,
     },
     {
       link: "mailto:LapITSolutions09@gmail.com",
-      pic: <Image src="/gm.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/gm.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+
+        }} />,
     },
   ];
 
@@ -39,7 +80,15 @@ const Footer = () => {
       <div className="">
         <a href={link} target="_blank" rel="noopener noreferrer">
           {typeof pic === "string" ? (
-            <Image src={pic} alt="" width={100} height={100} />
+            <Image
+              src={pic}
+              alt=""
+              width={100}
+              height={100}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }} />
           ) : (
             pic
           )}
@@ -59,10 +108,13 @@ const Footer = () => {
                 <Image
                   src="/lapit.svg"
                   alt="logo"
-                  layout="responsive"
                   width={150}
                   height={120}
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }} />
               </div>
             </Link>
             <div className="text-[12px] text-center ">
@@ -98,21 +150,32 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center md:mt-7 xl:ml-5 xl:mb-10  ">
           <div className="font-bold text-[17px] md:text-[18px] mt-5 sm:mt-2">Reach out</div>
           <div className="flex items-start mt-1 justify-center  w-72 ">
-            <img src="/point.png" alt="" className="mr-2" />
+            <Image 
+            src="/location.svg" 
+            alt="" 
+            width={16}
+            height={16}
+            className="mr-2" />
             <div className="justify-center flex text-center text-[12px] md:text-[14px] 2xl:text-[16px]">
               <div>Door 2 Ground floor Marcela Bldg. Jose Palma Gil St., Claveria St. Davao City, 8000 Philippines</div>
             </div>
           </div>
           <div className="flex items-center text-[12px] mt-2 md:text-[14px] 2xl:text-[16px]">
-            <img src="/vector.png" alt="" className="mr-2" />
+            <Image src="/vector.png"   
+            alt="" 
+            width={16}
+            height={16} className="mr-2" />
             <div>sales.lap@gmail.com</div>
           </div>
           <div className="flex items-center text-[12px] mt-2 md:text-[14px] 2xl:text-[16px]">
-            <img src="/Vector (1).png" alt="" className="mr-2" />
+            <Image src="/phone.svg"  
+            alt="" 
+            width={16}
+            height={16} className="mr-2" />
             <div>+63 905 556 5713</div>
           </div>
         </div>
-        <div className="flex flex-col items-center mt-5 md:mt-7 xl:w-72">
+        <div className="flex flex-col items-center mt-5 md:mt-7 xl:w-80">
           <div className="font-bold text-[17px] md:text-[18px]">Get In Touch</div>
           <div className="flex flex-col text-[12px] mt-1">
             <h1 className="mx-10 text-center text-[12px] md:text-[15px] 2xl:text-[16px]">

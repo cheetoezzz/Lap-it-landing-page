@@ -3,49 +3,47 @@ import Image from "next/image";
 
 const Servicessec = () => {
   return (
-    <div className="flex flex-col items-center pt-20 text-center select-none">
-      <div className="font-extrabold text-5xl">
+    <div className="flex flex-col items-center pt-8 md:pt-20 text-center select-none">
+      <div className="font-extrabold text-3xl md:text-5xl">
         <h1 className="mt-2">WE OFFER</h1>
         <h1 className="mt-4">
           OTHER{" "}
-          <span className="bg-red-600 text-white p-1 px-4 rounded-md inline-block">
+          <span className="bg-red-600 text-white p-1 px-3 md:p-1 md:px-4 rounded-md inline-block">
             SERVICES
           </span>
         </h1>
       </div>
-      <div className="text-center mt-7">
+      <div className="text-center mt-4 md:mt-7">
         <p>
-        Explore our range of additional services designed to complement your needs and enhance your experience  
+          Explore our range of additional services designed to complement your
+          needs and enhance your experience
         </p>
       </div>
-      <div className="flex flex-row gap-12">
-        <section className="w-1/2 ml-20">
-          <div className="flex justify-end items-end mr-24 mt-24">
-            <Image
-              src="/comp.svg"
-              alt="Image Description"
-              width={600}
-              height={300}
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-              }} />
-          </div>
+      <div className="mt-6 mx-2 md:mt-10">
+        <section className="max-w-full xl:mx-80">
+          <Image
+            src="/comp.svg"
+            alt="Image Description"
+            width={600}
+            height={300}
+            layout="responsive"
+          />
         </section>
-        <section className="flex flex-col items-center mt-36 gap-2">
-          <h1 className="text-slate-600 text-base mt-7 text-md text-justify mx-auto max-w-lg">
-            Discover a full spectrum of services including laptop and computer
-            repairs, ensuring that we cater to all your tech needs under one
-            reliable roof, so you can focus on what matters most—your business.
+        <section className="max-w-full text-center md:text-left md:ml-6 mt-4 md:mt-0">
+          <h1 className="text-slate-600 text-base text-justify mx-2 md:text-lg mt-4 md:mt-7 xl:mx-52 xl:mt-10">
+             Our goal is to provide you
+            with a one-stop-shop for all your tech needs, offering reliable and
+            efficient services so that you can dedicate your time and energy to
+            what truly matters—nurturing and growing your business.{" "}
           </h1>
-          <div className="mt-7 flex flex-col items-start justify-start pr-[350px]">
-            <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
+          {/* <div className="mt-4 mx-2 md:mt-7">
+            <button className="bg-blue-600 w-32 md:w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
                 fill="currentColor"
-                className="w-4 h-4 ml-4"
+                className="w-4 h-4 ml-2"
               >
                 <path
                   fillRule="evenodd"
@@ -54,7 +52,7 @@ const Servicessec = () => {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </section>
       </div>
     </div>

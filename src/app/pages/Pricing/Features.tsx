@@ -4,7 +4,7 @@ import React from "react";
 import { FcCheckmark } from "react-icons/fc";
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Features = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -86,6 +86,8 @@ const Features = () => {
                       height={600}
                       style={{
                         maxWidth: "100%",
+                        height: "auto",
+                        maxWidth: "100%",
                         height: "auto"
                       }} />
                   </div>
@@ -159,6 +161,8 @@ const Features = () => {
                       width={0}
                       height={0}
                       style={{
+                        maxWidth: "100%",
+                        height: "auto",
                         maxWidth: "100%",
                         height: "auto"
                       }} />

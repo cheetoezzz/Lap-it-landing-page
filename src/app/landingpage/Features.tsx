@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Card from "../components/card";
 import {
   Carousel,
@@ -79,7 +79,7 @@ const Features = () => {
           height={24}
           style={{
             maxWidth: "100%",
-            height: "auto"
+            height: "auto",
           }} />
       </div>
       

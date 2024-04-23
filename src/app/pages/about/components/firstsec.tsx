@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Firstsection = () => {
   return (
@@ -71,6 +71,8 @@ const Firstsection = () => {
               alt=""
               style={{
                 maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
                 height: "auto"
               }} />
           </div>
@@ -81,6 +83,8 @@ const Firstsection = () => {
               height={1000}
               alt=""
               style={{
+                maxWidth: "100%",
+                height: "auto",
                 maxWidth: "100%",
                 height: "auto"
               }} />

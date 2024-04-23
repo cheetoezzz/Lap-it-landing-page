@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -237,6 +237,8 @@ const Thirdsection = () => {
               width={500}
               height={300}
               style={{
+                maxWidth: "100%",
+                height: "auto",
                 maxWidth: "100%",
                 height: "auto"
               }} />

@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS } from ".";
 import BottomOfFooter from "./BottomOfFooter";
@@ -15,6 +15,8 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
+          height: "auto",
+          maxWidth: "100%",
           height: "auto"
         }} />,
     },
@@ -26,6 +28,8 @@ const Footer = () => {
         width={16}
         height={16}
         style={{
+          maxWidth: "100%",
+          height: "auto",
           maxWidth: "100%",
           height: "auto"
         }} />,
@@ -39,6 +43,8 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
+          height: "auto",
+          maxWidth: "100%",
           height: "auto"
         }} />,
     },
@@ -51,6 +57,8 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
+          height: "auto",
+          maxWidth: "100%",
           height: "auto"
         }} />,
     },
@@ -62,6 +70,8 @@ const Footer = () => {
         width={16}
         height={16}
         style={{
+          maxWidth: "100%",
+          height: "auto",
           maxWidth: "100%",
           height: "auto"
         }} />,
@@ -85,6 +95,8 @@ const Footer = () => {
               width={100}
               height={100}
               style={{
+                maxWidth: "100%",
+                height: "auto",
                 maxWidth: "100%",
                 height: "auto"
               }} />
@@ -112,6 +124,8 @@ const Footer = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
+                    height: "auto",
+                    maxWidth: "100%",
                     height: "auto"
                   }} />
               </div>

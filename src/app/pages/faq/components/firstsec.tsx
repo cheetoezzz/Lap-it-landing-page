@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -30,6 +30,8 @@ const firstsec = () => {
               height={550}
               className="lg:w-[400px] xl:w-[500px]"
               style={{
+                maxWidth: "100%",
+                height: "auto",
                 maxWidth: "100%",
                 height: "auto"
               }} />

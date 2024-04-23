@@ -1,6 +1,6 @@
 import React from "react";
 import { FcOk } from "react-icons/fc";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Thirdsection = () => {
   return (
@@ -33,7 +33,7 @@ const Thirdsection = () => {
             sizes="100vw"
             style={{
               width: "100%",
-              height: "auto"
+              height: "auto",
             }} />
         </section>
         <section className="flex flex-col items-center lg:w-1/2 xl:w-1/2 lg:pb-32 xl:pb-32">

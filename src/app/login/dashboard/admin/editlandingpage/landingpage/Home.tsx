@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Card from "./components";
 import {
   Accordion,
@@ -270,6 +270,8 @@ const Home = () => {
               className="opacity-10"
               style={{
                 maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
                 height: "auto"
               }} />
           </div>
@@ -280,6 +282,8 @@ const Home = () => {
               width={600}
               height={400}
               style={{
+                maxWidth: "100%",
+                height: "auto",
                 maxWidth: "100%",
                 height: "auto"
               }} />

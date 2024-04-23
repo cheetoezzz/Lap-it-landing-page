@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Servicessec = () => {
   return (
@@ -28,7 +28,7 @@ const Servicessec = () => {
               height={300}
               style={{
                 maxWidth: "100%",
-                height: "auto"
+                height: "auto",
               }} />
           </div>
         </section>

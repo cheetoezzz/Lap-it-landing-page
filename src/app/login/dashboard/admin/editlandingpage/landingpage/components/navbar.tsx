@@ -1,5 +1,5 @@
 
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS } from ".";
 
@@ -19,6 +19,8 @@ const Navbar = () => {
             height={60}
             className="sm:w-28 md:w-40"
             style={{
+              maxWidth: "100%",
+              height: "auto",
               maxWidth: "100%",
               height: "auto"
             }} />

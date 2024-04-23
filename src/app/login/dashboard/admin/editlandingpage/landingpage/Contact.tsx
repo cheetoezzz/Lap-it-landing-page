@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -28,6 +28,8 @@ const Contact = () => {
                 width={500}
                 height={500}
                 style={{
+                  maxWidth: "100%",
+                  height: "auto",
                   maxWidth: "100%",
                   height: "auto"
                 }} />

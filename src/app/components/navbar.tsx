@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { NAV_LINKS } from "./constants";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from 'react';
 
@@ -25,6 +25,8 @@ const Navbar = () => {
                 height={200}
                 className="sm:w-[200px] md:w-[200px]"
                 style={{
+                  maxWidth: "100%",
+                  height: "auto",
                   maxWidth: "100%",
                   height: "auto"
                 }} />
@@ -55,6 +57,8 @@ const Navbar = () => {
                 src="/menumobile.svg"
                 alt="menumobile"
                 style={{
+                  maxWidth: "100%",
+                  height: "auto",
                   maxWidth: "100%",
                   height: "auto"
                 }} />
@@ -94,6 +98,8 @@ const Navbar = () => {
                   src="/menumobile.svg"
                   alt="menumobile"
                   style={{
+                    maxWidth: "100%",
+                    height: "auto",
                     maxWidth: "100%",
                     height: "auto"
                   }} />

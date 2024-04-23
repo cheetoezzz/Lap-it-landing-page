@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Fourthsec = () => {
   return (
@@ -20,7 +20,7 @@ const Fourthsec = () => {
       </div>
       <div className="flex flex-col lg:flex-row xl:flex-row mt-24">
         
-        <section className="lg:w-1/2 xl:w-1/2 xl:mr-20">
+        <section className="mx-2 lg:w-1/2 xl:w-1/2 xl:mr-20">
           <h1 className="text-slate-600 mb-8 mt-20 text-md text-justify mx-auto lg:mx-3 max-w-lg ">
             Experience peace of mind with our secure cloud application hosting
             services, providing a reliable and scalable platform to host your
@@ -47,7 +47,7 @@ const Fourthsec = () => {
             </div>
           </div>
         </section>
-        <section className="order-first -mt-16 mb-2 lg:mb-28 lg:order-2 xl:mb-28 xl:order-2">
+        <section className="order-first mx-2 -mt-16 mb-2 lg:mb-28 lg:order-2 xl:mb-28 xl:order-2">
           <div className="flex-col items-center lg:flex lg:justify-end lg:items-end lg:mt-10 xl:flex xl:justify-end xl:items-end xl:mt-10">
             <Image
               src="/fourthsec.svg"
@@ -56,7 +56,7 @@ const Fourthsec = () => {
               height={300}
               style={{
                 maxWidth: "100%",
-                height: "auto"
+                height: "auto",
               }} />
           </div>
         </section>

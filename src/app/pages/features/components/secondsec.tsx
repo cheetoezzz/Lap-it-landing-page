@@ -51,8 +51,7 @@ const Secondsection = () => {
             width={1150}
             height={50}
             style={{
-              maxWidth: "100%",
-              height: "auto",
+      
               maxWidth: "100%",
               height: "auto"
             }} />

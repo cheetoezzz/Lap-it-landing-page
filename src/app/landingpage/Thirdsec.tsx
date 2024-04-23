@@ -61,7 +61,7 @@ const Thirdsection = () => {
                 </div>
               </div>
               <div className="flex mt-9 xl:items-center xl:mt-9">
-                <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
+                <button className="bg-blue-600 w-40 h-10 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md xl:text-base">
                   Learn More
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

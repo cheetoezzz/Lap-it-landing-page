@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Image from "next/image";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { z } from "zod";
@@ -95,13 +96,20 @@ const SignUpPage = () => {
         <a href="/" className="absolute top-0 left-0 m-4 text-amber-50">
           Back to Home
         </a>
-        <img src="/Lapwhitelogo.svg" alt="Logo" className="w-40 h-auto mt-8" />
+        <Image 
+    src="/Lapwhitelogo.svg" 
+    alt="Logo" 
+    width={150}
+    // className="w-40 h-auto mt-8" 
+/>
         <div className="bg-white rounded-lg flex items-center mt-8">
           <div className="">
-            <img
+            <Image
               src="/signupleftimage.svg"
               alt="Image"
-              className="w-72 h-3/6"
+              width={72}
+              height={3/6}
+              // className="w-72 h-3/6"
             />
           </div>
           <div className="pt-5">

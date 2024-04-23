@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import { NAV_LINKS } from ".";
 import BottomOfFooter from "./BottomOfFooter";
@@ -8,23 +8,63 @@ const Footer = () => {
   const card = [
     {
       link: "https://www.facebook.com/itechsolutions588",
-      pic: <Image src="/fb.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/fb.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />,
     },
     {
       link: "https://www.facebook.com/itechsolutions588",
-      pic: <Image src="/mssgr.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/mssgr.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />,
     },
     {
       link: "https://www.instagram.com/lapitsolutions/",
-      pic: <Image src="/insta.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/insta.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />,
     },
     {
       link: "https://www.facebook.com/itechsolutions588",
-      pic: <Image src="/twtr.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/twtr.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />,
     },
     {
       link: "mailto:LapITSolutions09@gmail.com",
-      pic: <Image src="/gm.png" alt="" width={16} height={16} />,
+      pic: <Image
+        src="/gm.png"
+        alt=""
+        width={16}
+        height={16}
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />,
     },
   ];
 
@@ -39,7 +79,15 @@ const Footer = () => {
       <div className="">
         <a href={link} target="_blank" rel="noopener noreferrer">
           {typeof pic === "string" ? (
-            <Image src={pic} alt="" width={100} height={100} />
+            <Image
+              src={pic}
+              alt=""
+              width={100}
+              height={100}
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           ) : (
             pic
           )}
@@ -59,10 +107,13 @@ const Footer = () => {
                 <Image
                   src="/lapit.svg"
                   alt="logo"
-                  layout="responsive"
                   width={150}
                   height={120}
-                />
+                  sizes="100vw"
+                  style={{
+                    width: "100%",
+                    height: "auto"
+                  }} />
               </div>
             </Link>
             <div className="text-[12px] text-center ">

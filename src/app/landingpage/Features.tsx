@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Card from "../components/card";
 import {
   Carousel,
@@ -72,7 +72,15 @@ const Features = () => {
         </p>
       </div>
       <div className="mt-12">
-        <Image src="/computer.svg" alt="image" width={24} height={24} />
+        <Image
+          src="/computer.svg"
+          alt="image"
+          width={24}
+          height={24}
+          style={{
+            maxWidth: "100%",
+            height: "auto"
+          }} />
       </div>
       
       {isSmallScreen ? (

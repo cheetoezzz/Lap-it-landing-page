@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 // import Map from "./map";
 
 const Thirdsection = () => {
@@ -18,7 +18,15 @@ const Thirdsection = () => {
           <div className="flex flex-col xl:flex-row">
             <div className="w-screen h-[60vh] sm:h-[100vh] xl:w-1/2 relative ">
             <div className="flex items-center justify-center mt-5 mb-6 mx-3 xl:mt-12">
-              <Image src="/about/image2.svg" width={600} height={600} alt="" />
+              <Image
+                src="/about/image2.svg"
+                width={600}
+                height={600}
+                alt=""
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               </div>
             <div className="flex items-center justify-center my-6 mx-3">
               {/* <Map/> */}

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -22,7 +22,15 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-col mr-3 pb-24">
-              <Image src="/subscribe.svg" alt="icon" width={500} height={500} />
+              <Image
+                src="/subscribe.svg"
+                alt="icon"
+                width={500}
+                height={500}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </div>

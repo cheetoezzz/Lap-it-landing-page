@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import SignInForm from "@/components/form/signinform";
 import { Button } from "@/components/ui/button";
 
@@ -15,10 +15,12 @@ const Page = () => {
           {/* Background Image */}
           <Image
             src="/login/Background.png"
-            layout="fill"
-            objectFit="cover"
             alt=""
-          />
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover"
+            }} />
           {/* Logo */}
           <div>
             <a href="/.">
@@ -28,7 +30,10 @@ const Page = () => {
             height={150}
             className="absolute top-0 left-0 m-4 md:m-6 lg:m-8 xl:m-10 max-w-full h-auto"
             alt="Logo"
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
           </a>
           </div>
           {/* Quote */}

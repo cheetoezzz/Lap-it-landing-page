@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import {
   Accordion,
   AccordionContent,
@@ -29,7 +29,10 @@ const firstsec = () => {
               width={550}
               height={550}
               className="lg:w-[400px] xl:w-[500px]"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
         <div className=" w-screen items-center justify-center flex flex-col lg:w-1/2 lg:-translate-x-28">

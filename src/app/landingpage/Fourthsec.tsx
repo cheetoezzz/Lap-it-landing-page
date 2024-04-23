@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Fourthsec = () => {
   return (
@@ -53,7 +53,10 @@ const Fourthsec = () => {
               alt="Image Description"
               width={500}
               height={300}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </section>
       </div>

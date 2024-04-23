@@ -4,7 +4,7 @@ import React from "react";
 import { FcCheckmark } from "react-icons/fc";
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Features = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

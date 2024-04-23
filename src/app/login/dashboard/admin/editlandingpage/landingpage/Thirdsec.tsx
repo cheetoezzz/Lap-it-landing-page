@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { FcOk } from "react-icons/fc";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {
   Accordion,
   AccordionContent,

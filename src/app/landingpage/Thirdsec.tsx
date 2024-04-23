@@ -1,6 +1,6 @@
 import React from "react";
 import { FcOk } from "react-icons/fc";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const Thirdsection = () => {
   return (

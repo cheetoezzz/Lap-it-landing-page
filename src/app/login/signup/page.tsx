@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import SignUpForm from "@/components/form/signupform";
 import { Button } from "@/components/ui/button";
 

@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 
 const Fourthsec = () => {
   return (
-    <div className="flex flex-col items-center mt-28 text-center bg-white select-none">
+    <div className="flex flex-col items-center mt-16 text-center bg-white select-none lg:-mt-16 xl:-mt-16">
       <div className="font-extrabold text-3xl lg:text-5xl xl:text-5xl">
         <h1 className="mt-4">
           <span className="bg-red-600 text-white p-1 px-4 rounded-md inline-block">

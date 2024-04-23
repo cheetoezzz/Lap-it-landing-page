@@ -12,7 +12,16 @@ const Navbar = () => {
 
       <div className="ml-24">
         <Link href='/'>
-          <Image src="/lapit.svg" alt="logo" width={80} height={60} className="sm:w-28 md:w-40" />
+          <Image
+            src="/lapit.svg"
+            alt="logo"
+            width={80}
+            height={60}
+            className="sm:w-28 md:w-40"
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </Link>
       </div>
       <div className="flex items-center text-xs py-5 ">

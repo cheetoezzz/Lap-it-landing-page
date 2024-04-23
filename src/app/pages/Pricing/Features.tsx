@@ -84,7 +84,10 @@ const Features = () => {
                       className="rounded-lg"
                       width={600}
                       height={600}
-                    />
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                      }} />
                   </div>
                 </div>
               </div>
@@ -155,7 +158,10 @@ const Features = () => {
                       className="rounded-lg "
                       width={0}
                       height={0}
-                    />
+                      style={{
+                        maxWidth: "100%",
+                        height: "auto"
+                      }} />
                   </div>
                 </div>
               </div>

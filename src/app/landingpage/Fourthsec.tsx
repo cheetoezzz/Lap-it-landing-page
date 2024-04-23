@@ -15,7 +15,7 @@ const Fourthsec = () => {
       </div>
       <div className="text-center mt-7 text-sm lg:text-base xl:text-base">
         <p>
-        Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
+          Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
         </p>
       </div>
       <div className="flex flex-col lg:flex-row xl:flex-row mt-24">
@@ -54,7 +54,10 @@ const Fourthsec = () => {
               alt="Image Description"
               width={500}
               height={300}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </section>
       </div>

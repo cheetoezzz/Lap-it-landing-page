@@ -268,7 +268,10 @@ const Home = () => {
               width={530}
               height={400}
               className="opacity-10"
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
           <div className="absolute -top-1 right-24">
             <Image
@@ -276,7 +279,10 @@ const Home = () => {
               alt="Image Description"
               width={600}
               height={400}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
       </section>

@@ -22,7 +22,15 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-col mr-5 pb-[124px]">
-              <Image src="/subscribe.svg" alt="icon" width={510} height={500} />
+              <Image
+                src="/subscribe.svg"
+                alt="icon"
+                width={510}
+                height={500}
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </div>
           </div>
         </div>

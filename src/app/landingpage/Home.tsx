@@ -47,7 +47,10 @@ const Home = () => {
                     alt="Point of Sale"
                     width={600}
                     height={600}
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
                 <div className="flex gap-10 relative mt-[-120px] justify-center mb-[-50px] -right-20 lg:-right-5">
                   <Image
@@ -56,14 +59,28 @@ const Home = () => {
                     width={80}
                     height={100}
                     className=""
-                  />
-                  <Image src="/sm.svg" alt="SM Logo" width={80} height={100} />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
+                  <Image
+                    src="/sm.svg"
+                    alt="SM Logo"
+                    width={80}
+                    height={100}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                   <Image
                     src="/abreeza.svg"
                     alt="Abreeza Logo"
                     width={80}
                     height={100}
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto"
+                    }} />
                 </div>
               </div>
             </div>

@@ -18,7 +18,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href='/'>
-              <Image src="/lapit.svg" alt="logo" width={200} height={200} className="sm:w-[200px] md:w-[200px]" />
+              <Image
+                src="/lapit.svg"
+                alt="logo"
+                width={200}
+                height={200}
+                className="sm:w-[200px] md:w-[200px]"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
             </Link>
           </div>
           <div className="hidden lg:block">
@@ -44,7 +53,11 @@ const Navbar = () => {
                 width={20}
                 height={20}
                 src="/menumobile.svg"
-                alt="menumobile" />
+                alt="menumobile"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
               {isOpen ? (
                 <path
                   fillRule="evenodd"
@@ -79,7 +92,11 @@ const Navbar = () => {
                   width={20}
                   height={20}
                   src="/menumobile.svg"
-                  alt="menumobile" />
+                  alt="menumobile"
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                  }} />
 
               </button>
             </div>

@@ -2,21 +2,11 @@
 import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
 import React from 'react';
-// import SignoutButton from '../components/signoutbutton';
-
-
 // Triaged, use ternary operator, and create a separate component for nav bar and wrap it inside the layout.tsx
 const Page = async () => {
 
   const session = await getServerSession(authOptions);
   console.log(session);
-
-  // session ? (
-  //   <div></div>
-  // ) : (
-
-  // ) // use ternary operators 
-
   if (session?.user.role == 'admin'){
   return (
     <div className="flex h-screen ">

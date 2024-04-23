@@ -1,10 +1,9 @@
 import React from "react";
 import Features from "./Features";
-import PlanFeatures from "./PlanFeatures";
-import TableFeature from "./TableFeature";
 import Footer
  from "@/app/components/constants/Footer";
 import Navbar from "../../landingpage/components/navbar";
+import PriceTable from "./Table";
 const Pricing = () => {
   return (
     <>
@@ -12,14 +11,6 @@ const Pricing = () => {
       <div>
         <div className="text-green-500 sm:text-red-500 md:text-fuchsia-700 xl:text-blue-600">
           responsive
-        </div>
-        <div className="mt-12 text-2xl sm:text-4xl md:text-5xl xl:text-6xl">
-          <div className="flex justify-center font-bold">
-            <h1>PRICING</h1>
-          </div>
-          <div className="flex justify-center mt-1 text-slate-500 text-xs sm:text-sm md:text-base xl:text-xl">
-            <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-          </div>
         </div>
         <Features />
         <div className="bg-blue-50 py-3 pt-11 mt-7"> {/*2nd SECTION*/}  
@@ -40,11 +31,14 @@ const Pricing = () => {
             <div className="text-[16px] text-gray-500 flex justify-center ">
               <h1>Leaders through Innovation and Excellence.</h1>
             </div>
+
+            <div><PriceTable/></div>
         </div> {/* END OF DIV FOR 2nd SECTION*/}  
 
+
+
         
-        <PlanFeatures/>
-        <TableFeature/>
+
         <Footer/>
       </div>
     </>

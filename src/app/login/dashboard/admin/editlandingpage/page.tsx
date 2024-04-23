@@ -11,9 +11,13 @@ import Servicessec from './landingpage/Servicessec'
 import Testimonysec from './landingpage/Testimonysec'
 import Contact from './landingpage/Contact'
 import Home from './landingpage/Home'
+import { getServerSession } from 'next-auth'
+import { authOptions } from '@/lib/auth'
 
 
-const Page = () => {
+const Page = async () => {
+  const session = await getServerSession(authOptions);
+  if (session?.user.role == 'admin'){
   return (
     <div>
       <Navbar/>
@@ -28,6 +32,8 @@ const Page = () => {
       <Footer/>
     </div>
   )
+}
+return <h2> Please Login First to see this page <a href="/login/signin">Sign In</a></h2>;
 }
 
 export default Page

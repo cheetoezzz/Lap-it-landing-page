@@ -15,7 +15,7 @@ const Fourthsec = () => {
       </div>
       <div className="text-center mt-7">
         <p>
-        Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
+          Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
         </p>
       </div>
       <div className="flex flex-row mt-24">

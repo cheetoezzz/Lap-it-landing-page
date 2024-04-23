@@ -11,7 +11,7 @@ const Page = () => {
     <div>
 
       <div className="flex">
-        <div className="w-1/2 h-screen relative">
+        <div className="w-1/2 h-screen relative hidden lg:block">
           {/* Background Image */}
           <Image
             src="/login/Background.png"
@@ -42,9 +42,11 @@ const Page = () => {
             
           </div>
         </div>
-        <div className="w-1/2 h-screen p-8 flex justify-center items-center">
+        <div className="w-screen h-screen lg:w-1/2 p-8 flex justify-center items-center">
           {/* Form or content */}
+          <Button className="absolute top-0 left-0 m-4 md:m-6 lg:m-8 xl:m-10 max-w-full h-auto bg-transparent hover:bg-transparent text-black lg:hidden"><a href="/.">Home</a></Button>
           <Button className="absolute top-0 right-0 m-4 md:m-6 lg:m-8 xl:m-10 max-w-full h-auto bg-transparent hover:bg-transparent text-black"><a href="/login/signup">Sign Up</a></Button>
+          
           <SignInForm/>
         </div>
       </div>

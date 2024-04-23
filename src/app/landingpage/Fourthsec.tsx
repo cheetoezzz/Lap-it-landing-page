@@ -27,7 +27,7 @@ const Fourthsec = () => {
             applications with top-notch security measures, ensuring data
             integrity and availability for your business needs.
           </h1>
-          <div className="font-semibold text-slate-600">
+          <div className="font-semibold text-slate-500">
             <div className="flex items-center mb-10">
               <button className="bg-blue-600 w-40 h-10  hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md lg:ml-2 xl:ml-2">
                 Learn More

@@ -4,7 +4,7 @@ import Image from "next/image";
 const Fourthsec = () => {
   return (
     <div className="flex flex-col items-center mt-28 text-center bg-white select-none">
-      <div className="font-extrabold text-5xl">
+      <div className="font-extrabold text-3xl lg:text-5xl xl:text-5xl">
         <h1 className="mt-4">
           <span className="bg-red-600 text-white p-1 px-4 rounded-md inline-block">
             SECURE
@@ -13,22 +13,23 @@ const Fourthsec = () => {
         </h1>
         <h1 className="mt-2">APPLICATION HOSTING</h1>
       </div>
-      <div className="text-center mt-7">
+      <div className="text-center mt-7 text-sm lg:text-base xl:text-base">
         <p>
-        Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
+          Securely host your applications in the cloud for reliable and scalable performance, backed by top-notch security measures.
         </p>
       </div>
-      <div className="flex flex-row mt-24">
-        <section className="w-1/2 mr-20">
-          <h1 className="text-slate-600 mb-8 mt-20 text-md text-justify mx-auto max-w-lg">
+      <div className="flex flex-col lg:flex-row xl:flex-row mt-24">
+        
+        <section className="mx-2 lg:w-1/2 xl:w-1/2 xl:mr-20">
+          <h1 className="text-slate-600 mb-8 mt-20 text-md text-justify mx-auto lg:mx-3 max-w-lg ">
             Experience peace of mind with our secure cloud application hosting
             services, providing a reliable and scalable platform to host your
             applications with top-notch security measures, ensuring data
             integrity and availability for your business needs.
           </h1>
-          <div className="font-semibold text-slate-600">
-            <div className="flex items-center">
-              <button className="bg-blue-600 w-40 h-10 ml-2 hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md">
+          <div className="font-semibold text-slate-500">
+            <div className="flex items-center mb-10">
+              <button className="bg-blue-600 w-40 h-10  hover:bg-blue-800 transition-all text-white font-normal flex items-center justify-center rounded-md lg:ml-2 xl:ml-2">
                 Learn More
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,14 +47,17 @@ const Fourthsec = () => {
             </div>
           </div>
         </section>
-        <section className="-mt-16 mb-28">
-          <div className="flex justify-end items-end mt-10">
+        <section className="order-first mx-2 -mt-16 mb-2 lg:mb-28 lg:order-2 xl:mb-28 xl:order-2">
+          <div className="flex-col items-center lg:flex lg:justify-end lg:items-end lg:mt-10 xl:flex xl:justify-end xl:items-end xl:mt-10">
             <Image
               src="/fourthsec.svg"
               alt="Image Description"
               width={500}
               height={300}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }} />
           </div>
         </section>
       </div>

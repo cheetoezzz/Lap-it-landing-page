@@ -50,7 +50,12 @@ const Secondsection = () => {
             alt="Features"
             width={1150}
             height={50}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
 
         <div className="flex flex-col items-center justify-center mt-6 lg:flex lg:flex-row  ">

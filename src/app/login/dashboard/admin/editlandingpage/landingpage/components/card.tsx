@@ -11,7 +11,18 @@ const Card: React.FC<CardProps> = ({ description, title, iconSrc }) => {
   return (
     <div className="w-[350px] h-96 border bg-white border-blue-500 rounded-md shadow-xl flex flex-col justify-center hover:scale-105 duration-700 transition-all">
       <div className="flex flex-col justify-center items-center p-4 h-full">     
-      <Image className="mt-7" src={iconSrc} alt={title} width={50} height={50} />
+      <Image
+        className="mt-7"
+        src={iconSrc}
+        alt={title}
+        width={50}
+        height={50}
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          maxWidth: "100%",
+          height: "auto"
+        }} />
         <h1 className="text-black font-semibold text-lg pt-10 text-center">
           {title}
         </h1>

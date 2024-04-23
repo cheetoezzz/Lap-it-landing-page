@@ -29,10 +29,10 @@ const Home = () => {
               </p>
             </div>
             <div className="mt-9 flex gap-16 justify-center max-w-none mx-5 lg:justify-start lg:pl-5">
-              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12">
+              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12 max-w-none">
                 Get Started
               </button>
-              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12">
+              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12 max-w-none">
                 Book a demo
               </button>
             </div>
@@ -41,13 +41,17 @@ const Home = () => {
           <div className="relative pb-10 hidden lg:flex-row lg:max-w-none lg:mr-16 lg:block xl:block xl:pl-14 ">
             <div className="relative -right-24 lg:-right-10">
               <div className="max-w-none relative pb-10">
-                <div className="relative -top-20 -right-26">
+                <div className="relative -top-16 -right-26">
                   <Image
                     src="/poss.svg"
                     alt="Point of Sale"
                     width={600}
                     height={600}
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      
+                    }} />
                 </div>
                 <div className="flex gap-10 relative mt-[-120px] justify-center mb-[-50px] -right-20 lg:-right-5">
                   <Image
@@ -56,14 +60,31 @@ const Home = () => {
                     width={80}
                     height={100}
                     className=""
-                  />
-                  <Image src="/sm.svg" alt="SM Logo" width={80} height={100} />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      
+                    }} />
+                  <Image
+                    src="/sm.svg"
+                    alt="SM Logo"
+                    width={80}
+                    height={100}
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+                      
+                    }} />
                   <Image
                     src="/abreeza.svg"
                     alt="Abreeza Logo"
                     width={80}
                     height={100}
-                  />
+                    style={{
+                      maxWidth: "100%",
+                      height: "auto",
+              
+                    }} />
                 </div>
               </div>
             </div>

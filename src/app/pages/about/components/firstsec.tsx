@@ -64,10 +64,26 @@ const Firstsection = () => {
         <div className="lg:mr-10 xl:ml-20">
           {/* Image */}
           <div className="hidden lg:block lg:w-[550px] lg:ml-14 lg:mt-5 xl:w-[600px] xl:mr-5 ">
-            <Image src="/about/image.svg" width={1000} height={1000} alt="" />
+            <Image
+              src="/about/image.svg"
+              width={1000}
+              height={1000}
+              alt=""
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }} />
           </div>
           <div className="hidden lg:block lg:w-[550px] lg:ml-14 lg:mt-5 xl:w-[600px] xl:mr-5 ">
-            <Image src="/about/image.svg" width={1000} height={1000} alt="" />
+            <Image
+              src="/about/image.svg"
+              width={1000}
+              height={1000}
+              alt=""
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+              }} />
           </div>
         </div>
       </div>

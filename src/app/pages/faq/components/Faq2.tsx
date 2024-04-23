@@ -1,25 +1,25 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Footer from "@/app/components/constants/Footer";
+
 
 const Faq2 = () => {
   return (
-    <div className="pt-20  select-none">
-      <div className="flex flex-col items-center font-extrabold text-5xl">
+    <div className="select-none pb-20 ">
+      <div className="flex flex-col items-center font-extrabold text-[16px] lg:text-[40px]">
         <h1>STILL HAVE QUESTIONS</h1>
       </div>
-      <div className="text-center text-md pt-7 pb-20">
-        <p>
+      <div className="text-center text-[10px] lg:text-[16px] ">
+        <h1 className="text-gray-500">
           You can submit your question through the form below.
           <br /> Please provide as much detail as possible so that we can assist
           you effectively.
-        </p>
+        </h1>
         <div className="flex justify-center items-center gap-3 pt-10">
           <div className="bg-white w-96 p-6 rounded-lg shadow-xl">
             <div className="pt-4">
-              <h1 className="font-bold">Ask a Question</h1>
-              <p className="text-xs mt-4">
+              <h1 className="font-bold text-[16px]">Ask a Question</h1>
+              <p className="text-xs mt-4 text-gray-500">
                 Fill-in the form below to submit your question to us.
               </p>
             </div>
@@ -40,7 +40,6 @@ const Faq2 = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

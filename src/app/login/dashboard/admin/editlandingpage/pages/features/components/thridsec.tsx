@@ -59,7 +59,12 @@ const Thirdsection = () => {
             alt="Features"
             width={1150}
             height={50}
-          />
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </div>
 
         <div className="flex flex-row items-center justify-center translate-y-7 sm:translate-y-14 xl:w-[1550px] xl:-translate-x-[210px]">

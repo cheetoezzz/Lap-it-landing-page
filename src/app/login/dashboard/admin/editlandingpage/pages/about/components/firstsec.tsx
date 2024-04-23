@@ -57,11 +57,16 @@ Our Software and Hardware is trusted and used by many business owners and operat
           {/* Form or content */}
           <div>
             <Image
-            src="/about/image.svg"
-            width={1000}
-            height={1000}
-            alt=""
-            />
+              src="/about/image.svg"
+              width={1000}
+              height={1000}
+              alt=""
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </div>
       </div>

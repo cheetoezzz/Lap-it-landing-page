@@ -203,7 +203,12 @@ const Thirdsection = () => {
               alt="Image Description"
               width={600}
               height={300}
-            />
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
+                height: "auto"
+              }} />
           </div>
         </section>
         <section className="flex flex-col items-center mt-32">

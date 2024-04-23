@@ -20,7 +20,7 @@ const Home = () => {
               <h1 className="text-3xl text-center font-extrabold text-white sm:text-4xl lg:text-start lg:text-[40px] xl:text-5xl">
                 SOFTWARE
               </h1>
-              <p className="text-white mt-7 text-sm text-justify mx-5 max-w-none sm:text-lg lg:mx-0 lg:max-w-[500px]">
+              <p className="text-white mt-7 text-sm text-justify mx-2 max-w-none sm:text-lg lg:mx-0 lg:max-w-[500px]">
                 Empower your business with cutting-edge tools designed to
                 streamline operations, boost productivity, and maximize growth
                 without breaking the bank. Our software is tailored to meet the
@@ -28,7 +28,7 @@ const Home = () => {
                 of features that are easy to use and implement.
               </p>
             </div>
-            <div className="mt-9 flex gap-16 justify-center max-w-none mx-5 lg:justify-start lg:pl-5">
+            <div className="mt-9 flex gap-16 justify-center max-w-none mx-1 lg:justify-start lg:pl-10">
               <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12 max-w-none">
                 Get Started
               </button>

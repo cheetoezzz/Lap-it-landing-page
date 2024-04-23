@@ -4,7 +4,7 @@ import Image from "next/image";
 const Servicessec = () => {
   return (
     <div className="flex flex-col items-center pt-20 text-center select-none">
-      <div className="font-extrabold text-5xl">
+      <div className="font-extrabold text-3xl lg:text-5xl xl:text-5xl">
         <h1 className="mt-2">WE OFFER</h1>
         <h1 className="mt-4">
           OTHER{" "}
@@ -13,19 +13,20 @@ const Servicessec = () => {
           </span>
         </h1>
       </div>
-      <div className="text-center mt-7">
+      <div className="text-center mt-7 text-sm lg:text-base xl:text-base">
         <p>
         Explore our range of additional services designed to complement your needs and enhance your experience  
         </p>
       </div>
-      <div className="flex flex-row gap-12">
-        <section className="w-1/2 ml-20">
-          <div className="flex justify-end items-end mr-24 mt-24">
+      <div className="xl:flex xl:flex-row xl:gap-12">
+        <section className=" xl:w-1/2 xl:ml-20">
+          <div className="flex flex-col items-center mt-10 xl:flex xl:justify-end xl:items-end xl:mr-24 xl:mt-24">
             <Image
               src="/comp.svg"
               alt="Image Description"
-              width={600}
+              width={500}
               height={300}
+              layout="responsive"
               style={{
                 maxWidth: "100%",
                 height: "auto",

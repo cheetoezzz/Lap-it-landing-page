@@ -15,7 +15,7 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
-          height: "auto"
+          height: "auto",
         }} />,
     },
     {
@@ -27,7 +27,7 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
-          height: "auto"
+          height: "auto",
         }} />,
     },
     {
@@ -39,7 +39,7 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
-          height: "auto"
+          height: "auto",
         }} />,
     },
     {
@@ -51,7 +51,7 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
-          height: "auto"
+          height: "auto",     
         }} />,
     },
     {
@@ -63,7 +63,8 @@ const Footer = () => {
         height={16}
         style={{
           maxWidth: "100%",
-          height: "auto"
+          height: "auto",
+
         }} />,
     },
   ];
@@ -86,7 +87,7 @@ const Footer = () => {
               height={100}
               style={{
                 maxWidth: "100%",
-                height: "auto"
+                height: "auto",
               }} />
           ) : (
             pic
@@ -112,7 +113,7 @@ const Footer = () => {
                   sizes="100vw"
                   style={{
                     width: "100%",
-                    height: "auto"
+                    height: "auto",
                   }} />
               </div>
             </Link>

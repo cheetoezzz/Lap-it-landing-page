@@ -31,6 +31,8 @@ const firstsec = () => {
               className="lg:w-[400px] xl:w-[500px]"
               style={{
                 maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
                 height: "auto"
               }} />
           </div>

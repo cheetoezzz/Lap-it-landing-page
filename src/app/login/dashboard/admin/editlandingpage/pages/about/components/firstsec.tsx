@@ -63,6 +63,8 @@ Our Software and Hardware is trusted and used by many business owners and operat
               alt=""
               style={{
                 maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
                 height: "auto"
               }} />
           </div>

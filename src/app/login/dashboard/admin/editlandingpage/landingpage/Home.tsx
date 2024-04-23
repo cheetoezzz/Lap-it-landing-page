@@ -270,6 +270,8 @@ const Home = () => {
               className="opacity-10"
               style={{
                 maxWidth: "100%",
+                height: "auto",
+                maxWidth: "100%",
                 height: "auto"
               }} />
           </div>
@@ -280,6 +282,8 @@ const Home = () => {
               width={600}
               height={400}
               style={{
+                maxWidth: "100%",
+                height: "auto",
                 maxWidth: "100%",
                 height: "auto"
               }} />

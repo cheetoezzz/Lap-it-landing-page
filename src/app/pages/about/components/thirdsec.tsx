@@ -25,7 +25,7 @@ const Thirdsection = () => {
                 alt=""
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
+                  height: "auto",
                 }} />
               </div>
             <div className="flex items-center justify-center my-6 mx-3">

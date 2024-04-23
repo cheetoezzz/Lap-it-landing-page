@@ -26,7 +26,7 @@ const Navbar = () => {
                 className="sm:w-[200px] md:w-[200px]"
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
+                  height: "auto",
                 }} />
             </Link>
           </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
                 alt="menumobile"
                 style={{
                   maxWidth: "100%",
-                  height: "auto"
+                  height: "auto",
                 }} />
               {isOpen ? (
                 <path
@@ -95,7 +95,7 @@ const Navbar = () => {
                   alt="menumobile"
                   style={{
                     maxWidth: "100%",
-                    height: "auto"
+                    height: "auto",
                   }} />
 
               </button>

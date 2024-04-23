@@ -18,7 +18,9 @@ const Page = () => {
             fill
             sizes="100vw"
             style={{
-              objectFit: "cover"
+              objectFit: "cover",
+              maxWidth: "100%",
+              height: "auto"
             }} />
           {/* Logo */}
           <div>
@@ -30,6 +32,8 @@ const Page = () => {
             className="absolute top-0 left-0 m-4 md:m-6 lg:m-8 xl:m-10 max-w-full h-auto"
             alt="Logo"
             style={{
+              maxWidth: "100%",
+              height: "auto",
               maxWidth: "100%",
               height: "auto"
             }} />

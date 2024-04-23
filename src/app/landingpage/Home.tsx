@@ -29,10 +29,10 @@ const Home = () => {
               </p>
             </div>
             <div className="mt-9 flex gap-16 justify-center max-w-none mx-5 lg:justify-start lg:pl-5">
-              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12">
+              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12 max-w-none">
                 Get Started
               </button>
-              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12">
+              <button className="border w-44 h-10 rounded-md border-white text-white font-semibold hover:bg-white hover:text-black md:h-12 max-w-none">
                 Book a demo
               </button>
             </div>
@@ -49,7 +49,8 @@ const Home = () => {
                     height={600}
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "auto",
+                      
                     }} />
                 </div>
                 <div className="flex gap-10 relative mt-[-120px] justify-center mb-[-50px] -right-20 lg:-right-5">
@@ -61,7 +62,8 @@ const Home = () => {
                     className=""
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "auto",
+                      
                     }} />
                   <Image
                     src="/sm.svg"
@@ -70,7 +72,8 @@ const Home = () => {
                     height={100}
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "auto",
+                      
                     }} />
                   <Image
                     src="/abreeza.svg"
@@ -79,7 +82,8 @@ const Home = () => {
                     height={100}
                     style={{
                       maxWidth: "100%",
-                      height: "auto"
+                      height: "auto",
+              
                     }} />
                 </div>
               </div>

@@ -19,6 +19,8 @@ const Card: React.FC<CardProps> = ({ description, title, iconSrc }) => {
         height={50}
         style={{
           maxWidth: "100%",
+          height: "auto",
+          maxWidth: "100%",
           height: "auto"
         }} />
         <h1 className="text-black font-semibold text-lg pt-10 text-center">

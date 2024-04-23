@@ -71,7 +71,7 @@ const Firstsection = () => {
               alt=""
               style={{
                 maxWidth: "100%",
-                height: "auto"
+                height: "auto",
               }} />
           </div>
           <div className="hidden lg:block lg:w-[550px] lg:ml-14 lg:mt-5 xl:w-[600px] xl:mr-5 ">
@@ -82,7 +82,7 @@ const Firstsection = () => {
               alt=""
               style={{
                 maxWidth: "100%",
-                height: "auto"
+                height: "auto",
               }} />
           </div>
         </div>

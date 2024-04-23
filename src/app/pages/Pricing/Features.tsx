@@ -86,6 +86,8 @@ const Features = () => {
                       height={600}
                       style={{
                         maxWidth: "100%",
+                        height: "auto",
+                        maxWidth: "100%",
                         height: "auto"
                       }} />
                   </div>
@@ -159,6 +161,8 @@ const Features = () => {
                       width={0}
                       height={0}
                       style={{
+                        maxWidth: "100%",
+                        height: "auto",
                         maxWidth: "100%",
                         height: "auto"
                       }} />

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 interface CardProps {
   description: string;
@@ -17,10 +17,7 @@ const Card: React.FC<CardProps> = ({ description, title, iconSrc }) => {
           alt={title}
           width={50}
           height={50}
-          style={{
-            maxWidth: "100%",
-            height: "auto"
-          }} />
+          />
             <h1 className="text-black font-semibold text-sm pt-7 xl:text-lg xl:pt-10 text-center">
               {title}
             </h1>

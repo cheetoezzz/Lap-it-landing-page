@@ -27,8 +27,6 @@ const Navbar = () => {
                 style={{
                   maxWidth: "100%",
                   height: "auto",
-                  maxWidth: "100%",
-                  height: "auto"
                 }} />
             </Link>
           </div>
@@ -59,8 +57,6 @@ const Navbar = () => {
                 style={{
                   maxWidth: "100%",
                   height: "auto",
-                  maxWidth: "100%",
-                  height: "auto"
                 }} />
               {isOpen ? (
                 <path
@@ -100,8 +96,6 @@ const Navbar = () => {
                   style={{
                     maxWidth: "100%",
                     height: "auto",
-                    maxWidth: "100%",
-                    height: "auto"
                   }} />
 
               </button>

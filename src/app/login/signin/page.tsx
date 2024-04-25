@@ -15,10 +15,10 @@ const Page = () => {
           {/* Background Image */}
           <Image
             src="/login/Background.png"
-            alt=""
-            sizes="100vw"
             width={1000}
-            height={100}/>
+            height={1000}
+            alt=""
+            sizes="100vw"/>
           {/* Logo */}
           <div>
             <a href="/.">
@@ -30,7 +30,6 @@ const Page = () => {
             alt="Logo"
             style={{
               maxWidth: "100%",
-              height: "auto",
             }} />
           </a>
           </div>

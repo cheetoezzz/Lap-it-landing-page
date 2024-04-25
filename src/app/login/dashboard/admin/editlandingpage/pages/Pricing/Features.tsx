@@ -16,7 +16,14 @@ const Features = () => {
     <section className="flex items-center justify-center max-h-none mb-20 select-none">
       <div className="flex flex-col">
         <div className="text-center">
-          <h1 className="text-[48px] font-extrabold"> PRICING</h1>
+          <div className="flex flex-row justify-center gap-3">
+            <div className="text-[48px] font-bold bg-red-600 rounded-lg text-white px-5">
+              <h1>PACKAGE</h1>
+            </div>
+            <div className="text-[48px] font-bold">
+              <h1>PRICING</h1>
+            </div>
+          </div>
         </div>
         <div className="flex flex-row mt-10">
           <div>

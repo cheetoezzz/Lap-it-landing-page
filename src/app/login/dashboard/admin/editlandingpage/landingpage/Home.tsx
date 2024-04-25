@@ -271,8 +271,6 @@ const Home = () => {
               style={{
                 maxWidth: "100%",
                 height: "auto",
-                maxWidth: "100%",
-                height: "auto"
               }} />
           </div>
           <div className="absolute -top-1 right-24">
@@ -284,8 +282,6 @@ const Home = () => {
               style={{
                 maxWidth: "100%",
                 height: "auto",
-                maxWidth: "100%",
-                height: "auto"
               }} />
           </div>
         </div>

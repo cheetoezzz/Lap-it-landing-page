@@ -18,12 +18,7 @@ const Page = () => {
             width={1000}
             height={1000}
             alt=""
-            sizes="100vw"
-            style={{
-              objectFit: "cover",
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+            sizes="100vw"/>
           {/* Logo */}
           <div>
             <a href="/.">
@@ -35,7 +30,6 @@ const Page = () => {
             alt="Logo"
             style={{
               maxWidth: "100%",
-              height: "auto"
             }} />
           </a>
           </div>

@@ -87,8 +87,6 @@ const Features = () => {
                       style={{
                         maxWidth: "100%",
                         height: "auto",
-                        maxWidth: "100%",
-                        height: "auto"
                       }} />
                   </div>
                 </div>
@@ -163,8 +161,6 @@ const Features = () => {
                       style={{
                         maxWidth: "100%",
                         height: "auto",
-                        maxWidth: "100%",
-                        height: "auto"
                       }} />
                   </div>
                 </div>
@@ -230,7 +226,7 @@ const Features = () => {
                         />
                       </svg>
                     </Button>
-                    <img
+                    <Image
                       src="/Food.png"
                       alt="Your Image"
                       className="rounded-lg"

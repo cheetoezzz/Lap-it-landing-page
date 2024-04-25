@@ -20,7 +20,7 @@ const Servicessec = () => {
         </p>
       </div>
       <div className="mt-6 mx-2 md:mt-10">
-        <section className="max-w-full xl:mx-80">
+        <section className="max-w-full lg:mx-56 xl:mx-80">
           <Image
             src="/comp.svg"
             alt="Image Description"

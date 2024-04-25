@@ -18,13 +18,13 @@ const Page = () => {
       <Home/> 
       <Features/>
       <Thirdsection/>
-      <div className='text-green-500 sm:text-red-500 md:text-violet-400 lg:text-blue-600 xl:text-orange-800'>
-        responsive
-      </div>
       <Fourthsec/>
       <Fifthesec/>
       <Servicessec/>
       <Testimonysec/>
+      <div className='text-green-500 sm:text-red-500 md:text-violet-400 lg:text-blue-600 xl:text-orange-800'>
+        responsive
+      </div>
       <Contact/>
       <Footer/>
     </div>

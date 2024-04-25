@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Card from "./thirdsectioncard";
 
 const Thirdsection = () => {
@@ -59,8 +59,6 @@ const Thirdsection = () => {
             style={{
               maxWidth: "100%",
               height: "auto",
-              maxWidth: "100%",
-              height: "auto"
             }} />
         </div>
 

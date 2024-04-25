@@ -69,7 +69,7 @@ const Fifthesec = () => {
   return (
     <div className="select-none bg-blue-50">
       <div className="flex flex-col items-center pt-16 text-center">
-        <div className="font-extrabold text-5xl">
+        <div className="font-extrabold text-3xl lg:text-5xl xl:text-5xl">
           <h1 className="mt-4">LET’S KNOW THE</h1>
           <h1 className="mt-2">
             <span className="bg-red-600 text-white p-1 px-4 rounded-md inline-block">
@@ -78,13 +78,13 @@ const Fifthesec = () => {
             FOR YOU
           </h1>
         </div>
-        <div className="text-center mt-7">
+        <div className="text-center mt-7 text-sm lg:text-base xl:text-base">
           <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
       </div>
-      <section className="py-10 px-10 2xl:max-container relative flex flex-row justify-center gap-16">
+      <section className="overflow-x-auto flex flex-row gap-2 2xl:max-container xl:py-10 xl:px-10 xl:2xl:max-container xl:relative xl:flex xl:flex-row xl:justify-center xl:gap-16 xl:overflow-hidden">
         {card.map((car, index) => (
-          <div className="space-x-4" key={index}>
+          <div className="space-x-4 mx-3 mb-10 mt-20 lg:mt-10 xl:mt-10 lg:mx-2 xl:mx-2" key={index}>
             <Card
               title={car.title}
               smallDescription={car.smallDescription}

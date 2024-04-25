@@ -15,8 +15,9 @@ const Page = () => {
           {/* Background Image */}
           <Image
             src="/login/Background.png"
+            width={1000}
+            height={1000}
             alt=""
-            fill
             sizes="100vw"
             style={{
               objectFit: "cover",
@@ -33,8 +34,6 @@ const Page = () => {
             className="absolute top-0 left-0 m-4 md:m-6 lg:m-8 xl:m-10 max-w-full h-auto"
             alt="Logo"
             style={{
-              maxWidth: "100%",
-              height: "auto",
               maxWidth: "100%",
               height: "auto"
             }} />

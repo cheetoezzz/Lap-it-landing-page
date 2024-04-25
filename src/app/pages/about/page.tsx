@@ -12,7 +12,7 @@ const Page = () => {
       <Navbar />
       <Firstsection />
       <Secondsection />
-      <Thirdsection />
+      <Thirdsection  />
       <Footer />
     </div>
   );

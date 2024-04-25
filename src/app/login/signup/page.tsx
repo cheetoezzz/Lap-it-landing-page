@@ -15,13 +15,9 @@ const Page = () => {
           <Image
             src="/login/Background.png"
             alt=""
-            fill
             sizes="100vw"
-            style={{
-              objectFit: "cover",
-              maxWidth: "100%",
-              height: "auto"
-            }} />
+            width={1000}
+            height={100}/>
           {/* Logo */}
           <div>
             <a href="/.">
@@ -34,8 +30,6 @@ const Page = () => {
             style={{
               maxWidth: "100%",
               height: "auto",
-              maxWidth: "100%",
-              height: "auto"
             }} />
           </a>
           </div>

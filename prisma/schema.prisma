@@ -18,6 +18,7 @@ enum UserRole {
   admin
   user
 }
+
 model User {
   id      Int      @id @default(autoincrement())
   companyName String @unique
@@ -60,6 +61,21 @@ model LandingpageCards {
   title     String
   content   String
   Image     String
+  createdAt DateTime @default(now())
+  UpdateAt  DateTime @updatedAt
+}
+
+enum Status {
+  checkmark
+  crossmark
+}
+
+model PricingTable {
+  id        Int      @id @default(autoincrement())
+  title     String
+  standard  Status
+  premium   Status
+  starter   Status
   createdAt DateTime @default(now())
   UpdateAt  DateTime @updatedAt
 }

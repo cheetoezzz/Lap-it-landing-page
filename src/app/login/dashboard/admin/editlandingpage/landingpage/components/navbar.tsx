@@ -20,8 +20,6 @@ const Navbar = () => {
             className="sm:w-28 md:w-40"
             style={{
               maxWidth: "100%",
-              height: "auto",
-              maxWidth: "100%",
               height: "auto"
             }} />
         </Link>

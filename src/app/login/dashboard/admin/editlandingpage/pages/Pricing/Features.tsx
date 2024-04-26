@@ -44,7 +44,6 @@ const Features = () => {
         const response = await fetch("/api/landingpagecontent/pricingcontent/cards");
         const data = await response.json();
         const pricingcardContent: pricingcardContent[] = data.pricingtcardsContent;
-        
         setPricingCardContent(pricingcardContent);
       } catch (error) {
         console.error("Error fetching feature content:", error);

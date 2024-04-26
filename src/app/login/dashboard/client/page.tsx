@@ -2,6 +2,7 @@
 import { authOptions } from '@/lib/auth';
 import { getServerSession } from 'next-auth';
 import React from 'react';
+import Image from 'next/image';
 // import SignoutButton from '../components/signoutbutton';
 
 
@@ -23,7 +24,7 @@ const Page = async () => {
       {/* Side Navbar */}
       <div className="w-64 px-4 py-8 bg-white border-r">
         <div className='transform'>
-        <img src="/person1.svg" alt="" />
+        <Image width={100} height={100} src="/person1.svg" alt="" />
         </div>
         <div className="mt-10"> 
           <p className="mb-4 text-gray-600">Welcome, <strong>{session?.user.companyName}</strong>!</p>

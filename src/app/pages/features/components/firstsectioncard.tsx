@@ -18,14 +18,17 @@ const firstCard = ({ title, iconSrc }: cardprops) => {
             height={300}
             className="w-[50px] h-[50px] sm:w-[35px] sm:h-[35px] md:w-[45px] md:h-[45px] xl:w-[80px] xl:h-[80px] mx-auto "
           />
-
-          <img
-            src={iconSrc}
-            alt={title}
-            width={50}
-            height={50}
-            className=" sm:w-[35px] sm:h-[35px] md:w-[45px] md:h-[45px] xl:w-[80px] xl:h-[80px] mx-auto "
-          />
+          {iconSrc && (
+          <div className="mb-4">
+            <Image
+              width={50}
+              height={50}
+              src={iconSrc}
+              alt={title}
+              className=" sm:w-[35px] sm:h-[35px] md:w-[45px] md:h-[45px] xl:w-[80px] xl:h-[80px] mx-auto "
+            />
+          </div>
+           )}
         </div>
         <div>
           <h1 className="text-center text-black font-semibold text-[7px] sm:text-[10px] md:text-[10px] xl:text-[18px] pb-2">

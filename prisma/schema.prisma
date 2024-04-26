@@ -87,7 +87,11 @@ model PricingCards {
   price     Int
   subtitle2 String
   price2    Int
-  package   String    
+  packageone  String
+  packagetwo  String
+  packagethree  String
+  packagefour  String
+  packagefive  String
   createdAt DateTime @default(now())
   UpdateAt  DateTime @updatedAt
 }

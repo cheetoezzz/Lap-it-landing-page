@@ -10,10 +10,8 @@ import {
 } from "@/components/ui/accordion";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,

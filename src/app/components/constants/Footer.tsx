@@ -115,9 +115,15 @@ const Footer = () => {
     <footer className="bg-blue-900 text-white mt-auto">
       <div className="max-w-none md:grid md:grid-cols-2 xl:flex xl:flex-row xl:gap-14 xl:justify-center 2xl:gap-48 relative">
         <div className="2xl:mt-5">
+
           <div className="flex flex-col items-center mt-5">
             <Image src="/lapit.svg" alt="" width={150} height={40} />
             <div className="text-[12px] text-center">
+
+          <div className="flex flex-col items-center mt-5  ">
+            <Image src="/lapit.svg" alt="" width={150} height={40} />
+            <div className="text-[12px] text-center ">
+
               <p className="md:text-center md:max-w-none sm:text-[12px] md:text-[14px] lg:text-[16px] xl:text-[14px] 2xl:text-[16px]">
                 We are happy to serve you for the better{" "}
                 <span className="lg:block"></span> future of our country in
@@ -153,6 +159,7 @@ const Footer = () => {
             Reach out
           </div>
 
+
           <div className="flex justify-center items-center mt-2">
             <div className="flex items-center">
               <Image
@@ -179,6 +186,33 @@ const Footer = () => {
           </div>
         </div>
 
+
+          <div className="flex justify-center items-center mt-2">
+            <div className="flex items-center">
+              <Image
+                src="/location.svg"
+                alt="location"
+                width={20}
+                height={20}
+                className="md:w-auto"
+              />
+              <div className="flex text-center pl-2 text-[12px] md:text-[14px] 2xl:text-[16px] xl:text-start xl:w-80">
+                Door 2 Ground floor Marcela Bldg. Jose Palma Gil St., Claveria
+                St. Davao City, 8000 Philippines
+              </div>
+            </div>
+          </div>
+
+
+          <div className="flex items-center text-[12px] mt-2 md:text-[14px] 2xl:text-[16px] ">
+            <Image src="/vector.png" alt="" width={16} height={16} />
+            <div className="pl-2">sales.lap@gmail.com</div>
+          </div>
+          <div className="flex items-center text-[12px] mt-2 md:text-[14px] 2xl:text-[16px]">
+            <Image src="/phone.svg" alt="" width={16} height={16} />
+            <div className="pl-2">+63 905 556 5713</div>
+          </div>
+        </div>
         <div className="flex flex-col items-center mt-5 md:mt-7 xl:w-80 2xl:mt-10 xl:items-start">
           <div className="font-bold text-[17px] md:text-[18px]">
             Get In Touch
@@ -189,6 +223,7 @@ const Footer = () => {
             </h1>
           </div>
         </div>
+      </div>
       </div>
       <BottomOfFooter />
     </footer>

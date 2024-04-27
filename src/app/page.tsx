@@ -21,10 +21,10 @@ const Page = () => {
       <Fourthsec/>
       <Fifthesec/>
       <Servicessec/>
-      <Testimonysec/>
+      {/* <Testimonysec/>
       <div className='text-green-500 sm:text-red-500 md:text-violet-400 lg:text-blue-600 xl:text-orange-800'>
         responsive
-      </div>
+      </div> */}
       <Contact/>
       <Footer/>
     </div>

@@ -191,7 +191,7 @@ const Features = () => {
                 </div>
                 <div className="flex items-center justify-center translate-x-[13px] mt-10">
                   <Button
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={() => setIsModalOpen2(true)}
                     className="w-[300px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   >
                     Learn More
@@ -227,8 +227,8 @@ const Features = () => {
                       src="/Inventory.png"
                       alt="Your Image"
                       className="rounded-lg "
-                      width={0}
-                      height={0}
+                      width={600}
+                      height={600}
                       style={{
                         maxWidth: "100%",
                         height: "auto",
@@ -277,7 +277,7 @@ const Features = () => {
                 </div>
                 <div className="flex items-center justify-center translate-x-[13px] mt-10">
                   <Button
-                    onClick={() => setIsModalOpen(true)}
+                    onClick={() => setIsModalOpen3(true)}
                     className="w-[300px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                   >
                     Learn More
@@ -313,8 +313,8 @@ const Features = () => {
                       src="/Food.png"
                       alt="Your Image"
                       className="rounded-lg "
-                      width={0}
-                      height={0}
+                      width={600}
+                      height={600}
                       style={{
                         maxWidth: "100%",
                         height: "auto",

@@ -2,6 +2,7 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { NAV_LINKS } from ".";
+import { Button } from "@/components/ui/button";
 
 
 
@@ -11,12 +12,12 @@ const Navbar = () => {
     <nav className="flex items-center justify-between max-w-full px-4 py-4 bg-blue-600 ml">
 
       <div className="ml-24">
-        <Link href='/'>
+        <Link href='/login/dashboard/admin/editlandingpage'>
           <Image
             src="/lapit.svg"
             alt="logo"
-            width={80}
-            height={60}
+            width={200}
+            height={100}
             className="sm:w-28 md:w-40"
             style={{
               maxWidth: "100%",
@@ -34,6 +35,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <div className="ml-16">
+        <Button className="bg-white text-black hover:text-white"><a href="/login/dashboard/admin">BACK TO ADMIN DASHBOARD</a></Button>
+        </div>
 
       </div>
     </nav>

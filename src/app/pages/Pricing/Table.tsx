@@ -42,7 +42,7 @@ const PriceTable = () => {
 
   return (
     <div className="mx-20">
-      <Table>
+      <Table className="overflow-hidden">
         <TableHeader>
           <TableRow>
             <TableCell className="text-center">Features</TableCell>

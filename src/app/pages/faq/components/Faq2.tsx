@@ -33,7 +33,7 @@ const Faq2 = () => {
                   className="w-full h-32 resize-none border rounded-md px-2 py-2"
                 ></textarea>
               </div>
-              <Button className="w-full bg-blue-600 hover:bg-blue-800" type="submit">
+              <Button className="w-full bg-blue-600 hover:bg-blue-800 text-white" type="submit">
                 Submit
               </Button>
             </div>

@@ -9,6 +9,8 @@ import Servicessec from './landingpage/Servicessec'
 import Testimonysec from './landingpage/Testimonysec'
 import Contact from './landingpage/Contact'
 import Footer from './components/constants/Footer'
+import { InfiniteMovingCardsDemo } from './landingpage/Clients'
+
 
 
 const Page = () => {
@@ -25,6 +27,7 @@ const Page = () => {
       <div className='text-green-500 sm:text-red-500 md:text-violet-400 lg:text-blue-600 xl:text-orange-800'>
         responsive
       </div> */}
+      <InfiniteMovingCardsDemo/>
       <Contact/>
       <Footer/>
     </div>

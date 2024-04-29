@@ -6,29 +6,29 @@ import { FcCheckmark, FcMinus } from "react-icons/fc";
 const Fifthesec = () => {
   const card = [
     {
-      title: "STARTER",
-      smallDescription: "First you can try it for free",
-      price: "₱ 7,500",
+      title: "POS Retail",
+      prices: "₱ 45,000",
+      price: "₱ 800",
     },
     {
-      title: "STANDARD",
-      smallDescription: "First you can try it for free",
+      title: "POS Hotel",
+      prices: "₱ 10,500",
       price: "₱ 10,500",
     },
     {
-      title: "PREMIUM",
-      smallDescription: "First you can try it for free",
+      title: "POS F&B",
+      prices: "₱ 15,500",
       price: "₱ 15,500",
     },
   ];
 
   const getTitleColorClass = (title: string): string => {
     switch (title) {
-      case "STARTER":
+      case "POS Retail":
         return "text-green-500";
-      case "STANDARD":
+      case "POS Hotel":
         return "text-orange-500";
-      case "PREMIUM":
+      case "POS F&B":
         return "text-red-500";
       default:
         return "text-black";
@@ -37,29 +37,27 @@ const Fifthesec = () => {
 
   const renderIcons = (title: string): { icon: React.ReactElement; text: string }[] => {
     switch (title) {
-      case "STARTER":
+      case "POS Retail":
         return [
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcMinus style={{ fontSize: "24px" }} />, text: "Amet consectetur" },
-          { icon: <FcMinus style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit amet" },
-          { icon: <FcMinus style={{ fontSize: "24px" }} />, text: "Volutpat nulla lorem vitae" },
-          { icon: <FcMinus style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit amet" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Software" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Hardware" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Barcode Scanner" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Computer Set" },
+        ]
+      case "POS Hotel":
+        return [
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Software" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Hardware" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Computer Set" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Training" },
         ];
-      case "STANDARD":
+      case "POS F&B":
         return [
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcMinus style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit amet" },
-          { icon: <FcMinus style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit amet" },
-        ];
-      case "PREMIUM":
-        return [
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
-          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Lorem ipsum dolor sit" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Software" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Computer Set" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Training" },
+          { icon: <FcCheckmark style={{ fontSize: "24px" }} />, text: "Maintenance" },
+       
         ];
       default:
         return [];
@@ -87,7 +85,7 @@ const Fifthesec = () => {
           <div className="space-x-4 mx-3 mb-10 mt-20 lg:mt-10 xl:mt-10 lg:mx-2 xl:mx-2" key={index}>
             <Card
               title={car.title}
-              smallDescription={car.smallDescription}
+              prices={car.prices}
               price={car.price}
               className={getTitleColorClass(car.title)}
               icons={renderIcons(car.title)}
